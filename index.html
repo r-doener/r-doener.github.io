@@ -10,6 +10,7 @@
     <meta name="description" content=Doener Ratings von r doener" />
     <meta name="keywords" content="Doener Map, Doenermap, doener on map, reddit doener" />
     <meta name="author" content="u timo_schroe" />
+    <meta name="msvalidate.01" content="59272B35CC50FF1FD6730D59B82E40FA" />
 
 
 
@@ -44411,6 +44412,168 @@
             map.entities.push(pin);
         //}
         
+            var location = new Microsoft.Maps.Location(51.56658554, 12.0686903);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            icon: '/static/doner-kebab.png',
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Doenermap - für den hohen Rat ',
+                subTitle: 'test',
+                description: 'Ich hatte am Wochenende etwas zeit und habe mich dem hohen Rat gewidmet.\n\nDamit der hohe Rat eine Übersicht über die Lage hat:\n\n[Döner Map](https://r-doener.github.io)   \nEdit: achja, die Döner sind klickbar.\n\n&amp;#x200B;\n\nIst noch nicht komplett fertig - ich aber für das Wochenende.\n\nGuten Appetit. Oben links auf dem Button gibts Infos.\n\n&amp;#x200B;\n\nFAQ:\n\nMein Post ist nicht da?\n\n* Glückwunsch\n\nWann wird das aktualisiert ?\n\n* Baue ich heute Abend ein, dann alle 15 min.\n\nBild bei xyz ist Bild Kaputt?\n\n* Ich unterstütze noch keine Videos und grad auch nur Reddit und imgur.\n\nBei xyz wird Rating / Preis nicht angezeigt?\n\n* Weil ihr nicht wie ein gescheiter Alman die Post Regeln beachtet.\n\nIch habe später aber den Preis / den Ort / das Rating in die Comments geschrieben!\n\n* schön für dich!\n\nDer Döner ist an einem falschen Ort!\n\n* Das ist grad gar nicht so selten, es braucht mehrere Almans um aus euren Beschreibungen den Ort zu lokalisieren und den dann noch geographisch zuzuordnen. Ich arbeite dran wenn ich Zeit hab, ich denke es geht noch besser.\n\nWieso Bing Maps ?!?!?!\n\n* Weil ich mit der noch nicht gearbeitet habe und mir das mal angucken wollte.\n\nWomit hast du das geschrieben ?\n\n* 100% Python\n\nSource ?\n\n* Kommt wenn ich aufgeräumt habe, da sind noch Keys drin und so.\n\nDas hast du aber ganz schön zusammen gepfuscht !!!\n\n* Absolut!\n\nxyz funktioniert nicht!\n\n* Bei mir vermutlich schon.\n\nWas für ein Browser / Version / etc. ist getestet ?\n\n* Meins\n\n&amp;#x200B;\n\nKann ich helfen ?\n\nja ! Verbesser mein regex um Preise und Bewertungen zu parsen:\n\n    Preis:\n    match = re.search(r&#39;\d{1,2}(?:[.,]\d{0,2})?\s*(?:€|Euro)&#39;,  submission.title, re.IGNORECASE)\n    \n    Bewertung:\n    match = re.search(r&#39;\d{1,2}(?:[.,]\d{1,2})?\s*(?:/|von)\s*\d{1,2}&#39;, submission.title, re.IGNORECASE)\n\n&amp;#x200B;\n\nhttps://preview.redd.it/t1qu8g2mp6fc1.png?width=1360&amp;format=png&amp;auto=webp&amp;s=518609faff124e1d09be7581eff630d85ce1ae05 <br><br><a href="/static/doner-kebab.png" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/static/doner-kebab.png"></a></br><b>Rating: - Preis: -</b> <br> 28.01.24 by <a href="https://reddit.com/u/Timo_schroe"> /u/Timo_schroe</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
+            var location = new Microsoft.Maps.Location(48.86153412, 9.18575954);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            icon: '/static/doner-kebab.png',
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Yaprak Grillhouse Kornwestheim (Bester döner Deuts ',
+                subTitle: 'test',
+                description: 'Nachdem Holle dort war musste ich den jetzt auch probieren, wohne ca. 40km entfernt, aber bei dem tollen Wetter heute ab aufs Motorrad und dönieren! Was soll ich sagen, für mich ernsthaft der beste döner den ich jemals gegessen habe. Habe mir zum Fleisch testen einen kleinen (Viertel Döner) nur mit Zwiebeln, Tomaten und Fleisch bestellt. So wie Hölle auch. Dazu gab es noch einen normalen Döner mit allem. Das Fleisch schmeckt nicht dönertypisch, sondern eher wie Steak, sehr sehr geil! 8,50€ Der Döner, 4,50€ der Viertel Döner. <br><br><a href="https://i.redd.it/z9n85kjkn6fc1.jpg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/z9n85kjkn6fc1.jpg"></a></br><b>Rating: - Preis: 8,50€</b> <br> 28.01.24 by <a href="https://reddit.com/u/Ochuligel"> /u/Ochuligel</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
+            var location = new Microsoft.Maps.Location(52.52342987, 13.41143608);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            icon: '/static/doner-kebab.png',
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: '2019 Döner in Berlin (Mehas) ',
+                subTitle: 'test',
+                description: 'Als er noch 3,50€ gekostet hat. Das war damals einer der besten Döner, die ich je gegessen habe. <br><br><a href="https://i.redd.it/tdkt08p2l6fc1.jpeg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/tdkt08p2l6fc1.jpeg"></a></br><b>Rating: - Preis: 3,50€</b> <br> 28.01.24 by <a href="https://reddit.com/u/BallsOfSats"> /u/BallsOfSats</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
+            var location = new Microsoft.Maps.Location(52.50991821, 13.41411591);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            icon: '/static/doner-kebab.png',
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Dönerteller in Berlin, 10,50 ',
+                subTitle: 'test',
+                description: 'Ich habe unweit meiner Wohnung einen echt guten Dönerteller gefunden:\n- Kein Hackfleisch\n- Soßen alle selbstgemacht, die rote auch wirklich scharf\n- Guter Salat\n- nettes Personal + Tee\n\n10/10 Hinterschaufelpunkte <br><br><a href="https://i.redd.it/col88urg86fc1.jpeg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/col88urg86fc1.jpeg"></a></br><b>Rating: 10/10 Preis: -</b> <br> 28.01.24 by <a href="https://reddit.com/u/cravex12"> /u/cravex12</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
+            var location = new Microsoft.Maps.Location(51.21546936, 7.63506985);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            icon: '/static/doner-kebab.png',
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Durchschnittspreis für Döner liegt in Lüdenscheid  ',
+                subTitle: 'test',
+                description: ' <br><br><a href="https://i.redd.it/ckx54awk66fc1.jpeg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/ckx54awk66fc1.jpeg"></a></br><b>Rating: - Preis: 5,88 Euro</b> <br> 28.01.24 by <a href="https://reddit.com/u/156000340711"> /u/156000340711</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
+            var location = new Microsoft.Maps.Location(56.82699585, 9.01432037);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            icon: '/static/doner-kebab.png',
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Nochmal vom Filderkebab, diesmal der &#34;Mega Döner&#34;  ',
+                subTitle: 'test',
+                description: ' <br><br><a href="https://i.redd.it/k389k6eg26fc1.jpeg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/k389k6eg26fc1.jpeg"></a></br><b>Rating: - Preis: 8,50€</b> <br> 28.01.24 by <a href="https://reddit.com/u/skynet52"> /u/skynet52</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
         /*for (var i = 0; i < randomLocations.length; i++) {
             var pin = new Microsoft.Maps.Pushpin(randomLocations[i]);
 
@@ -44503,8 +44666,8 @@
  <div class="customNavBar">
             <input type="button" value="Doener Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">Durchschnittlicher Post-Preis: 7.82 €<br>
-                                    Durchschnittlicher Post-Preis 2024: 7.59 €<br>
+    <div class="hide" id="infotext">Durchschnittlicher Post-Preis: 7.84 €<br>
+                                    Durchschnittlicher Post-Preis 2024: 7.67 €<br>
                                     Durchschnittlicher Post-Preis 2023: 7.91 €<br>
                                     Durchschnittlicher Post-Preis 2022: 9.1 €<br>
                                     Durchschnittlicher Post-Preis 2021: 6.8 €<br><br><br>
