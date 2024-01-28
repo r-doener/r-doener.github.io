@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47860,6 +47859,35 @@
                 title: 'Nochmal vom Filderkebab, diesmal der &#34;Mega Döner&#34;  ',
                 subTitle: 'test',
                 description: ' <br><br><a href="https://i.redd.it/k389k6eg26fc1.jpeg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/k389k6eg26fc1.jpeg"></a></br><b>Rating: - Preis: 8,50€</b> <br> 28.01.24 by <a href="https://reddit.com/u/skynet52"> /u/skynet52</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
+            var location = new Microsoft.Maps.Location(58.17289734, 26.00320816);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+            icon: '/static/doner-kebab.png',
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Teure Döner bei Läden, ohne Kartenzahlung (Steuern ',
+                subTitle: 'test',
+                description: 'Es muss aufhören, dass mehr als jeder zweite Dönerladen (bei mir in der Gegend alle) keine Kartenzahlung akzeptiert, damit Steuern hinterziehen kann (was eigtl kein Geheimnis mehr ist) und gleichzeitig absurde Preise für einen IMMER KLEINER werdenden Döner verlangt, welcher nach Zusammenrechnung der Zutaten, Mitarbeiterpreise, Betriebskosten und Miete keinerlei Berechtigung hat.\n\nHört auf die Scheiße zu kaufen. Die meisten hauen dir heutzutage auch den Hackfleischmist drauf. <br><br><a href="/static/doner-kebab.png" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/static/doner-kebab.png"></a></br><b>Rating: - Preis: -</b> <br> 28.01.24 by <a href="https://reddit.com/u/SufferingPants"> /u/SufferingPants</a><br>'
             };
 
             //Add a click event handler to the pushpin.
