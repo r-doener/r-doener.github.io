@@ -47899,6 +47899,35 @@
             map.entities.push(pin);
         //}
         
+            var location = new Microsoft.Maps.Location(51.67562103, 6.1558547);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+            icon: '/static/doner-kebab.png',
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: '5,50 € Goch. Selbstgebackenes Brot ',
+                subTitle: 'test',
+                description: ' <br><br><a href="https://i.redd.it/unvhe0xkn8fc1.jpeg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/unvhe0xkn8fc1.jpeg"></a></br><b>Rating: - Preis: 5,50 €</b> <br> 28.01.24 by <a href="https://reddit.com/u/40Vol-WillyWodka"> /u/40Vol-WillyWodka</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
         /*for (var i = 0; i < randomLocations.length; i++) {
             var pin = new Microsoft.Maps.Pushpin(randomLocations[i]);
 
@@ -47996,7 +48025,7 @@
                                     Durchschnittlicher Post-Preis 2024: 7.67 €<br>
                                     Durchschnittlicher Post-Preis 2023: 7.91 €<br>
                                     Durchschnittlicher Post-Preis 2022: 9.1 €<br>
-                                    Durchschnittlicher Post-Preis 2021: 6.8 €<br><br><br>Letztes Update: 2024-01-28 20:32:23.022685<br>
+                                    Durchschnittlicher Post-Preis 2021: 6.8 €<br><br><br>Letztes Update: 2024-01-28 21:24:35.352336<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
