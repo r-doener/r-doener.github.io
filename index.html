@@ -48305,6 +48305,64 @@
             map.entities.push(pin);
         //}
         
+            var location = new Microsoft.Maps.Location(57.20902634, 21.41466713);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+            icon: '/static/doner-kebab.png',
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Backofen Döner... ',
+                subTitle: 'test',
+                description: ' <br><br><a href="https://i.redd.it/bxzzxub3udfc1.jpeg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/bxzzxub3udfc1.jpeg"></a></br><b>Rating: - Preis: -</b> <br> 30.01.24 by <a href="https://reddit.com/u/mpMaPo"> /u/mpMaPo</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
+            var location = new Microsoft.Maps.Location(65.26089478, -166.3601532);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+            icon: '/static/uk.png',
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Spezi Teller 4,50€ ',
+                subTitle: 'test',
+                description: 'Ort: Adora Döner Kumru İmbiss in Berlin\n\nPreis: je Spezi 4,50€ Über Uber Eats aktuell im Angebot 2 für 1 bestellbar. Sonst 9 Euro. \n\nGeschmack: Ich liebe Spezi Teller. Daher war dieses eine solide 7/10. Wer Spezi kennt ist im Grunde gesamter Döner Inhalt auf einem Teller Geschichtet und mit Pommes garniert. Samt alle Soßen. Mayo, ketchup auf Pommes 🍟 und oben auf Salat Kräuter, Knoblauch und Scharf. Dann kommt das Fleisch nochmal drauf. \n\nMenge: Dazu muss ich sagen das sich innerhalb 2 Jahre leider die Verpackung verkleinert hat. Somit spürt man es in der Menge auch. Aber was solls. Wie überall diese schrumpflation.\n\nFleisch:  Es ist kein Premium Dönerfleisch. Aber auch nicht schlecht. Es macht gut satt. Schmeckt mit den anderen Komponenten gut. \n\nAufbau Anleitung : 1.Pommes(Soßen) 2. Dönerfleisch 2.Komplett Salat 🥗 4.Dönerfleisch(Soßen) \n\nWARNUNG ⚠ : Auf den Fotos sieht das Fleisch wie ein UK 🇬🇧 Abklatsch aus. Ist es aber nicht. Gut durch gebraten und kein Pappkarton. <br><br><a href="https://i.redd.it/rnlmfp2x7mfc1.jpg" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://i.redd.it/rnlmfp2x7mfc1.jpg"></a></br><b>Rating: 7/10 Preis: 4,50€</b> <br> 30.01.24 by <a href="https://reddit.com/u/Afyonlu-03"> /u/Afyonlu-03</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
         /*for (var i = 0; i < randomLocations.length; i++) {
             var pin = new Microsoft.Maps.Pushpin(randomLocations[i]);
 
@@ -48398,11 +48456,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">Durchschnittlicher Post-Preis: 7.84 €<br>
-                                    Durchschnittlicher Post-Preis 2024: 7.67 €<br>
+    <div class="hide" id="infotext">Durchschnittlicher Post-Preis: 7.83 €<br>
+                                    Durchschnittlicher Post-Preis 2024: 7.65 €<br>
                                     Durchschnittlicher Post-Preis 2023: 7.91 €<br>
                                     Durchschnittlicher Post-Preis 2022: 9.1 €<br>
-                                    Durchschnittlicher Post-Preis 2021: 6.8 €<br><br><br>Letztes Update: 2024-01-30 20:45:03.561954<br>
+                                    Durchschnittlicher Post-Preis 2021: 6.8 €<br><br><br>Letztes Update: 2024-01-30 21:00:13.319419<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
