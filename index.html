@@ -48421,6 +48421,35 @@
             map.entities.push(pin);
         //}
         
+            var location = new Microsoft.Maps.Location(-3.83985257, 139.25273132);
+
+
+
+        //for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+            icon: '/static/doner-kebab.png',
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'Reihenfolge der Zutaten beim Döner ',
+                subTitle: 'test',
+                description: 'Ja moin alle,\n\nIch hab mir gerade von meinem Dönermann einen Frühstücksdöner oder auch Mittagsdöner (das ist ja nicht so einfach mit den Zeiten während Nachtschicht 😅)  gegönnt und es wahr absolut Wahnsinn. Das Verhältnis von Sose zu dem Rest war absolut überragend. Dabei ist mir aufgefallen, der gute Mann hatte folgende Reihenfolge:\n (Brot) - &gt; Fleisch - &gt; Soße - &gt; Kraut - &gt; nochmal Soße\n - &gt; Fleisch.\n\nEigentlich kenne ich am Anfang erst Soße im Brot verteilen und dann das Fleisch. Hier ist also die kulinarische Variation! Das Ergebnis wahr fantastisch. Kein durchgeweichtes Brot oder ähnliches! \n\nWie machen das eure Dönermänner des vertrauens? <br><br><a href="/static/doner-kebab.png" target="_blank"><img width="250px"  style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/static/doner-kebab.png"></a></br><b>Rating: - Preis: -</b> <br> 31.01.24 by <a href="https://reddit.com/u/Hachald"> /u/Hachald</a><br>'
+            };
+
+            //Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+            //map.setView({ center: location, zoom: 6 });
+            //Add pushpin to the map.
+            map.entities.push(pin);
+        //}
+        
         /*for (var i = 0; i < randomLocations.length; i++) {
             var pin = new Microsoft.Maps.Pushpin(randomLocations[i]);
 
@@ -48518,7 +48547,7 @@
                                     Durchschnittlicher Post-Preis 2024: 7.65 €<br>
                                     Durchschnittlicher Post-Preis 2023: 7.91 €<br>
                                     Durchschnittlicher Post-Preis 2022: 9.1 €<br>
-                                    Durchschnittlicher Post-Preis 2021: 6.8 €<br><br><br>Letztes Update: 2024-01-31 16:00:04.263150<br>
+                                    Durchschnittlicher Post-Preis 2021: 6.8 €<br><br><br>Letztes Update: 2024-01-31 16:15:13.099620<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
