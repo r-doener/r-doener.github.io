@@ -46,6 +46,33 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(52.52342987, 13.41143608);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Bester Döner in Berlin ',
+                subTitle: 'test',
+                description: 'Bin morgen in Berlin und möchte einfach den geilsten Döner Essen. \nIst da Mustafas Gemüse Kebap die richtige Anlaufstelle oder gibt es noch geilere Dönerbuden? <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1ag76pw/bester_döner_in_berlin/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 01.02.2024 by <a href="https://reddit.com/u/Hallo294654"> /u/Hallo294654</a><a href="https://reddit.com//r/doener/comments/1ag76pw/bester_döner_in_berlin/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: auto; margin-right: 5px; margin-top: -55px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(54.62119293, 13.28821373);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -267,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -45315,7 +45342,7 @@
                                     &#8960;  Post-Preis 2024: 7.84 €<br>
                                     &#8960;  Post-Preis 2023: 7.56 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 8.46 €<br><br><br>Letztes Update: 2024-02-01 10:30:03.753403<br>
+                                    &#8960;  Post-Preis 2021: 8.46 €<br><br><br>Letztes Update: 2024-02-01 10:45:04.526421<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
