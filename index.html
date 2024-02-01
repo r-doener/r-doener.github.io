@@ -46,6 +46,60 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(51.49919891, 11.8107996);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dieser Tag wurde gesegnet ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1agafbu/dieser_tag_wurde_gesegnet/" target="_blank"><img width="250px" height="300px" style="border-radius:5px;display: block; margin-left: 5px; margin-right: 5px;" src="https://i.redd.it/ovwiyja02zfc1.jpeg"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 01.02.2024 by <a href="https://reddit.com/u/LeutnantKobra"> /u/LeutnantKobra</a><a href="https://reddit.com//r/doener/comments/1agafbu/dieser_tag_wurde_gesegnet/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: auto; margin-right: 5px; margin-top: -55px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+            var location = new Microsoft.Maps.Location(-25.72804832, 134.49017334);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Döner Saucen ',
+                subTitle: 'test',
+                description: 'Aus der Berliner Perspektive, habe ich das Gefühl, dass eine Stinknormale Joghurt-Sauce zur Rarität geworden ist.\n\nIch hasse Majo und die Vorstellung rohes Ei gemischt mit Öl - und dann damit sämtliche Saucen abwandeln - das ist doch mies. \n\nFalls jemand nen Tipp hat wo es ganz normale Joghurt / Joghurt-Knoblauch Sauce ohne Scheiß ekelhafter Majo gibt: Help!\n\nVerstehe den Trend nicht - geht’s da um Geld sparen? Geschmacklich auf jeden Fall ein Downgrade - ölig, schmierige Sauce igitt <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1agac9z/döner_saucen/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 01.02.2024 by <a href="https://reddit.com/u/Equivalent-Scratch20"> /u/Equivalent-Scratch20</a><a href="https://reddit.com//r/doener/comments/1agac9z/döner_saucen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: auto; margin-right: 5px; margin-top: -55px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(50.10491943, 8.75856113);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -240,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -267,7 +321,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -45396,7 +45450,7 @@
                                     &#8960;  Post-Preis 2024: 7.86 €<br>
                                     &#8960;  Post-Preis 2023: 7.56 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 8.46 €<br><br><br>Letztes Update: 2024-02-01 13:45:03.608190<br>
+                                    &#8960;  Post-Preis 2021: 8.46 €<br><br><br>Letztes Update: 2024-02-01 14:00:04.822903<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
