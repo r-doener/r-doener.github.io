@@ -46,6 +46,33 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(50.10491943, 8.75856113);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '100% Steak Döner hausgemachter Spieß - Kebab Crib Offenbach 11,5€ ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ag8tv2/100_steak_döner_hausgemachter_spieß_kebab_crib/" target="_blank"><img width="250px" height="300px" style="border-radius:5px;display: block; margin-left: 5px; margin-right: 5px;" src="https://i.redd.it/yv9f78eglyfc1.jpeg"></a>' +
+        
+        '</br><b>Rating: - Preis: 11.5 €</b> <br> 01.02.2024 by <a href="https://reddit.com/u/Run3k3y"> /u/Run3k3y</a><a href="https://reddit.com//r/doener/comments/1ag8tv2/100_steak_döner_hausgemachter_spieß_kebab_crib/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: auto; margin-right: 5px; margin-top: -55px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(42.35879135, -71.09327698);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -267,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -45365,11 +45392,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.5 €<br>
-                                    &#8960;  Post-Preis 2024: 7.84 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.51 €<br>
+                                    &#8960;  Post-Preis 2024: 7.86 €<br>
                                     &#8960;  Post-Preis 2023: 7.56 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 8.46 €<br><br><br>Letztes Update: 2024-02-01 12:15:04.179325<br>
+                                    &#8960;  Post-Preis 2021: 8.46 €<br><br><br>Letztes Update: 2024-02-01 12:30:04.649613<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
