@@ -46,6 +46,33 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(56.9462471, 24.10425186);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Rīga Lettland 7.20€ 8/10 ',
+                subTitle: 'test',
+                description: 'Mit Gurken und Knoblauch Soße, äußerst Solide.\nAusmeņa Kebabs https://maps.app.goo.gl/2F6tWerVLJHfCZ61A <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1akh0tn/rīga_lettland_720_810/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/1linrp6if0hc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=8acebf9feb7f9d4ea69c8f486810aecc52da27a9"></a>' +
+        
+        '</br><b>Rating: 8/10 Preis: 7.2 €</b> <br> 06.02.2024 by <a href="https://reddit.com/u/strawberry_l"> /u/strawberry_l</a><a href="https://reddit.com//r/doener/comments/1akh0tn/rīga_lettland_720_810/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(33.90317103, -117.5156088);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -267,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -40927,10 +40954,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.55 €<br>
-                                    &#8960;  Post-Preis 2024: 7.96 €<br>
+                                    &#8960;  Post-Preis 2024: 7.95 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-06 19:30:14.206963<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-06 19:45:11.583612<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
