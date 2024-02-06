@@ -46,6 +46,33 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(50.90379333, 11.0247221);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Erste Aufback Döner Geschmackstest bei Antenne Thüringen ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ak45ut/erste_aufback_döner_geschmackstest_bei_antenne/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/x0Ob0upR0GL2tA4sRbzZ1xkHhCdr7b62Tm8VaE3hEkQ.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=b71de00896823e0e9f1c3e3e6b7eec162f035b31"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 06.02.2024 by <a href="https://reddit.com/u/Festplattekaputtt"> /u/Festplattekaputtt</a><a href="https://reddit.com//r/doener/comments/1ak45ut/erste_aufback_döner_geschmackstest_bei_antenne/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(50.9823205, 6.0747842);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -267,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -40849,7 +40876,7 @@
                                     &#8960;  Post-Preis 2024: 7.98 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-06 08:15:09.271265<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-06 08:30:13.172516<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
