@@ -46,6 +46,60 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(51.43659592, 5.47800159);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Hizmet Bakkerij, Eindhoven (NL) | Döner mit gemixte fleisch (Huhn und  ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1al7wob/hizmet_bakkerij_eindhoven_nl_döner_mit_gemixte/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/ybbfewq607hc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=8ab1d39c7e785ac6cf2be820b32d6dc2afcee9f8"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 07.02.2024 by <a href="https://reddit.com/u/Numerous-Wishbone-76"> /u/Numerous-Wishbone-76</a><a href="https://reddit.com//r/doener/comments/1al7wob/hizmet_bakkerij_eindhoven_nl_döner_mit_gemixte/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+            var location = new Microsoft.Maps.Location(53.58613586, 10.08551884);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Urfam Wandsbek 👍 7.30€ + free Cay ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1al7p7g/urfam_wandsbek_730_free_cay/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/y5jppcei27hc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=672473f00dfcab79f4c1e4d9b5b4a9c1b3a43488"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.3 €</b> <br> 07.02.2024 by <a href="https://reddit.com/u/rambo3349"> /u/rambo3349</a><a href="https://reddit.com//r/doener/comments/1al7p7g/urfam_wandsbek_730_free_cay/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(50.94832611, 6.920434);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -240,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -267,7 +321,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -41092,7 +41146,7 @@
                                     &#8960;  Post-Preis 2024: 7.94 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-07 18:00:14.174942<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-07 18:15:10.749580<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
