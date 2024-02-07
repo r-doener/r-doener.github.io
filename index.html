@@ -46,6 +46,33 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(53.59901428, 9.47367764);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Köz Holzkohlegrill - Stade ',
+                subTitle: 'test',
+                description: '- 1: Jumbo Döner 8€\n- 2: Dürüm 8€\n- 3: Falafel Döner 7€\n\nGeschmacklich war der Jumbo Döner ne 7/10 Fleisch war ein bisschen trocken, aber der Salat und die Soße haben da ganz gut geholfen. War dafür aber sehr groß, also normalerweise esse ich so 1 1/2 bis 2 normale Döner, aber nach dem Jumbo war ich komplett voll. Dürüm war auch so ne 7 und der Falafel ne 6 (hab selber nur den Jumbo Döner gegessen). Der Laden macht auch ganz gutes gegrilltes Fleisch \n/Brot, also wenn’s nicht so nach dem Döner mundet (Blasphemie!) dann findet man noch gut andere Sachen. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1al0yfy/köz_holzkohlegrill_stade/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/2xkxvnnqg5hc1.jpg"></a>' +
+        
+        '</br><b>Rating: 7/10 Preis: 8.0 €</b> <br> 07.02.2024 by <a href="https://reddit.com/u/Extra-Ad287"> /u/Extra-Ad287</a><a href="https://reddit.com//r/doener/comments/1al0yfy/köz_holzkohlegrill_stade/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(50.11088562, 8.679492);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -267,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -41011,7 +41038,7 @@
                                     &#8960;  Post-Preis 2024: 7.97 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-07 12:30:14.057107<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-07 12:45:11.643618<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
