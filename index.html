@@ -46,6 +46,33 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(42.35879135, -71.09327698);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dürüm mit Hummus 7.50€ ',
+                subTitle: 'test',
+                description: 'In Leipzig, super lecker 👌🏻 <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1alxedy/dürüm_mit_hummus_750/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/5yqi2vf2kdhc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=a2e477c4c2aacc0b5523458cc835d3966e05aad7"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.5 €</b> <br> 08.02.2024 by <a href="https://reddit.com/u/idkwid1"> /u/idkwid1</a><a href="https://reddit.com//r/doener/comments/1alxedy/dürüm_mit_hummus_750/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(39.18002239, -83.97833161);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -267,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -41170,10 +41197,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.55 €<br>
-                                    &#8960;  Post-Preis 2024: 7.93 €<br>
+                                    &#8960;  Post-Preis 2024: 7.92 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-08 15:45:10.518261<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-08 16:00:13.266980<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
