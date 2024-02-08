@@ -46,6 +46,33 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(42.35879135, -71.09327698);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Döner Spezial bei lokalem Dönermann, 7.50€. Normaler Döner 6.50€. mit  ',
+                subTitle: 'test',
+                description: 'Warum Geflügelfleisch? Tja, weil nun auch der gute Dönermann aus dem Ort billige Hackfleischspieße für das normale Fleisch verwendet. Das Geflügelfleisch ist aber nach wie vor gut. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1am1d8l/döner_spezial_bei_lokalem_dönermann_750_normaler/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/in2bcksleehc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.5 €</b> <br> 08.02.2024 by <a href="https://reddit.com/u/gretanonymous"> /u/gretanonymous</a><a href="https://reddit.com//r/doener/comments/1am1d8l/döner_spezial_bei_lokalem_dönermann_750_normaler/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(49.24452209, 11.09058094);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -267,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -41251,10 +41278,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.55 €<br>
-                                    &#8960;  Post-Preis 2024: 7.93 €<br>
+                                    &#8960;  Post-Preis 2024: 7.92 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-08 18:30:09.825491<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-08 18:45:08.818902<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
