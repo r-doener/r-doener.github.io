@@ -46,6 +46,33 @@
 
         infobox.setMap(map);
         
+            var location = new Microsoft.Maps.Location(49.14645, 10.047045);
+
+            var pin = new Microsoft.Maps.Pushpin(location, {
+            
+                
+                    icon: '/static/doner-kebab-highlight.png',
+                
+            
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Iskender Kebap, Tandir Grillhouse, Crailsheim, 14€ ',
+                subTitle: 'test',
+                description: 'Am Mittwoch war ich das erste Mal in Crailsheim, meine Firma zieht um und ich suche dort eine Wohnung.\nWie es dir Zufall so will hat dort im November erst ein türkisches Grillhouse aufgemacht und eine Wohnung war ziemlich in der Nähe weshalb ich drauf aufmerksam geworden bin. \nWas soll ich sagen? Ich war positiv überrascht bzw beeindruckt. Recht Groß, freundliches Personal und die Karte war sogar noch etwas ausführlicher als das was ich von meinem Stammgrill gewohnt bin.\nMein Kollege hatte dann eben den Iskender Kebap, ich hab das Fleisch probiert und fand es lecker.\nIch selbst hatte Beyti, Bild von unten, was auch sehr gut war.\nZudem gab es selbstgemachten Ayran und ihr Brot machen sie auch selbst. \nInsgesamt überzeugende Vorstellung, geh ich wieder hin. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1amxuxp/iskender_kebap_tandir_grillhouse_crailsheim_14/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/x05ly4q0emhc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=39ccf63dceb160687fd3883ea50782c7e84532ab"></a>' +
+        
+        '</br><b>Rating: - Preis: 14.0 €</b> <br> 09.02.2024 by <a href="https://reddit.com/u/GoldenMic"> /u/GoldenMic</a><a href="https://reddit.com//r/doener/comments/1amxuxp/iskender_kebap_tandir_grillhouse_crailsheim_14/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
             var location = new Microsoft.Maps.Location(52.20869064, 8.03631783);
 
             var pin = new Microsoft.Maps.Pushpin(location, {
@@ -267,7 +294,7 @@
             var pin = new Microsoft.Maps.Pushpin(location, {
             
                 
-                    icon: '/static/doner-kebab-highlight.png',
+                    icon: '/static/doner-kebab.png',
                 
             
             anchor: new Microsoft.Maps.Point(12, 39)
@@ -41655,11 +41682,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.54 €<br>
-                                    &#8960;  Post-Preis 2024: 7.89 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.55 €<br>
+                                    &#8960;  Post-Preis 2024: 7.92 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-09 21:30:12.162863<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-09 21:45:08.457283<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
