@@ -1,5 +1,6 @@
-import praw, sqlite3
-from doenerconfig import *
+import praw
+import sqlite3
+
 from doener_functions import *
 
 conn = sqlite3.connect(db_file)
@@ -78,11 +79,10 @@ for submission in subreddit.new(limit=limit):  # hot, top, new, rising,
                         ids = [i['media_id'] for i in submission.gallery_data['items']]
                         url = submission.media_metadata[ids[0]]['p'][0]['u']
                         image = url.split("?")[0].replace("preview", "i")
-                    # print("---->" + image)
 
                 else:
                     image = placholder_img
-                    error = True  #### if no pictur, throw away (discussions, polls etc.)
+                    continue  #### if no pictur, throw away (discussions, polls etc.) #todo: insert id to not double crawl
 
             date = submission.created_utc
             if not error: ## if no coordinates - throw way

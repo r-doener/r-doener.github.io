@@ -1,4 +1,7 @@
-import requests, re, googlemaps
+import googlemaps
+import re
+import requests
+
 from doenerconfig import *
 
 
