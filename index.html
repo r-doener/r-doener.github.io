@@ -48,7 +48,7 @@
         infobox.setMap(map);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Dönerteller - By Ali Kebap &amp; Burger Cottbus
+                var location = new Microsoft.Maps.Location(51.76065819999999, 14.3325143); // 'Dönerteller - By Ali Kebap &amp; Burger Cottbus
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -78,7 +78,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Uludag Dortmund 6,5€
+                var location = new Microsoft.Maps.Location(51.5165278, 7.468557999999999); // 'Uludag Dortmund 6,5€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -108,7 +108,37 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Lübeck 5min vom Hauptbahnhof
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Portionsgröße in verschiedenen Bundesländern
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Portionsgröße in verschiedenen Bundesländern ',
+                subTitle: 'test',
+                description: 'Hey,\n\nmeine Feldstudie der letzten Jahre lässt mich immer mehr zu dem Schluss kommen, dass die ortsübliche Portionsgröße sehr stark von der jeweiligen Region abhängig ist. \n\nAm krassesten ist es definitiv in Bayern. Dort ist ein Döner eine nette Zwischenmahlzeit aber nie und nimmer eine vollwertige Mahlzeit. Kann man zum Mittag essen, wenn man gegen 6 dann richtig ausgiebig essen will. \n\nGanz im Gegensatz zu NRW, dort ist ein Döner eine vollwertige Mahlzeit. Fleisch, Salat, Saucen, Brot als Beilage. Ein komplettes Essen und mindestens doppelt so schwer wie in Bayern. \n\nWir läuft&#39;s bei euch? Wo positionieren sich eure Bundesländer? <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1anlvl8/portionsgröße_in_verschiedenen_bundesländern/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 10.02.2024 by <a href="https://reddit.com/u/StillNotGettinUp"> /u/StillNotGettinUp</a><a href="https://reddit.com//r/doener/comments/1anlvl8/portionsgröße_in_verschiedenen_bundesländern/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(53.8671672, 10.6705011); // 'Lübeck 5min vom Hauptbahnhof
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -138,7 +168,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'BaBaleison, Kottbusser Tor, 8€
+                var location = new Microsoft.Maps.Location(52.4985496, 13.4179723); // 'BaBaleison, Kottbusser Tor, 8€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -258,12 +288,42 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Besser als er aussieht
+                var location = new Microsoft.Maps.Location(50.438534, 7.403052); // 'Suche richtigen Döner (kein hackfleischspieß) in der Umgebung Koblenz/
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
                         icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Suche richtigen Döner (kein hackfleischspieß) in der Umgebung Koblenz/ ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1ang6nu/suche_richtigen_döner_kein_hackfleischspieß_in/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 10.02.2024 by <a href="https://reddit.com/u/SerioeseSeekuh"> /u/SerioeseSeekuh</a><a href="https://reddit.com//r/doener/comments/1ang6nu/suche_richtigen_döner_kein_hackfleischspieß_in/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Besser als er aussieht
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -288,12 +348,42 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(50.1061333, 8.6925157); // 'Mein letzter Döner
+                var location = new Microsoft.Maps.Location(50.927129, 8.47231); // 'Wo gibt&#39;s noch Dönerbuden mit richtigem Fleischdrehspieß?
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Wo gibt&#39;s noch Dönerbuden mit richtigem Fleischdrehspieß? ',
+                subTitle: 'test',
+                description: 'Ich sehe fast nur noch Hackfleischpampendrehspieß, die offiziell dann gar nicht Döner heißen dürften. Hier in Freiburg gibt&#39;s glaub ich noch eine einzige Dönerbude, die richtigen Dönerdrehspieß verwendet. Und das bei 220.000 Einwohnern und entsprechend vielen Anbietern.\n\n\nMeine Frage: wo gibt es noch richtige Dönerspieße mit Fleischscheiben im deutschsprachigen Raum? <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1ancyli/wo_gibts_noch_dönerbuden_mit_richtigem/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 10.02.2024 by <a href="https://reddit.com/u/Vezoy95"> /u/Vezoy95</a><a href="https://reddit.com//r/doener/comments/1ancyli/wo_gibts_noch_dönerbuden_mit_richtigem/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(50.9148892, 8.3536889); // 'Mein letzter Döner
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -498,6 +588,36 @@
             map.entities.push(pin);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // '12 Döner in 3 Tagen
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '12 Döner in 3 Tagen ',
+                subTitle: 'test',
+                description: 'Grüßt euch, liebe Dönerenthusiasten!\n\nIch war vor zwei Wochen im gelobten Mekka für Dönerliebhaber - NRW. Habe den Döner von dort so sehr vermisst, dass es direkt 12 Stück in 3 Tagen geworden sind. Hier die Ergebnisse meiner Feldstudie:\n\n\nHas Urfa, Bochum: 8/10, 7 Euro, Yaprak Döner im geviertelten Fladenbrot. Salate: grün, rote Zwiebel, Tomaten, Gurken, Weißkraut, dazu relativ dünnflüssiges Cacik. Fleischkonsistenz unfassbar gut, geschmacklich aufgrund des Fetts zwischen den Fleischheiben etwas streng. Immer eine stabile Nummer. Insgesamt 4 mal gegessen. \n\n\nUrfa Saray, Bochum: 6/10, 7 Euro, Schwesterladen von Has Urfa. Fleisch, Salat, Sauce identisch. Kam leider nach 22 Uhr (geöffnet bis 23 Uhr) und habe nur noch vorgeschnittenes Fleisch bekommen. Dafür hat mir der Verkäufer unfassbar viel Fleisch drauf gepackt und mir sogar noch welches zusätzlich in einer Box geschenkt. War insgesamt bestimmt 1 Kilo. Da es schon vorgeschnittenes Fleisch war, fehlte allerdings der Crunch. \n\n\nAli Baba, Bochum: 1/10, 6 Euro, Hähnchendöner, Lebensmittelvergiftung, Fleisch war nicht richtig durch. \n\n\nUludag, Dortmund: 8/10, 6,5 Euro, Fleisch ist Kalb mit Hackfleischanteil, super gegrillt, Salat frisch, Cacik sehr gut! Immer eine stabile Nummer. \n\n\nMulti Kebap, Lünen: 10/10, 9 Euro, Steakfleisch Döner, Alter Schwede! Bestes Fleisch bisher, schön mariniert, gewisser Fettanteil der nicht durch zugesetztes Fett kommt, Salat super, Brot frisch gebackenen, lediglich Saucen für meinen Geschmack etwas zu fettig, eher wie beim typischen berliner Döner. Hingehen!\n\n\nIstanbul Kebaphaus, Bochum Laer, 9/10, 7 Euro, Dienstag Hähnchenfleisch alle anderen Tage Kalbfleisch, älteres total nettes Ehepaar, machen alles (bis auf den Spieß) selbst, Brot frisch und mega gut, Saucen gut, vor allem Ezme ein Traum mit ein wenig Kreuzkümmel. \n\n\nCan Imbiss, Marl: 6,5/10, 7 Euro (mittel), insgesamt alles okay aber nicht herausragend, Knoblauch wird hier extra nachträglich auf den Döner geträufelt, Saucen Standard, Fleisch sehr gut, Salat Standard. Hat mir früher deutlich besser geschmeckt. <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1ammhzn/12_döner_in_3_tagen/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: 8/10 Preis: 7.0 €</b> <br> 09.02.2024 by <a href="https://reddit.com/u/StillNotGettinUp"> /u/StillNotGettinUp</a><a href="https://reddit.com//r/doener/comments/1ammhzn/12_döner_in_3_tagen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.3482576, 6.6737392); // 'Der Teller passt nicht auf den Teller.
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -528,7 +648,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(51.4100091, 6.7203903); // 'Hähnchen Döner - 2,50€ (!) bei First Kebap Duisburg-Rheinhausen
+                var location = new Microsoft.Maps.Location(51.4100048, 6.720381499999999); // 'Hähnchen Döner - 2,50€ (!) bei First Kebap Duisburg-Rheinhausen
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -558,7 +678,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(50.1229254, 8.7010047); // 'Selbstgemachter veganer Döner
+                var location = new Microsoft.Maps.Location(50.9270019, 8.411925799999999); // 'Selbstgemachter veganer Döner
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -618,6 +738,36 @@
             map.entities.push(pin);
         
 
+                var location = new Microsoft.Maps.Location(50.7656588, 8.493047899999999); // 'Ich suche nach TK Dönerfleisch
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Ich suche nach TK Dönerfleisch ',
+                subTitle: 'test',
+                description: 'Hey wo bekomm ich gutes TK dönerfleisch her ???? Das ist das einzige was noch daran hängt döner selber zu machen <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1am65eq/ich_suche_nach_tk_dönerfleisch/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 08.02.2024 by <a href="https://reddit.com/u/Far-Lecture-7416"> /u/Far-Lecture-7416</a><a href="https://reddit.com//r/doener/comments/1am65eq/ich_suche_nach_tk_dönerfleisch/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.9719442, 11.0372365); // 'Ali Baba Döner Kebab, Erfurt, direkt am Hbf. Großer Döner für 7€. (Nor
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -638,6 +788,36 @@
          '<a href="https://reddit.com//r/doener/comments/1am5syo/ali_baba_döner_kebab_erfurt_direkt_am_hbf_großer/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/ujd5d6brbfhc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=2e5ab9ca72bed51d0808344c62fc7a3d149f98ce"></a>' +
         
         '</br><b>Rating: - Preis: 7.0 €</b> <br> 08.02.2024 by <a href="https://reddit.com/u/TorteVonSchlacht"> /u/TorteVonSchlacht</a><a href="https://reddit.com//r/doener/comments/1am5syo/ali_baba_döner_kebab_erfurt_direkt_am_hbf_großer/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(50.927129, 8.47231); // 'Ab wann zählt etwas als Dönerladen?
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Ab wann zählt etwas als Dönerladen? ',
+                subTitle: 'test',
+                description: 'Meine Freude und ich haben eine intensive Diskussion ab wann etwas als Dönerladen zählt.\n\nIst ein Pizzaladen der zudem auch Döner verkauft auch ein Dönerladen?\n <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1am4cb7/ab_wann_zählt_etwas_als_dönerladen/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 08.02.2024 by <a href="https://reddit.com/u/alex828keke"> /u/alex828keke</a><a href="https://reddit.com//r/doener/comments/1am4cb7/ab_wann_zählt_etwas_als_dönerladen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
 
             };
 
@@ -708,7 +888,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(50.1044608, 8.642934499999999); // 'Döner Spezial bei lokalem Dönermann, 7.50€. Normaler Döner 6.50€. mit 
+                var location = new Microsoft.Maps.Location(50.927129, 8.47231); // 'Döner Spezial bei lokalem Dönermann, 7.50€. Normaler Döner 6.50€. mit 
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -798,7 +978,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(50.1239038, 8.7035926); // 'Dürüm mit Hummus 7.50€
+                var location = new Microsoft.Maps.Location(50.5835151, 8.6717718); // 'Dürüm mit Hummus 7.50€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -818,6 +998,36 @@
          '<a href="https://reddit.com//r/doener/comments/1alxedy/dürüm_mit_hummus_750/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/5yqi2vf2kdhc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=a2e477c4c2aacc0b5523458cc835d3966e05aad7"></a>' +
         
         '</br><b>Rating: - Preis: 7.5 €</b> <br> 08.02.2024 by <a href="https://reddit.com/u/idkwid1"> /u/idkwid1</a><a href="https://reddit.com//r/doener/comments/1alxedy/dürüm_mit_hummus_750/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(50.927129, 8.47231); // 'Ich suche Döner/Rezepten in der Ami(Minesota)
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Ich suche Döner/Rezepten in der Ami(Minesota) ',
+                subTitle: 'test',
+                description: 'Zuerst Entschuldigung, mein Deutsch ist nicht perfekt und es ist meine erste seit etwas aus Reddit zu fragen. Wann ich in Deutschland gewohnt ich hatte ganz viele Döner gegessen. Jetzt ich habe Lust auf einen Döner, aber ich bin jetzt in der Ami und es gibt keinen Dönerladen hier. Hat jemand ein gutes Rezept oder ein gute laden?  Vielen Dank und bitteschön.                   <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1alo5k1/ich_suche_dönerrezepten_in_der_amiminesota/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 08.02.2024 by <a href="https://reddit.com/u/astolfo_und_pommes"> /u/astolfo_und_pommes</a><a href="https://reddit.com//r/doener/comments/1alo5k1/ich_suche_dönerrezepten_in_der_amiminesota/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
 
             };
 
@@ -938,6 +1148,36 @@
          '<a href="https://reddit.com//r/doener/comments/1al2mjt/markthalle_körnerstraße_köln_selbstgemachter/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/98e99zexx5hc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=f215ab5611d9fd3f4fbe4245ad498b552343e8d5"></a>' +
         
         '</br><b>Rating: - Preis: 6.0 €</b> <br> 07.02.2024 by <a href="https://reddit.com/u/covnti"> /u/covnti</a><a href="https://reddit.com//r/doener/comments/1al2mjt/markthalle_körnerstraße_köln_selbstgemachter/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(41.0041559, 28.5422783); // 'Möner
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Möner ',
+                subTitle: 'test',
+                description: 'Leute das ist die idee (vorallem in Deutschland), hier lieben alle Döner und was lieben die Deutschen auch noch?? METT natürlich und deswegen brauchen wir dönerläder wo wir anstatt Kalb oder Hähnchen einfach mal Mett draufknallen könne, ich würde es dann Möner nennen. Das wäre wirklich eine 10/10 \nWer will mir helfen <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1al17wv/möner/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: None €</b> <br> 07.02.2024 by <a href="https://reddit.com/u/Nas3nloch"> /u/Nas3nloch</a><a href="https://reddit.com//r/doener/comments/1al17wv/möner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
 
             };
 
@@ -1118,6 +1358,66 @@
          '<a href="https://reddit.com//r/doener/comments/1akc714/home_of_libanon_4_oldenburg/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/7izwad7kfzgc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=67c5a38df3de11a84dcb189486b7d8e194cfe407"></a>' +
         
         '</br><b>Rating: - Preis: 4.0 €</b> <br> 06.02.2024 by <a href="https://reddit.com/u/Crafty_Mushroom666"> /u/Crafty_Mushroom666</a><a href="https://reddit.com//r/doener/comments/1akc714/home_of_libanon_4_oldenburg/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(45.7704872, 21.2182669); // 'Usta Doner, city: Timisoara, country: Romania, 4 euro.
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Usta Doner, city: Timisoara, country: Romania, 4 euro. ',
+                subTitle: 'test',
+                description: '&amp;#x200B;\n\nhttps://preview.redd.it/362ytvho3zgc1.png?width=380&amp;format=png&amp;auto=webp&amp;s=710c36af9eb81a3c759a426c75005c3fc029c796 <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1akaonh/usta_doner_city_timisoara_country_romania_4_euro/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: 4.0 €</b> <br> 06.02.2024 by <a href="https://reddit.com/u/Turbulent_Resort_174"> /u/Turbulent_Resort_174</a><a href="https://reddit.com//r/doener/comments/1akaonh/usta_doner_city_timisoara_country_romania_4_euro/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(48.5764039, 7.807028); // 'Der beste Dönerladen in Kehl/Strasbourg
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Der beste Dönerladen in Kehl/Strasbourg ',
+                subTitle: 'test',
+                description: 'Ich fahre am Mittwoch mit meiner Klasse nach Strasbourg für 3 Tage und wollte deswegen fragen ob ihr mir dort in der Umgebung einen Dönerladen empfehlen könnt der auch wirklich gut ist. <br><br>' +
+        
+        '<a href="https://reddit.com//r/doener/comments/1ak65ur/der_beste_dönerladen_in_kehlstrasbourg/" target="_blank"><img width="60px"; style="display: block; margin-left: auto; margin-right: auto;" src="/static/doner-kebab.png"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 06.02.2024 by <a href="https://reddit.com/u/Pyrozocker20"> /u/Pyrozocker20</a><a href="https://reddit.com//r/doener/comments/1ak65ur/der_beste_dönerladen_in_kehlstrasbourg/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
 
             };
 
@@ -14078,7 +14378,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(50.9967153, 12.4232937); // 'Döner mit Extrafleisch und viel Scharf für 7,50€ in ABG
+                var location = new Microsoft.Maps.Location(50.98623019999999, 12.433321); // 'Döner mit Extrafleisch und viel Scharf für 7,50€ in ABG
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -21848,7 +22148,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(50.113564, 8.683574199999999); // 'The ultimate calendar to show your love for Döner
+                var location = new Microsoft.Maps.Location(50.9272956, 8.4722141); // 'The ultimate calendar to show your love for Döner
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -39752,7 +40052,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Man hat es ja geahnt 😅
+                var location = new Microsoft.Maps.Location(50.918748, 8.460996); // 'Man hat es ja geahnt 😅
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -40322,7 +40622,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(50.1155413, 8.6861166); // 'Finally attempting to make my own Döner Kebab from scratch. Pide flatb
+                var location = new Microsoft.Maps.Location(50.113564, 8.683574199999999); // 'Finally attempting to make my own Döner Kebab from scratch. Pide flatb
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -46421,10 +46721,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.55 €<br>
-                                    &#8960;  Post-Preis 2024: 7.91 €<br>
+                                    &#8960;  Post-Preis 2024: 7.89 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-10 21:15:07.086479<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-10 21:31:46.399180<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
