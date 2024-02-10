@@ -47,6 +47,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'BaBaleison, Kottbusser Tor, 8€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'BaBaleison, Kottbusser Tor, 8€ ',
+                subTitle: 'test',
+                description: 'Der anscheinend neue heiße Scheiß am Kotti.\nDöner 8 Euro\nIskender 19 Euro\n\nDas Fleisch war wirklich gut. 10/10 aber leider kalt.\nMenge nicht ausreichend. Weder beim normalen Döner nich beim Iskender Döner. Vor allem nicht bei 19 Euro. Daher war die Brot Fleisch ratio nicht gut. Habe die Hälfte des Brotes auf dem Teller gelassen. Insbesondere, da keine Soße dabei war. Diese wär eigentlich bei dem tollen Fleisch auch nicht nötig gewesen. Das Fleisch war zwar kalt aber es war auch viel los. Ich denke der Döner stand ein bisschen rum, also nicht unbedingt der normal Fall glaube ich.\nSalat war auch gut, bestand aus Zwiebeln Eisenberg und Tomaten. Brot war selbst gemacht aber leider sehr fluffig und nicht knusprig aber das ist Geschmackssache.\n\nAlles in allem ein bisschen enttäuschend bei dem Preis. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ank2i4/babaleison_kottbusser_tor_8/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/xblps4r4bshc1.jpg"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: 8.0 €</b> <br> 10.02.2024 by <a href="https://reddit.com/u/Oruneh"> /u/Oruneh</a><a href="https://reddit.com//r/doener/comments/1ank2i4/babaleison_kottbusser_tor_8/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.9286027, 6.941812); // 'King of Döner Köln Barbarossaplatz - 8 Euro
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -292,7 +322,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -46303,7 +46333,7 @@
                                     &#8960;  Post-Preis 2024: 7.92 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-10 17:15:07.256048<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-10 17:30:10.647276<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
