@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Dönerteller - By Ali Kebap &amp; Burger Cottbus
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerteller - By Ali Kebap &amp; Burger Cottbus ',
+                subTitle: 'test',
+                description: 'Für schmale 9€ dürfte man halbwegs von satt werden. Nur die Soße klebt immer im Deckel <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1annp26/dönerteller_by_ali_kebap_burger_cottbus/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/lky34azn3thc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=377faa52fd3757c71fdf68b8132fa54cd6b6cfb6"></a>' +
+        
+        '</br><b>Rating: - Preis: 9.0 €</b> <br> 10.02.2024 by <a href="https://reddit.com/u/Benni_HPG"> /u/Benni_HPG</a><a href="https://reddit.com//r/doener/comments/1annp26/dönerteller_by_ali_kebap_burger_cottbus/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Uludag Dortmund 6,5€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -46394,7 +46424,7 @@
                                     &#8960;  Post-Preis 2024: 7.91 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-10 20:00:11.262712<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-10 20:15:07.891895<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
