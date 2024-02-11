@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Diwan, Wien 20. Steak Döner, Zwiebel, Rotkraut, Jogurtsoße. 6,90€ vom 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Diwan, Wien 20. Steak Döner, Zwiebel, Rotkraut, Jogurtsoße. 6,90€ vom  ',
+                subTitle: 'test',
+                description: 'In Wien gibt&#39;s in letzter Zeit mehr feine Rindfleisch Döner, wenn man Glück hat vor Holzkohlenfeuer. Geschmack 1A, Fleischmenge anständig. Sehr zu empfehlen. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1aoef7q/diwan_wien_20_steak_döner_zwiebel_rotkraut/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/ujdht6q8zzhc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.9 €</b> <br> 11.02.2024 by <a href="https://reddit.com/u/attiladerhunne"> /u/attiladerhunne</a><a href="https://reddit.com//r/doener/comments/1aoef7q/diwan_wien_20_steak_döner_zwiebel_rotkraut/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(48.8972285, 9.1901084); // 'Dönasty (Sportler-Döner) - Ludwigsburg - 9,20€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönasty (Sportler-Döner) - Ludwigsburg - 9,20€ ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1aoe36m/dönasty_sportlerdöner_ludwigsburg_920/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/jg81hfqtwzhc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=79da9de7d69e86d4dc8d291a10eb596a057fd805"></a>' +
+        
+        '</br><b>Rating: - Preis: 9.2 €</b> <br> 11.02.2024 by <a href="https://reddit.com/u/Zomby94"> /u/Zomby94</a><a href="https://reddit.com//r/doener/comments/1aoe36m/dönasty_sportlerdöner_ludwigsburg_920/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.8972285, 9.1901084); // 'Dönasty - Ludwigsburg - 0€ (Aktion); statt 7,80€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -47080,11 +47140,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.53 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.54 €<br>
                                     &#8960;  Post-Preis 2024: 7.82 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-11 19:00:04.743735<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-11 19:15:05.782651<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
