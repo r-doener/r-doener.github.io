@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Emin usta2 Neueröfnung Oldenburg 6.80€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Emin usta2 Neueröfnung Oldenburg 6.80€ ',
+                subTitle: 'test',
+                description: 'So gestern den neu eröffneten Laden am Bahnhof ausprobiert. Der kalbhackspieß ist aus eigener Herstellung und Geschmacklich echt gut gewürzt aber leider etwas Zeh der Hänchenspieß ist durchschnittlich. Das Brot wahr fluffig und mit starken schwarz Kümmel Geschmack und das cacik wahr lecker, die scharfe soße aber leider viel zu süßer Curry Ketchup an sich OK Preis ein bisschen hoch. Aja und die Bedienung ist relativ unpersönlichen es funktioniert mit dem Ticket system wodurch es sich anfühlt als ob man in nem McDonald&#39;s sitzt. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ao40nz/emin_usta2_neueröfnung_oldenburg_680/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/exx47a3ebxhc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.8 €</b> <br> 11.02.2024 by <a href="https://reddit.com/u/Crafty_Mushroom666"> /u/Crafty_Mushroom666</a><a href="https://reddit.com//r/doener/comments/1ao40nz/emin_usta2_neueröfnung_oldenburg_680/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(53.5816096, 10.0130199); // 'Döner 6,90€ - my Kebap - Hamburg
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -46784,7 +46814,7 @@
                                     &#8960;  Post-Preis 2024: 7.88 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-11 10:15:03.188265<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-11 10:30:04.984669<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
