@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'DAS KANN SO NICHT WEITER GEHEN!
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'DAS KANN SO NICHT WEITER GEHEN! ',
+                subTitle: 'test',
+                description: 'Mach mit! \n\nhttps://chng.it/y8V9BGmVdg <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1aobbzc/das_kann_so_nicht_weiter_gehen/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/gBLMuWxyxVr3AdlSj3-o8iSBSRvS4M8uLwYCIVHnwLU.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=356fe07829c1596b62969fd5ccdbbfb06b98d6b6"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 11.02.2024 by <a href="https://reddit.com/u/AngryAJ"> /u/AngryAJ</a><a href="https://reddit.com//r/doener/comments/1aobbzc/das_kann_so_nicht_weiter_gehen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.0851517, 8.771620799999999); // 'Döner(7€) und Iskender(15€) bei NazarGrill in Offenbach
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -46964,7 +46994,7 @@
                                     &#8960;  Post-Preis 2024: 7.86 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-11 17:00:03.581930<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-11 17:15:04.753877<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
