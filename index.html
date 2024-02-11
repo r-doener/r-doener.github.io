@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.1780176, 8.620130399999999); // 'Ex-Stammdöner hat eine neue Pom Döner Verpackung…
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Ex-Stammdöner hat eine neue Pom Döner Verpackung… ',
+                subTitle: 'test',
+                description: 'Berlin Döner Itzehoe 7€. Der “große” Pomm Döner ist jetzt in der Verpackung der vorherigen kleinen Version. Und für den Kleinen haben sie neue Verpackungen geordert die besser auf einer Miniatureisenbahn Platz findet, als auf meinem Essenstisch.\nP.S. ich sitze buchstäblich auf der Toilette nachdem ich das vor ca. 5 Stunden bestellt habe. Das Fleisch sah gut aus, schmeckt aber alt und Ranzig. Habe nur ein Drittel essen können. Bei der Portion also ungefähr 2 Gabeln. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1aof6b1/exstammdöner_hat_eine_neue_pom_döner_verpackung/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/hnf3vogt40ic1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=31d172811e81c9596fa29f87ac292b08e1e2abd7"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.0 €</b> <br> 11.02.2024 by <a href="https://reddit.com/u/BrandlessPain"> /u/BrandlessPain</a><a href="https://reddit.com//r/doener/comments/1aof6b1/exstammdöner_hat_eine_neue_pom_döner_verpackung/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Diwan, Wien 20. Steak Döner, Zwiebel, Rotkraut, Jogurtsoße. 6,90€ vom 
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -47140,11 +47170,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.54 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.53 €<br>
                                     &#8960;  Post-Preis 2024: 7.82 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-11 19:45:03.286423<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-11 20:00:05.318483<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
