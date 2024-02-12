@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.1166798, 8.6858098); // 'Der billigste Döner
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Der billigste Döner ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1apedjc/der_billigste_döner/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/MHpqdzBwaWxuOGljMUOI7KiuKrCJpLXS8aCCWEv6Wd0gnYWNxz3ogI7FJS6O.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=d4ce0366f9907c0fd69e6e22da20c351c43908b5"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 12.02.2024 by <a href="https://reddit.com/u/Background-Can-9004"> /u/Background-Can-9004</a><a href="https://reddit.com//r/doener/comments/1apedjc/der_billigste_döner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(50.9486246, 6.9220733); // 'Markthalle Körnerstraße Köln
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Markthalle Körnerstraße Köln ',
+                subTitle: 'test',
+                description: 'Eher ein klassischer Döner wie in der Türkei. \n\n\n(Ja ich weiss man erkennt nicht viel) <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ape6rv/markthalle_körnerstraße_köln/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/s419ivq5m8ic1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=3189e9b6d04f5550175400dc133f9cfd79b64698"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 12.02.2024 by <a href="https://reddit.com/u/Spirited_Name_9039"> /u/Spirited_Name_9039</a><a href="https://reddit.com//r/doener/comments/1ape6rv/markthalle_körnerstraße_köln/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Exkursion in r/Doenerverbrechen
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -261,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -291,7 +351,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -47352,7 +47412,7 @@
                                     &#8960;  Post-Preis 2024: 7.8 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-13 00:15:03.397796<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-13 00:30:06.090193<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
