@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.3716585, 8.0305348); // 'Einmal mit alles haben die nicht übertrieben (8 Euro) bei Haus des Dön
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Einmal mit alles haben die nicht übertrieben (8 Euro) bei Haus des Dön ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1aq04nt/einmal_mit_alles_haben_die_nicht_übertrieben_8/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/wz1oxb268eic1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=cae45ebf5746689939aa5294825c6e26b63dab90"></a>' +
+        
+        '</br><b>Rating: - Preis: 8.0 €</b> <br> 13.02.2024 by <a href="https://reddit.com/u/plasmapleasure"> /u/plasmapleasure</a><a href="https://reddit.com//r/doener/comments/1aq04nt/einmal_mit_alles_haben_die_nicht_übertrieben_8/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(49.9440687, 11.5707207); // 'Berlin Döner in Bayreuth, 6€ ohne Extras
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Berlin Döner in Bayreuth, 6€ ohne Extras ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1aq01xj/berlin_döner_in_bayreuth_6_ohne_extras/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/l5l4ia1h7eic1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=c3dc32ff9717f4f78044a01c1ca2416c9669b50e"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.0 €</b> <br> 13.02.2024 by <a href="https://reddit.com/u/DasEvoli"> /u/DasEvoli</a><a href="https://reddit.com//r/doener/comments/1aq01xj/berlin_döner_in_bayreuth_6_ohne_extras/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.1163992, 8.679136); // 'Frankfurt mit Käse 6.50€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -47499,10 +47559,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.52 €<br>
-                                    &#8960;  Post-Preis 2024: 7.75 €<br>
+                                    &#8960;  Post-Preis 2024: 7.74 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-13 19:00:04.895166<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-13 19:15:07.788701<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
