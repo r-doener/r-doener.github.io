@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.949501, 6.917592); // 'Antep Mangal in Köln /Ehrenfeld 8,40Euro
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Antep Mangal in Köln /Ehrenfeld 8,40Euro ',
+                subTitle: 'test',
+                description: 'Ich mach es kurz und knapp . Brot geil . Scharfe Sauce auch . Der Rest eher ziemlicher Durchschnitt. Fleisch ok , Salat und co schon wahrscheinlich länger gelegen . Der Käse war auch teilweise etwas hart . Fand ihn früher ganz geil (so vor 5-6 Jahren ) \nHeute nur noch ein Standard Döner .\n\n+Brot \n+scharfe Sauce \n+der Abi der mich bedient hat. \n\n- Fleisch absolut random \n-Gemüse lag schon was länger \n-Der Käse war teilweise hart \n\nNe lieb gemeinte 6/10 \nMeine persönliche Nr1 in Köln Ehrenfeld bleibt Kudret. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1aseav9/antep_mangal_in_köln_ehrenfeld_840euro/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/azrm02ctfzic1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=47c2ee8dce3ff5758e1dfba4991d692c390810eb"></a>' +
+        
+        '</br><b>Rating: 6/10 Preis: 8.4 €</b> <br> 16.02.2024 by <a href="https://reddit.com/u/Glad_Pomelo_7231"> /u/Glad_Pomelo_7231</a><a href="https://reddit.com//r/doener/comments/1aseav9/antep_mangal_in_köln_ehrenfeld_840euro/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(50.9162954, 6.9608165); // 'Der Sucuk Döner in Köln-Kalk, „Im Pot Döner“, 12,50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Der Sucuk Döner in Köln-Kalk, „Im Pot Döner“, 12,50€ ',
+                subTitle: 'test',
+                description: 'Geliefert wird zusätzlich ein Sesambrot zum selber belegen. Mehr als faire Portion, besser als in vielen normalen Dönerläden.\n\nSucuk ist übrigens eine leckere knoblauchwurst. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ase0rl/der_sucuk_döner_in_kölnkalk_im_pot_döner_1250/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/lamymnmtdzic1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 12.5 €</b> <br> 16.02.2024 by <a href="https://reddit.com/u/34methylendioxy"> /u/34methylendioxy</a><a href="https://reddit.com//r/doener/comments/1ase0rl/der_sucuk_döner_in_kölnkalk_im_pot_döner_1250/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(53.1567358, 8.220955); // 'Biltz Döner Oldenburg (rohes chiken?)
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -48218,11 +48278,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.55 €<br>
-                                    &#8960;  Post-Preis 2024: 7.84 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.56 €<br>
+                                    &#8960;  Post-Preis 2024: 7.86 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-16 18:15:06.878865<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-16 18:30:09.674802<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
