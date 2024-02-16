@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.1155413, 8.6861166); // 'Toprak - FFM Konstablerwache - 14,50 €
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Toprak - FFM Konstablerwache - 14,50 € ',
+                subTitle: 'test',
+                description: 'Stolzer Preis, aber ist halt Frankfurt. Fleisch war ziemlich solide, aber auch nicht die komplette Offenbarung. Würze ziemlich gut, sehr saftig, aber hätte für mich noch ein bisschen knuspriger und vor allem heißer sein dürfen. Pommes und Salat beide ziemlich gut. Die extra scharfe Sauce oben auf der Cocktailsauce war echt gut vom Geschmack (allerdings nicht wirklich scharf), die Cocktailsauce dagegen nur Standard. Mir ist aber auch generell Knoblauch lieber, aber man hat mich nicht gefragt. Das Brot war extrem lecker, wahrscheinlich das Beste, was ich je hatte.\n\nAnschließend gab es noch schwarzen Tee auf&#39;s Haus und ein richtig gutes aber leider auch richtig kleines Stück Baklava.\n\nBesonderheit ist, dass zumindest laut Aussage meines Kellners alles selbst gemacht ist. Das Brot kann ich bestätigen; das wurde frisch gemacht, als ich gerade da war. Man meint aber, selbst der Spieß sei hausgemacht. Das muss ich dann wohl einfach so glauben.\n\nWürde insgesamt so 7.5/10 vergeben. Den Preis kann ich bei „alles komplett selbst gemacht“ auch noch verkraften. Mit Knoblauchsauce und heißer serviert wären auch 8/10 locker drin. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1asfi6s/toprak_ffm_konstablerwache_1450/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/e3iqxsgaozic1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=0931b675997cbca162711df19e7c81d563c38445"></a>' +
+        
+        '</br><b>Rating: 7.5/10 Preis: 14.5 €</b> <br> 16.02.2024 by <a href="https://reddit.com/u/badBlackShark"> /u/badBlackShark</a><a href="https://reddit.com//r/doener/comments/1asfi6s/toprak_ffm_konstablerwache_1450/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.1136231, 8.685597999999999); // 'Ton Bul Frankfurt 
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -48368,11 +48398,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.57 €<br>
-                                    &#8960;  Post-Preis 2024: 7.92 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.58 €<br>
+                                    &#8960;  Post-Preis 2024: 7.95 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-16 19:15:06.447187<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-16 19:30:08.436078<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
