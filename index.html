@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(49.5054587, 10.4125903); // 'Sahin Imbiss Döner Bad Windsheim, 13€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Sahin Imbiss Döner Bad Windsheim, 13€ ',
+                subTitle: 'test',
+                description: 'War leider nur &#34;okay&#34;. Voll schade, denn der Besitzer war so super freundlich. Es gab Tee für die Wartezeit und nen Ayran hat er am Ende auch noch kostenlos dazu gegeben.\nDer Dönerteller selbst war nicht scheiße, aber auch nicht auffällig gut, einfach durchschnittlich.  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1asenjt/sahin_imbiss_döner_bad_windsheim_13/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/5ieozbb9izic1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=740d3109cfe6067da4731092ef6e211251c0f590"></a>' +
+        
+        '</br><b>Rating: - Preis: 13.0 €</b> <br> 16.02.2024 by <a href="https://reddit.com/u/xRuSheR"> /u/xRuSheR</a><a href="https://reddit.com//r/doener/comments/1asenjt/sahin_imbiss_döner_bad_windsheim_13/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(49.3527752, 11.1625739); // 'Dönerbox-8,50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerbox-8,50€ ',
+                subTitle: 'test',
+                description: 'Hat sehr gut geschmeckt,war von allem schön viel drin (Fleisch,Pommes,Salat,Gurke,etc.) <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1asejyf/dönerbox850/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/p2bip4alhzic1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=db47c302b2944c80a8e818bb0faabd3f7fec900d"></a>' +
+        
+        '</br><b>Rating: - Preis: 8.5 €</b> <br> 16.02.2024 by <a href="https://reddit.com/u/Sea_Cow_2674"> /u/Sea_Cow_2674</a><a href="https://reddit.com//r/doener/comments/1asejyf/dönerbox850/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.949501, 6.917592); // 'Antep Mangal in Köln /Ehrenfeld 8,40Euro
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -48279,10 +48339,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.56 €<br>
-                                    &#8960;  Post-Preis 2024: 7.86 €<br>
+                                    &#8960;  Post-Preis 2024: 7.89 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-16 18:30:09.674802<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-16 18:45:08.877223<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
