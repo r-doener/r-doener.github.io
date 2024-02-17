@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Musste einfach sein :D Game is btw gar nicht so schlecht wie man denke
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Musste einfach sein :D Game is btw gar nicht so schlecht wie man denke ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1atakri/musste_einfach_sein_d_game_is_btw_gar_nicht_so/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/3lgtf37v97jc1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=af1e3b2242c1fe22f7c0ad4e97d7466eee234f09"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 17.02.2024 by <a href="https://reddit.com/u/PENTA-yaNasTy"> /u/PENTA-yaNasTy</a><a href="https://reddit.com//r/doener/comments/1atakri/musste_einfach_sein_d_game_is_btw_gar_nicht_so/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(53.1402717, 7.6192108); // 'Renas Ostrhauderfehn 5€ Döner
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Renas Ostrhauderfehn 5€ Döner ',
+                subTitle: 'test',
+                description: 'Ich wollte die Döner Sommelière dies Subreddits um Meinung Fragen.\nMuss sagen geschmacklich ist dieser Döner wirklich gut und das Ambiente im Restaurant macht auch was her!  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1atainr/renas_ostrhauderfehn_5_döner/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/z5d0e3aj97jc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=3742292ed80b48acbf5f172f71a5a41d31644c0b"></a>' +
+        
+        '</br><b>Rating: - Preis: 5.0 €</b> <br> 17.02.2024 by <a href="https://reddit.com/u/TetrapackWein"> /u/TetrapackWein</a><a href="https://reddit.com//r/doener/comments/1atainr/renas_ostrhauderfehn_5_döner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.1776996, 7.196642600000001); // 'Yaprak Remscheid 11€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -48908,11 +48968,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.59 €<br>
-                                    &#8960;  Post-Preis 2024: 7.94 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.58 €<br>
+                                    &#8960;  Post-Preis 2024: 7.93 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-17 20:45:06.792666<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-17 21:00:08.298629<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
