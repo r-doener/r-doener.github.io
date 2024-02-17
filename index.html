@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.1148009, 8.681248199999999); // 'Selfmade Dönnerteller mit Cocktailsauce / 6,29 €
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Selfmade Dönnerteller mit Cocktailsauce / 6,29 € ',
+                subTitle: 'test',
+                description: 'Richtig pornös,\n\nPoldi Fleisch 4 €\nMcCain Fritten im Angebot 1.99 €\n\nFür die Cocktailsauce habe ich 0,30 € angesetzt <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1at4y8e/selfmade_dönnerteller_mit_cocktailsauce_629/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/6w9tsavx26jc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=0a254fa4d846c1b896aa8b8883a5099a5dce62c2"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.29 €</b> <br> 17.02.2024 by <a href="https://reddit.com/u/Worth-Beat-1953"> /u/Worth-Beat-1953</a><a href="https://reddit.com//r/doener/comments/1at4y8e/selfmade_dönnerteller_mit_cocktailsauce_629/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.5513006, 7.454776000000001); // 'K. Maras Grill - Döner 6.50€, Teller 14€ (Dortmund)
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -48732,7 +48762,7 @@
                                     &#8960;  Post-Preis 2024: 7.94 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-17 16:45:07.862564<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-17 17:00:08.032105<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
