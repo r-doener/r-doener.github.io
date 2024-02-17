@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.1776996, 7.196642600000001); // 'Yaprak Remscheid 11€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Yaprak Remscheid 11€ ',
+                subTitle: 'test',
+                description: 'Döner ist etwas teurer, dafür hausgemachtes, frisches und saftiges Schichtfleisch. \nHalbes Fladenbrot gross. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1at99hl/yaprak_remscheid_11/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/at7j2lf207jc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 11.0 €</b> <br> 17.02.2024 by <a href="https://reddit.com/u/ProfessionalG0pnik"> /u/ProfessionalG0pnik</a><a href="https://reddit.com//r/doener/comments/1at99hl/yaprak_remscheid_11/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(53.1402717, 7.6192108); // 'Döner 5€ Renas Ostrhauderfehn
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Döner 5€ Renas Ostrhauderfehn ',
+                subTitle: 'test',
+                description: 'was haltet ihr von diesem Döner, muss sagen geschmacklich ist er top das Ambiente im Restaurant ist auch in Ordnung. Nach mir kann man da für 5€ nicht meckern. \nMöchte aber gerne die Meinungen von den Döner Sommeliers dieses Subreddits hören.\n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1at98b6/döner_5_renas_ostrhauderfehn/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/x9c6ieotz6jc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=d9909912fccc7427a05b480b791e1b1a9ca1d388"></a>' +
+        
+        '</br><b>Rating: - Preis: 5.0 €</b> <br> 17.02.2024 by <a href="https://reddit.com/u/TetrapackWein"> /u/TetrapackWein</a><a href="https://reddit.com//r/doener/comments/1at98b6/döner_5_renas_ostrhauderfehn/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(53.5542135, 10.0143224); // 'Dönerteller Hamburg - Batman (12€)
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -48852,7 +48912,7 @@
                                     &#8960;  Post-Preis 2024: 7.94 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-17 19:45:06.247834<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-17 20:00:09.916270<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
