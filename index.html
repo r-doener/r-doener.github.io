@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.488222, 13.3351608); // 'Berlin Döner im Hamburger Westen. 6,90€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Berlin Döner im Hamburger Westen. 6,90€ ',
+                subTitle: 'test',
+                description: 'Zum Mitnehmen, daher etwas zusammengeditscht. 8 von 10 Punkten. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1atwl04/berlin_döner_im_hamburger_westen_690/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/enyf7pex3djc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=11392629b45da4a7b30081c775d9d7f729a7b5b3"></a>' +
+        
+        '</br><b>Rating: 8 von 10 Preis: 6.9 €</b> <br> 18.02.2024 by <a href="https://reddit.com/u/kohlmeise22"> /u/kohlmeise22</a><a href="https://reddit.com//r/doener/comments/1atwl04/berlin_döner_im_hamburger_westen_690/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.7742678, 9.1763797); // 'Antebi Stuttgart für 8€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -49212,7 +49242,7 @@
                                     &#8960;  Post-Preis 2024: 7.93 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-18 16:15:06.202431<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-18 16:30:07.460528<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
