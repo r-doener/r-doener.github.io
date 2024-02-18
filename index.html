@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.2090764, 16.3347774); // '6,50€ Bona LaMeLi in Wien
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '6,50€ Bona LaMeLi in Wien ',
+                subTitle: 'test',
+                description: 'Alles war gratis dazubestellbar, die Granatapfelkerne wollte ich einfach mal ausprobiert haben.\n\nEs gibt 3 verschiedene Soßen (Cocktail/Hot/Joghurt) welche man auch kostenlos beliebig kombinierbar, dazu Salat/Fetakäse/Mais/Rotkohl/Zwiebeln usw.\n\n\nFleisch war richtig geil, sie haben auch einen Steakdöner im Angebot der auch richtig geil ist.\n\nAlles in Allem eine glatte 10/10 <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1athels/650_bona_lameli_in_wien/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/3kq9dogpr8jc1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=5f097300484251879974ddfb3fe8d08e0a5356ca"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: 6.5 €</b> <br> 18.02.2024 by <a href="https://reddit.com/u/JesusDiedForOurSins2"> /u/JesusDiedForOurSins2</a><a href="https://reddit.com//r/doener/comments/1athels/650_bona_lameli_in_wien/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Musste einfach sein :D Game is btw gar nicht so schlecht wie man denke
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -48972,7 +49002,7 @@
                                     &#8960;  Post-Preis 2024: 7.93 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-18 01:45:05.386956<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-18 02:00:08.519194<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
