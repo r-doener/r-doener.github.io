@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.199392, 16.3594183); // '6,50 in Wien
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '6,50 in Wien ',
+                subTitle: 'test',
+                description: 'Zur Auswahl standen Kalb Hähnchen oder Steakfleisch.\n\nAls Toppings Salat/Rotkraut/Tomate (habe ich nicht genommen)/Rucola/Zwiebeln/Käse/Mais/Granatapfel Kerne\n\nDazu gab es 3 Soßen (Tzatziki/Cocktail/Scharf)\n\nWas mir besonders gefallen hat war, dass alle Zutaten gratis sind bzw die Röstaromen des Fleisches.\n\nVon mir gibt&#39;s eine glatte 10/10. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1attx78/650_in_wien/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/vp9tw1g3hcjc1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=a4fc3178abf92afd878fdae41cb72a85b1c54fd2"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: None €</b> <br> 18.02.2024 by <a href="https://reddit.com/u/JesusDiedForOurSins2"> /u/JesusDiedForOurSins2</a><a href="https://reddit.com//r/doener/comments/1attx78/650_in_wien/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.7438878, 11.4314736); // 'Dölapi+ in Ingolstadt - 8,50€ inkl. Ayran
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -49092,7 +49122,7 @@
                                     &#8960;  Post-Preis 2024: 7.93 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-18 14:15:06.420479<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-18 14:30:08.080000<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
