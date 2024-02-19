@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(49.4401064, 11.0786842); // 'Dönerteller 10,90€ - Konak, Nürnberg
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerteller 10,90€ - Konak, Nürnberg ',
+                subTitle: 'test',
+                description: 'Preislich mittlerweile happig, aber gute Portion mit Brot extra und &#34;echtes&#34; Fleisch aufm Spieß. Sehr geile Sauce auch bei den Kollegen 👍 <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1auvfc4/dönerteller_1090_konak_nürnberg/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/6g3q80m0bljc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=806c96f258de1daa829a4c4c02d7dbd00daff5e2"></a>' +
+        
+        '</br><b>Rating: - Preis: 10.9 €</b> <br> 19.02.2024 by <a href="https://reddit.com/u/TheDiscord1988"> /u/TheDiscord1988</a><a href="https://reddit.com//r/doener/comments/1auvfc4/dönerteller_1090_konak_nürnberg/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Was stellen sich die Briten so an, das hier beweist, dass es durchaus 
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -49629,10 +49659,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.6 €<br>
-                                    &#8960;  Post-Preis 2024: 7.95 €<br>
+                                    &#8960;  Post-Preis 2024: 7.96 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-19 20:00:07.156525<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-19 20:15:08.217656<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
