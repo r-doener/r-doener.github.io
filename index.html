@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.1004547, 8.600266999999999); // 'Mhm...
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Mhm... ',
+                subTitle: 'test',
+                description: 'Ich bin da zwiegespalten...  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1avtb1y/mhm/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/5qciwx385tjc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=acd688b61b8c7d048b925859638831c39aad0ae3"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 20.02.2024 by <a href="https://reddit.com/u/The_Anonymo"> /u/The_Anonymo</a><a href="https://reddit.com//r/doener/comments/1avtb1y/mhm/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(52.51029090000001, 13.2921392); // 'Kaiser Grill in Berlin Charlottenburg, 6,00€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Kaiser Grill in Berlin Charlottenburg, 6,00€ ',
+                subTitle: 'test',
+                description: 'Bin jetzt bei dieser Dönerbude seit mehreren Monaten und bin noch nie enttäuscht worden. Das Fleisch ist saftig, das Brot ist knusprig der Salat ist frisch, die Sauce ist perfekt und er fragt immer noch, ob man Zitronensaft und noch spezielles Gewürz dazu haben möchte. Dönermann ist auch immer sehr freundlich. Er lächelt gleich, wenn man reinkommt. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1avt480/kaiser_grill_in_berlin_charlottenburg_600/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/ar4q5sww3tjc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=0a4aac8322b8b2b8bd5819d030676a7247882cd9"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.0 €</b> <br> 20.02.2024 by <a href="https://reddit.com/u/Leopard_2A4_MBT"> /u/Leopard_2A4_MBT</a><a href="https://reddit.com//r/doener/comments/1avt480/kaiser_grill_in_berlin_charlottenburg_600/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.24561869999999, 16.4396966); // 'Sadem Döner, Wien 22, 5.40€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -49898,11 +49958,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.58 €<br>
-                                    &#8960;  Post-Preis 2024: 7.88 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.57 €<br>
+                                    &#8960;  Post-Preis 2024: 7.87 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-20 22:15:06.301281<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-20 22:30:07.913511<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
