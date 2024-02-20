@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(47.0578461, 15.4525865); // 'Best Food Grill, Graz 4,5€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Best Food Grill, Graz 4,5€ ',
+                subTitle: 'test',
+                description: 'Wahrscheinlich der beste Döner, den ich je gegessen habe. Wenn ich mir die Preise ansehe, ist das verrückt. Schade, dass ich 850 km von diesem Ort entfernt wohne :( <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1avhx4w/best_food_grill_graz_45/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/am3lsy3yuqjc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 4.5 €</b> <br> 20.02.2024 by <a href="https://reddit.com/u/-Competitive-Nose-"> /u/-Competitive-Nose-</a><a href="https://reddit.com//r/doener/comments/1avhx4w/best_food_grill_graz_45/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.1145879, 8.6783375); // 'Vegetarischer Döner, 5.5€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -49749,10 +49779,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.59 €<br>
-                                    &#8960;  Post-Preis 2024: 7.93 €<br>
+                                    &#8960;  Post-Preis 2024: 7.91 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-20 14:30:06.029683<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-20 14:45:08.408864<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
