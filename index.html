@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.24561869999999, 16.4396966); // 'Sadem Döner, Wien 22, 5.40€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Sadem Döner, Wien 22, 5.40€ ',
+                subTitle: 'test',
+                description: 'Habe mal den hochgelobten (4.9 Sterne auf Google) Sadem Döner probiert, da ich mir dieses Jahr sowieso vorgenommen habe alle Döner in meinem Bezirk zu probieren. \n\nPros:\n- sicher das geschmackvollste Kalbsfleisch, was ich bis jetzt probieren durfte\n- das Brot ist selbstgemacht und sehr gut\n- der faire Preis\n\nCons: \n- Leider war das Fleisch etwas trocken\n- Die großen Tomatenstücke\n- zu wenig Soße, was das Ganze insgesamt etwas trocken macht\n\nFazit: Es wird nicht mein Lieblibgsdöner, aber vielleicht habe ich auch einfach einen schlechten Tag erwischt. Würde für den Hühnerkebap nochmal kommen. \n\n3,5/5 <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1avs3bt/sadem_döner_wien_22_540/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/pgoxhkuswsjc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=65e76f913d63f24acbda864159cd3c6841057803"></a>' +
+        
+        '</br><b>Rating: 3,5/5 Preis: 5.4 €</b> <br> 20.02.2024 by <a href="https://reddit.com/u/Maze2810"> /u/Maze2810</a><a href="https://reddit.com//r/doener/comments/1avs3bt/sadem_döner_wien_22_540/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.3170861, 6.5764065); // 'Anders Köstlicher Döner-Teller
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -49869,10 +49899,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.58 €<br>
-                                    &#8960;  Post-Preis 2024: 7.89 €<br>
+                                    &#8960;  Post-Preis 2024: 7.88 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-20 21:30:05.199549<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-20 21:45:07.282872<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
