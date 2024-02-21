@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.9590977, 7.6263919); // 'Level Up Kebab in Münster
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Level Up Kebab in Münster ',
+                subTitle: 'test',
+                description: 'Review:\nDönertasch mit Alles 7,50€ + 2er für den Ayran.\nDas erste Bild für Präsentation und das zweite für den Zwischenstand.\nMeine Einschätzung:\nDas Brot ist genau richtig knusprig gebacken und innen fluffig. Richtige Menge Soße ins Brot gepinselt und (wahrscheinlich selbstgemachte) scharfe Soße auf die andere Seite.\nSalat sehr frisch, Standard Auswahl und Grillgemüse. Schafskäse cremig.\nSpieß ist Kalb, Drehspieß aber lecker gewürzt und saftig.\nLieß sich gut essen, aber am Ende etwas fettig. Ließ sich jedoch mit zwei (bekannt dünnen) Servietten über die Bühne bringen.\nEsserlebnis 8/10. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1awbryc/level_up_kebab_in_münster/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/kgm7d334vxjc1.jpg"></a>' +
+        
+        '</br><b>Rating: 8/10 Preis: 7.5 €</b> <br> 21.02.2024 by <a href="https://reddit.com/u/Mijuelle"> /u/Mijuelle</a><a href="https://reddit.com//r/doener/comments/1awbryc/level_up_kebab_in_münster/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.0020053, 8.2600532); // 'Döner für 7€ Statement
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -50022,7 +50052,7 @@
                                     &#8960;  Post-Preis 2024: 7.88 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-21 14:15:05.791318<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-21 14:30:06.037420<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
