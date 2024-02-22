@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.76921859999999, 6.090579399999999); // 'Dönerteller - Kebaphaus am Bahnhof, Aachen
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerteller - Kebaphaus am Bahnhof, Aachen ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1axhu0p/dönerteller_kebaphaus_am_bahnhof_aachen/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/dhkjyqbpc7kc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=ff02c3777d4937127440e0c1c6c9c3065c75cedf"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 22.02.2024 by <a href="https://reddit.com/u/allesumsonst"> /u/allesumsonst</a><a href="https://reddit.com//r/doener/comments/1axhu0p/dönerteller_kebaphaus_am_bahnhof_aachen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(48.1394745, 11.5027823); // 'Dönerteller - &#34;Beste Döner&#34;, München Laim, 13€ glaube ich
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerteller - &#34;Beste Döner&#34;, München Laim, 13€ glaube ich ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1axhrpd/dönerteller_beste_döner_münchen_laim_13_glaube_ich/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/irq9yng8c7kc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=21207e66fe99c1bb63a0c8fdd7494d81bcfac2a6"></a>' +
+        
+        '</br><b>Rating: - Preis: 13.0 €</b> <br> 22.02.2024 by <a href="https://reddit.com/u/allesumsonst"> /u/allesumsonst</a><a href="https://reddit.com//r/doener/comments/1axhrpd/dönerteller_beste_döner_münchen_laim_13_glaube_ich/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.3686311, 10.8868298); // 'Masters of Kebab 📍Augsburg.
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -50379,10 +50439,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.58 €<br>
-                                    &#8960;  Post-Preis 2024: 7.87 €<br>
+                                    &#8960;  Post-Preis 2024: 7.89 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-22 22:00:05.928385<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-22 22:15:06.998229<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
