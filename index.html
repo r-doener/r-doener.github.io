@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Erstes Mal vegane Dönerinterpretation zu Hause gemacht - das Urteil de
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Erstes Mal vegane Dönerinterpretation zu Hause gemacht - das Urteil de ',
+                subTitle: 'test',
+                description: 'Frisches Fladenbrot\nSelbstgemachtes Tzatziki mit veganem Joghurt, Gurke, Knoblauch, Salz, Pfeffer, Zitronensaft\nGurke\nPaprika\nEisbergsalat \nKrautsalat - Ja!\nVeganer Feta - Lidl Eigenmarke\nEhrengyros (31% Zwiebel)  - Lidl Eigenmarke (ja, Gyros ist kein Dönerfleisch, aber es ist so oder sein Fleisch)\n\nWas sagt das höchste Gericht? <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1az1opg/erstes_mal_vegane_dönerinterpretation_zu_hause/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/3tuov5jnukkc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 24.02.2024 by <a href="https://reddit.com/u/Legal-Sorbet9753"> /u/Legal-Sorbet9753</a><a href="https://reddit.com//r/doener/comments/1az1opg/erstes_mal_vegane_dönerinterpretation_zu_hause/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.5382626, 11.5141784); // 'Coskun Kebap in Pfaffenhofen a.d. Ilm
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -50922,7 +50952,7 @@
                                     &#8960;  Post-Preis 2024: 7.87 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-24 19:30:04.881490<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-24 19:45:07.322071<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
