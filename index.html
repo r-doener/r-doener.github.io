@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.9653156, 6.1168507); // 'Omeri Geilenkirchen, Kalb-Drehspieß, klein, 5,50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Omeri Geilenkirchen, Kalb-Drehspieß, klein, 5,50€ ',
+                subTitle: 'test',
+                description: 'Ja, es ist nur Drehspieß,  aber hier in der Gegend gibts nix anderes.\nKleines Döner, das grosse für 8€ habe ich beim letzten mal nicht geschafft. Bin satt geworden. \n\nTomaten, Zwiebeln, Gurken, dünne Knoblauchsoße, und Weißkäse inklusive. \nWar zufrieden. \nLenkrad for Scale (keine Banane dabei) <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1az6yi7/omeri_geilenkirchen_kalbdrehspieß_klein_550/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/z8d020laxlkc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 5.5 €</b> <br> 24.02.2024 by <a href="https://reddit.com/u/BigNepo"> /u/BigNepo</a><a href="https://reddit.com//r/doener/comments/1az6yi7/omeri_geilenkirchen_kalbdrehspieß_klein_550/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Erstes Mal vegane Dönerinterpretation zu Hause gemacht - das Urteil de
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -50949,10 +50979,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.58 €<br>
-                                    &#8960;  Post-Preis 2024: 7.87 €<br>
+                                    &#8960;  Post-Preis 2024: 7.86 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-24 23:00:05.091166<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-24 23:15:06.433798<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
