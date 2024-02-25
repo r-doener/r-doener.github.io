@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Bugaz, Dinslaken, 7€: mein Heimat- und Lieblingsdöner
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Bugaz, Dinslaken, 7€: mein Heimat- und Lieblingsdöner ',
+                subTitle: 'test',
+                description: 'Das Brot sieht auf dem Foto sehr unterfüllt aus. Tatsächlich war es aber eine gute, ausreichende Portion. Ich bin froh hier in NRW wieder mit Saucen auf Joghurtbasis (&#34;Tzatziki&#34;) in Kontakt zu kommen. Die Salatmayonnaise mit Knoblauch in Berlin geht mir langsam auf den Senkel.\n\nAuch sonst ist der Döner top. Das Fleisch ist sehr saftig, das Brot angenehm weich und es gibt ordentlich Schafskäse ohne Aufpreis. Vom Chef gab es noch einen Tee als Krönung des Genuss. Freue mich jedes Mal drauf, wenn ich heimkehre. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1azz29q/bugaz_dinslaken_7_mein_heimat_und_lieblingsdöner/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/6me8nsykrskc1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=79c1784ca842cb26e798d950f06e5510dc1780c1"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.0 €</b> <br> 25.02.2024 by <a href="https://reddit.com/u/nalk1710"> /u/nalk1710</a><a href="https://reddit.com//r/doener/comments/1azz29q/bugaz_dinslaken_7_mein_heimat_und_lieblingsdöner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.3455536, 12.4074949); // 'Ikram Ocakbasi, Eisenbahnstraße Leipzig, 7.50€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -51189,10 +51219,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.57 €<br>
-                                    &#8960;  Post-Preis 2024: 7.84 €<br>
+                                    &#8960;  Post-Preis 2024: 7.83 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-25 22:00:04.336750<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-25 22:15:04.865043<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
