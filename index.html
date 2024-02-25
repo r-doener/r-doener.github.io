@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.3455536, 12.4074949); // 'Ikram Ocakbasi, Eisenbahnstraße Leipzig, 7.50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Ikram Ocakbasi, Eisenbahnstraße Leipzig, 7.50€ ',
+                subTitle: 'test',
+                description: 'Mein persönlicher Lieblingsdöner in Leipzig, das Fleisch ist herrlich, die Soßen köstlich (und vor allem nicht süß, was mir in letzter Zeit häufiger begegnet) und das Brot ist top. Ist auch relativ viel Petersilie drin versteckt was ich sehr gerne mag. \n\n7,50€ sind nicht ganz günstig, ich finde aber er ist jeden Cent wert. Man kann auch entspannt vor Ort essen.  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1azuzxb/ikram_ocakbasi_eisenbahnstraße_leipzig_750/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/vpmtz83ryrkc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=8b93f9f28860b696c6c7848223276b9472bb6c1a"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.5 €</b> <br> 25.02.2024 by <a href="https://reddit.com/u/Scythoor"> /u/Scythoor</a><a href="https://reddit.com//r/doener/comments/1azuzxb/ikram_ocakbasi_eisenbahnstraße_leipzig_750/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.0628988, 8.8480828); // 'Wie wird das &#34;Dönerfleisch&#34; aus dem r/doner Sub gewonnen? Ein Beweisvi
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -51162,7 +51192,7 @@
                                     &#8960;  Post-Preis 2024: 7.84 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-25 19:15:04.102563<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-25 19:30:04.805642<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
