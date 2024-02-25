@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.5011685, 13.4193705); // 'Hasir Ocakbaši, Berlin Kreuzberg, 7€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Hasir Ocakbaši, Berlin Kreuzberg, 7€ ',
+                subTitle: 'test',
+                description: 'Was soll Ich sagen, richtig gutes Teil, sehr empfehlenswert. Lamm und Kalb mit angenehmen Röstaromen und das Brot fluffig aus eigener Herstellung direkt aus dem Ofen. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1azn5j1/hasir_ocakbaši_berlin_kreuzberg_7/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/qj4rrrny9qkc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.0 €</b> <br> 25.02.2024 by <a href="https://reddit.com/u/Prudent-Ad-3274"> /u/Prudent-Ad-3274</a><a href="https://reddit.com//r/doener/comments/1azn5j1/hasir_ocakbaši_berlin_kreuzberg_7/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(48.24561869999999, 16.4396966); // 'Sadem Döner, 1220 Wien, 5,40€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Sadem Döner, 1220 Wien, 5,40€ ',
+                subTitle: 'test',
+                description: 'Meiner Meinung nach ein sehr schmackhafter Kebap, habe Sadem vor einigen Monaten entdeckt und er ist seither mein Lieblingsgeschäft, wobei ich gestehen muss, noch nicht bei allzu vielen verschiedenen Läden gewesen zu sein 😅. Der Kebap ist auch mit Blaukraut und Gurken gefüllt, was ich sehr gerne mag, aber ich habe auf dem Sub hier auch schon öfters gelesen, dass es anscheinend nicht allen so geht.\n\nAllerdings scheint die Qualität des Kebaps auch von dem bedienenden Mitarbeiter abzuhängen. Auf dem Bild ist das zwar nicht nicht wirklich zu erkennen, aber das Brot wurde vor dem Befüllen innen ein bisschen mit Soße eingeschmiert, was ein Mitarbeiter leider einmal weggelassen hatte, wodurch der Kebap deutlich trockener schmeckte. Dafür hat dieser Mitarbeiter den Kebap in Zitrone ertränkt, weswegen ich seither beim Bestellen explizit um weniger Zitrone bitte. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1azn5aj/sadem_döner_1220_wien_540/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/me0p9mzw9qkc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=550f7628d957c072099f7b4e7e647cf5846480e8"></a>' +
+        
+        '</br><b>Rating: - Preis: 5.4 €</b> <br> 25.02.2024 by <a href="https://reddit.com/u/CornerInACorner"> /u/CornerInACorner</a><a href="https://reddit.com//r/doener/comments/1azn5aj/sadem_döner_1220_wien_540/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(37.9687274, 23.7298271); // 'Gyros Pou Gyrevis, Athens, pork left, chicken right, 6,40€ total (3,20
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -51069,10 +51129,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.57 €<br>
-                                    &#8960;  Post-Preis 2024: 7.85 €<br>
+                                    &#8960;  Post-Preis 2024: 7.84 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-25 13:45:04.553497<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-25 14:00:07.260606<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
