@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Steakdöner Siggy Gemüse Kebab Bremen Gastfeldstr
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Steakdöner Siggy Gemüse Kebab Bremen Gastfeldstr ',
+                subTitle: 'test',
+                description: '170g Fleisch für 10,50€ <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b0fyqg/steakdöner_siggy_gemüse_kebab_bremen_gastfeldstr/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/7i4fphqn7xkc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 10.5 €</b> <br> 26.02.2024 by <a href="https://reddit.com/u/Hanno259"> /u/Hanno259</a><a href="https://reddit.com//r/doener/comments/1b0fyqg/steakdöner_siggy_gemüse_kebab_bremen_gastfeldstr/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.526447, 13.3880622); // 'Kebab Baba, Oranienburger Tor, 7€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -51309,10 +51339,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.57 €<br>
-                                    &#8960;  Post-Preis 2024: 7.83 €<br>
+                                    &#8960;  Post-Preis 2024: 7.84 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-26 13:00:05.043117<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-26 13:15:04.633705<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
