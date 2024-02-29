@@ -48,6 +48,96 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.4811942, 7.2205739); // 'Istanbul Grill Bochum 6€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Istanbul Grill Bochum 6€ ',
+                subTitle: 'test',
+                description: 'Kalb und einmal alles ohne Cocktailsauce. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b2xjci/istanbul_grill_bochum_6/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/jf88ox4j8ilc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=35aa66b777aea4061e817e00fc42f2f487035d3f"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.0 €</b> <br> 29.02.2024 by <a href="https://reddit.com/u/Dragor"> /u/Dragor</a><a href="https://reddit.com//r/doener/comments/1b2xjci/istanbul_grill_bochum_6/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(50.89978439999999, 11.5935033); // 'Ich mag Chilli. Burgaupark Jena
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Ich mag Chilli. Burgaupark Jena ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b2xj3t/ich_mag_chilli_burgaupark_jena/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/s8p8cx5f8ilc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 29.02.2024 by <a href="https://reddit.com/u/Calm_Tom24"> /u/Calm_Tom24</a><a href="https://reddit.com//r/doener/comments/1b2xj3t/ich_mag_chilli_burgaupark_jena/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(50.1081003, 8.7608189); // 'Bibo verkauft für 3€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Bibo verkauft für 3€ ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b2xgyl/bibo_verkauft_für_3/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/BKoqkDJAqjREOag921QZRAopiJr4rsu2JnMUC0pub6o.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=520ed99d98c48b7cc3caaf0e16134baca6aab531"></a>' +
+        
+        '</br><b>Rating: - Preis: 3.0 €</b> <br> 29.02.2024 by <a href="https://reddit.com/u/Sgt_Bangurang"> /u/Sgt_Bangurang</a><a href="https://reddit.com//r/doener/comments/1b2xgyl/bibo_verkauft_für_3/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Volketswil CH im Zero Deux, CHF 12.50 - ohne Getränk
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -233,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -263,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +383,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -51789,10 +51879,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.58 €<br>
-                                    &#8960;  Post-Preis 2024: 7.87 €<br>
+                                    &#8960;  Post-Preis 2024: 7.85 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-29 11:45:04.201260<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-02-29 12:00:08.078586<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
