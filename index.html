@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.9374141, 6.9995416); // 'Nimet Grill Kalker Hauptstraße 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Nimet Grill Kalker Hauptstraße  ',
+                subTitle: 'test',
+                description: '24/7 offen, sehr stabile Portionen und echt lecker, für 6,50. Der beste Dönerladen in Köln meiner Meinung nach wenn man Preis, Geschmack und Service zusammenrechnet. Der Döner ist halt egal wie viel los ist immer direkt fertig und das zu heder Stunde im Jahr. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b4k18o/nimet_grill_kalker_hauptstraße/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/ixq8zchizvlc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=8e50fa29051e7e25137ab153e1a3f547051914f4"></a>' +
+        
+        '</br><b>Rating: 24/7 Preis: None €</b> <br> 02.03.2024 by <a href="https://reddit.com/u/notna161"> /u/notna161</a><a href="https://reddit.com//r/doener/comments/1b4k18o/nimet_grill_kalker_hauptstraße/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.5450512, 13.3623983); // 'Et Dünyasi, Berlin-Wedding, 15,90€ (War komplett geil)
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -52242,7 +52272,7 @@
                                     &#8960;  Post-Preis 2024: 7.88 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-02 10:00:07.260115<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-02 10:15:08.627122<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
