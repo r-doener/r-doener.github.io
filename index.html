@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(49.5993942, 11.0034543); // 'Berliner Döner 7.50€ - Erlangen/ Bayern
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Berliner Döner 7.50€ - Erlangen/ Bayern ',
+                subTitle: 'test',
+                description: 'Chicken-Gemüse Döner … Beste Döner in meinem Leben!! <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b6bvm8/berliner_döner_750_erlangen_bayern/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/avjoq83hsbmc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=fe7186e31c7f9d92f117e6f04fa02e28408a1a75"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.5 €</b> <br> 04.03.2024 by <a href="https://reddit.com/u/jenerderbleibt"> /u/jenerderbleibt</a><a href="https://reddit.com//r/doener/comments/1b6bvm8/berliner_döner_750_erlangen_bayern/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.92751819999999, 11.587239); // 'City Kebab Jena 7€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -52782,7 +52812,7 @@
                                     &#8960;  Post-Preis 2024: 7.84 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-04 15:00:06.600766<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-04 15:15:08.234225<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
