@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.4953492, 13.4201619); // 'Lukas Podolski eröffnet Dönerladen in Kreuzberg
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Lukas Podolski eröffnet Dönerladen in Kreuzberg ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b6g0rm/lukas_podolski_eröffnet_dönerladen_in_kreuzberg/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/dDZ3bmRwdmNtY21jMRwY1ZMQEx-SNrQ8jRck0i9B23RilL4rJcSxfFy8pVVe.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=34639ccb92312e4dc21ad423eade8ea8df78439b"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 04.03.2024 by <a href="https://reddit.com/u/mongo7727"> /u/mongo7727</a><a href="https://reddit.com//r/doener/comments/1b6g0rm/lukas_podolski_eröffnet_dönerladen_in_kreuzberg/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.9376237, 7.001627399999999); // 'Mangal x Podolski, Kalker Hauptstraße, 8,90€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -52842,7 +52872,7 @@
                                     &#8960;  Post-Preis 2024: 7.84 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-04 18:00:06.952842<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-04 18:15:08.122797<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
