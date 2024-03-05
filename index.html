@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // '13.90 in Kudret Kebap, Aachen
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '13.90 in Kudret Kebap, Aachen ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b7bw60/1390_in_kudret_kebap_aachen/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/p2p387t72kmc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=54aee1631d7f0caa32901a0a93104c694f2f52a8"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 05.03.2024 by <a href="https://reddit.com/u/gbugly"> /u/gbugly</a><a href="https://reddit.com//r/doener/comments/1b7bw60/1390_in_kudret_kebap_aachen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(53.56439349999999, 9.926525600000002); // 'Hamburg - Kurtulan Lamm-Döner 11€ 12/10
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -53112,7 +53142,7 @@
                                     &#8960;  Post-Preis 2024: 7.85 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-05 19:00:06.649360<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-05 19:15:07.858647<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
