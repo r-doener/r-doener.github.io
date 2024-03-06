@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // ' „Abzocke Grill“ Chemnitz NUR 50€ für die Preisleistung 💯/10
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: ' „Abzocke Grill“ Chemnitz NUR 50€ für die Preisleistung 💯/10 ',
+                subTitle: 'test',
+                description: 'Fette Portion, frischer Salat, das saftigste Fleisch das ich bei einem Döner je gegessen habe! (Schaut euch das Ding an 🤤 )\n\nDer einzige Nachteil ist halt das der Döner vor zwei Wochen noch für nur 45€ zu haben war aber die 5€ Preissteigerung sind es mir wert ist eine klare Empfehlung 👍🏻  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b8b9zv/abzocke_grill_chemnitz_nur_50_für_die/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/7imf4sz14smc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=b3e328e74efdbb3674764a538e440b15858d7692"></a>' +
+        
+        '</br><b>Rating: - Preis: 50.0 €</b> <br> 06.03.2024 by <a href="https://reddit.com/u/klas228"> /u/klas228</a><a href="https://reddit.com//r/doener/comments/1b8b9zv/abzocke_grill_chemnitz_nur_50_für_die/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.4577089, 7.977626799999999); // 'Antep Grill Neheim - 8€ Turbo Döner mit Rind 9/10
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -53348,11 +53378,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.6 €<br>
-                                    &#8960;  Post-Preis 2024: 7.89 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.65 €<br>
+                                    &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-06 22:00:06.380811<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-06 22:15:06.882382<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
