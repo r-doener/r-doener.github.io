@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.1114152, 11.5948805); // 'Dönerpizza Djangos München
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerpizza Djangos München ',
+                subTitle: 'test',
+                description: 'Dönnerpizza mit Zwiebeln, scharfer Soße, Pepperoni, inkl. Tee 14.50€  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b7xt4l/dönerpizza_djangos_münchen/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/mzmnnypucpmc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=16970416498a0a017966b6631dc132f00b2e6e44"></a>' +
+        
+        '</br><b>Rating: - Preis: 14.5 €</b> <br> 06.03.2024 by <a href="https://reddit.com/u/Jumpy-Gate-4416"> /u/Jumpy-Gate-4416</a><a href="https://reddit.com//r/doener/comments/1b7xt4l/dönerpizza_djangos_münchen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(47.54815170000001, 7.691251899999999); // 'Grenzach-Wyhlen Anadolu Grill 8,50€ Rind
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -53199,10 +53229,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.59 €<br>
-                                    &#8960;  Post-Preis 2024: 7.85 €<br>
+                                    &#8960;  Post-Preis 2024: 7.87 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-06 12:45:06.215499<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-06 13:00:07.434275<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
