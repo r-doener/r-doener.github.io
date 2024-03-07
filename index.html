@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.3613241, 7.5929026); // 'Mangal/Poldi Döner Koblenz ... katastrophal schlecht. 8€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Mangal/Poldi Döner Koblenz ... katastrophal schlecht. 8€ ',
+                subTitle: 'test',
+                description: 'Habe heute meine Frau gebeten mir einen Döner auf dem Heimweg mitzubringen. Ich wollte diesen &#34;Poldi-Döner&#34; schon immer getestet haben, zumal er schon ein paar Monate bei uns in der Stadt existiert. Da ich ursprünglich aus dem Ruhrgebiet komme, ist die Messlatte sehr hoch. Ich habe eigentlich mit einem Durchschnittsdöner gerechnet und nichts ausgefallenes erwartet, aber dieser war unterirdisch schlecht, so sehr ich Lukas auch mag! Fleisch nur fettig, nicht gewürzt, kaum Salat drauf, Soße nicht auffindbar und das Brot schmeckte wie gezuckert. Der erste Döner seit 10 Jahren den ich nicht aufessen wollte und konnte. Vielleicht mag die Uhrzeit um 21:30Uhr die Qualität beeinflusst haben, aber &#34;DAS&#34; werde ich mir nicht nochmal geben wollen... boah ist mir gerade schlecht!  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b96bh3/mangalpoldi_döner_koblenz_katastrophal_schlecht_8/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/b2i6sjk7fzmc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=bf47d97e973b884499f251a7dbe873c1c8024d90"></a>' +
+        
+        '</br><b>Rating: - Preis: 8.0 €</b> <br> 07.03.2024 by <a href="https://reddit.com/u/-p373-"> /u/-p373-</a><a href="https://reddit.com//r/doener/comments/1b96bh3/mangalpoldi_döner_koblenz_katastrophal_schlecht_8/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.4100091, 6.7203904); // 'First-Kebap aus Duisburg-Rheinhausen - 2,49€ - Test von BeastKitchen
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -53532,7 +53562,7 @@
                                     &#8960;  Post-Preis 2024: 8.0 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-07 22:30:06.397335<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-07 22:45:07.132822<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
