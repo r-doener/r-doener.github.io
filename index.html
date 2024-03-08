@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(49.4281662, 11.0177476); // 'Markus Söder isst Döner in Nürnberg
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Markus Söder isst Döner in Nürnberg ',
+                subTitle: 'test',
+                description: 'Der bayrische Ministerpräsident gönnt sich mal einen Döner, auch wenn dieser kein Vorzeigeexemplar ist.\n\n kennt eventuell jemand den Laden ? <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1b9olth/markus_söder_isst_döner_in_nürnberg/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/hijowfeo94nc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=0d3b60f6036cf2957e028c618339d3790dbc21a3"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 08.03.2024 by <a href="https://reddit.com/u/FastChocolate7701"> /u/FastChocolate7701</a><a href="https://reddit.com//r/doener/comments/1b9olth/markus_söder_isst_döner_in_nürnberg/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.115022, 8.691728); // 'Döner Anlieferung
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -53682,7 +53712,7 @@
                                     &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-08 15:00:06.612794<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-08 15:15:09.348770<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
