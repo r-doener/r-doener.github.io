@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Lange keinen gescheiten Döner außer Ferhat Wien gesehen also wieder: B
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Lange keinen gescheiten Döner außer Ferhat Wien gesehen also wieder: B ',
+                subTitle: 'test',
+                description: 'Mit Scheibenfleisch von der Rinderhochrippe geschichtet. Big Döner für 10,50€ 🤝🏼\n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bbla5x/lange_keinen_gescheiten_döner_außer_ferhat_wien/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/44mon1jtoknc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=914d689a4bd8c73e42e8c66ef72ac01e7c588c29"></a>' +
+        
+        '</br><b>Rating: - Preis: 10.5 €</b> <br> 10.03.2024 by <a href="https://reddit.com/u/damn_this_dude"> /u/damn_this_dude</a><a href="https://reddit.com//r/doener/comments/1bbla5x/lange_keinen_gescheiten_döner_außer_ferhat_wien/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(47.5617342, 7.592962); // 'Nach 100 Döner in einem Jahr - Hier sind meine Top 10 der Schweiz
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -54039,10 +54069,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.65 €<br>
-                                    &#8960;  Post-Preis 2024: 8.0 €<br>
+                                    &#8960;  Post-Preis 2024: 8.01 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-10 22:00:04.802238<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-10 22:15:05.887679<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
