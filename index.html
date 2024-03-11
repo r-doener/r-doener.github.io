@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(53.075653, 8.7836029); // 'Dönerteller zum Mitnehmen, 10€ glatt. Lokum Bremen/Woltmershausen.
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerteller zum Mitnehmen, 10€ glatt. Lokum Bremen/Woltmershausen. ',
+                subTitle: 'test',
+                description: 'ich weiß es ist zu viel Soße, aber ich liebe es so 😍\nUnter der Soße war natürlich auch noch Fleisch 😊 <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bcbta1/dönerteller_zum_mitnehmen_10_glatt_lokum/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/ciapoigqarnc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=087bb3dd5e126299e39d4c4c8da19c1592820fdc"></a>' +
+        
+        '</br><b>Rating: - Preis: 10.0 €</b> <br> 11.03.2024 by <a href="https://reddit.com/u/ReaL1991"> /u/ReaL1991</a><a href="https://reddit.com//r/doener/comments/1bcbta1/dönerteller_zum_mitnehmen_10_glatt_lokum/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(52.4994662, 13.4284868); // 'Hähnchen Gemüse Döner - Zagros, Berlin 4,99€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Hähnchen Gemüse Döner - Zagros, Berlin 4,99€ ',
+                subTitle: 'test',
+                description: 'War sehr lecker! Was sagt ihr? <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bcbouj/hähnchen_gemüse_döner_zagros_berlin_499/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/7u0trg1u9rnc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=1e7a2c73ada74bbafcfc731a2a5dc52c2b599daa"></a>' +
+        
+        '</br><b>Rating: - Preis: 4.99 €</b> <br> 11.03.2024 by <a href="https://reddit.com/u/kdvklaus"> /u/kdvklaus</a><a href="https://reddit.com//r/doener/comments/1bcbouj/hähnchen_gemüse_döner_zagros_berlin_499/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(49.5871608, 10.9763409); // 'Aladin Grill Erlangen - 6,50 Euro
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -54219,10 +54279,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.66 €<br>
-                                    &#8960;  Post-Preis 2024: 8.03 €<br>
+                                    &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-11 20:15:05.033857<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-11 20:30:07.277366<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
