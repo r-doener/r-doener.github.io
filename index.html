@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.52109100000001, 7.0889527); // 'Arena Kebab Gelsenkirchen
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Arena Kebab Gelsenkirchen ',
+                subTitle: 'test',
+                description: 'Sehr reichhaltig und schmackhaft für 10€. \n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bd4vzu/arena_kebab_gelsenkirchen/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/7j5mv5nd7ync1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=2e508564bbd0af95f2c24843738df4836117d404"></a>' +
+        
+        '</br><b>Rating: - Preis: 10.0 €</b> <br> 12.03.2024 by <a href="https://reddit.com/u/cid50"> /u/cid50</a><a href="https://reddit.com//r/doener/comments/1bd4vzu/arena_kebab_gelsenkirchen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(48.4910863, 9.2143252); // 'Saftiger Döner mit Grillgemüse vom Kebap-Häusle in Reutlingen für 8€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Saftiger Döner mit Grillgemüse vom Kebap-Häusle in Reutlingen für 8€ ',
+                subTitle: 'test',
+                description: 'Mit Scheibenfleisch. das Griffgemüse gibt es zum &#34;normalen&#34; Gemüse gratis mit dazu, dafür auch ein stolzer Preis. Außerdem ist das Ding so prall gefüllt, dass es mir beim Verzehr komplett auseinandergefallen ist. Aber man wird auf jeden Fall satt. Der Laden wird hier in Gegend recht gehyped und ich muss sagen, dass es einer der leckersten Döner war, die ich je gegessen habe. Vor allem die Joghurtsoße ist mega reichhaltig und war ordnungsgemäß ins Brot geschmiert. Das Fleisch hat richtig nach Fleisch geschmeckt ohne zu viel Würze. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bd4sjy/saftiger_döner_mit_grillgemüse_vom_kebaphäusle_in/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/jtlimd2p6ync1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 8.0 €</b> <br> 12.03.2024 by <a href="https://reddit.com/u/yulort2"> /u/yulort2</a><a href="https://reddit.com//r/doener/comments/1bd4sjy/saftiger_döner_mit_grillgemüse_vom_kebaphäusle_in/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.9242505, 6.1130062); // 'Ağa Gemüsekebab, Übach-Palenberg, 7 Euro
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -54492,7 +54552,7 @@
                                     &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-12 19:30:05.131880<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-12 19:45:06.919506<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
