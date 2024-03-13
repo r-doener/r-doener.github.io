@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.8022088, 9.220087999999999); // 'Etye Stuttgart Bad Cannstatt, 8€ pro Döner, 10/10
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Etye Stuttgart Bad Cannstatt, 8€ pro Döner, 10/10 ',
+                subTitle: 'test',
+                description: 'Riesige Portion, Qualitätsfleisch und gratis Çay. Absolute Empfehlung! <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bdeapa/etye_stuttgart_bad_cannstatt_8_pro_döner_1010/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/2fbdlqkf30oc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=15b55d4b3677f85f7ef1480c5efaac176c667540"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: 8.0 €</b> <br> 13.03.2024 by <a href="https://reddit.com/u/BallsOfSats"> /u/BallsOfSats</a><a href="https://reddit.com//r/doener/comments/1bdeapa/etye_stuttgart_bad_cannstatt_8_pro_döner_1010/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(47.9581323, 16.26542); // 'Hühnerdöner mit extra Fleisch, 6.50€, Kottingbrunn, Österreich
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -54582,7 +54612,7 @@
                                     &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-13 02:00:04.648753<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-13 02:15:06.193529<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
