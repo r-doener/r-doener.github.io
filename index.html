@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(49.9440687, 11.5707207); // 'Berlin Döner Bayreuth, 6€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Berlin Döner Bayreuth, 6€ ',
+                subTitle: 'test',
+                description: 'Ist ein Falafel-Döner und ja, die tun am Ende nochmal Salat drauf, um die Soße und alles andere zu verdecken, sind aber sowohl Tomate &amp; Gurke, als auch Kraut drauf. Die Falafel kommen immer als erste ins Brot, daher sieht man die nur so am Rande. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bdz5hy/berlin_döner_bayreuth_6/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/xnk1v68bc5oc1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=f707c5aacfeed49e68518c15db2bcd61b10bc2e2"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.0 €</b> <br> 13.03.2024 by <a href="https://reddit.com/u/404-NoHau-not-Found"> /u/404-NoHau-not-Found</a><a href="https://reddit.com//r/doener/comments/1bdz5hy/berlin_döner_bayreuth_6/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.5450512, 13.3623983); // 'Berlin El Dünyasi
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -54639,10 +54669,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.66 €<br>
-                                    &#8960;  Post-Preis 2024: 8.02 €<br>
+                                    &#8960;  Post-Preis 2024: 8.01 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-13 19:30:04.881946<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-13 19:45:05.600924<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
