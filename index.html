@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.77350939999999, 9.1671537); // 'Kebaphaus am Feuersee, Stuttgart. Rind: 8,90€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Kebaphaus am Feuersee, Stuttgart. Rind: 8,90€ ',
+                subTitle: 'test',
+                description: 'Sehr guter Döner, es gibt Hähnchen und Rind zum selben Preis. Und man hat die Chance einen VfB Stuttgart Profi zu treffen (Deniz Undav). <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1beqb0p/kebaphaus_am_feuersee_stuttgart_rind_890/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/7nkzzzm11coc1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=8d1ac27c16f2acdeddd8031a902ea0d14ea5b19d"></a>' +
+        
+        '</br><b>Rating: - Preis: 8.9 €</b> <br> 14.03.2024 by <a href="https://reddit.com/u/fbn0711"> /u/fbn0711</a><a href="https://reddit.com//r/doener/comments/1beqb0p/kebaphaus_am_feuersee_stuttgart_rind_890/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Dönerteller bei Kappadokien in Bremerhaven, 11,50 €. Soße etwas süß, l
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerteller bei Kappadokien in Bremerhaven, 11,50 €. Soße etwas süß, l ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1beqa7r/dönerteller_bei_kappadokien_in_bremerhaven_1150/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/odiklkix0coc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=7ffac66774e4d94d030cc70b2aa3fa138b3831c6"></a>' +
+        
+        '</br><b>Rating: 9,8/10 Preis: 11.5 €</b> <br> 14.03.2024 by <a href="https://reddit.com/u/mocoma_"> /u/mocoma_</a><a href="https://reddit.com//r/doener/comments/1beqa7r/dönerteller_bei_kappadokien_in_bremerhaven_1150/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(53.5515683, 9.9961484); // 'Gemüsedöner 6,90€ Hamburg „Ali‘s Gemüsekebap“ (Europapassage)
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -54818,11 +54878,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.65 €<br>
-                                    &#8960;  Post-Preis 2024: 8.0 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.66 €<br>
+                                    &#8960;  Post-Preis 2024: 8.01 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-14 18:00:05.201401<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-14 18:15:07.880738<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
