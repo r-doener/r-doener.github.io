@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.1100991, 6.9504286); // 'Döner Game, Langenfeld (Rhld), 9€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Döner Game, Langenfeld (Rhld), 9€ ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bfgz97/döner_game_langenfeld_rhld_9/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/7uueijkhqioc1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=b1201e5b6f7c55d5de57328638165c009cff8d2b"></a>' +
+        
+        '</br><b>Rating: - Preis: 9.0 €</b> <br> 15.03.2024 by <a href="https://reddit.com/u/NoTi123"> /u/NoTi123</a><a href="https://reddit.com//r/doener/comments/1bfgz97/döner_game_langenfeld_rhld_9/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(48.1341616, 11.5400432); // 'Chicco&#39;s Döner - München (7€)
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Chicco&#39;s Döner - München (7€) ',
+                subTitle: 'test',
+                description: 'Mein erster Beitrag in diesem Sub und ich merke wie schwer es is Fotos vom Döner zu machen, haha.\nBrot wird vormittags frisch gebacken, früher gabs noch Lamm, aktuell &#34;nur&#34; noch kalb, Qualität aber trotzdem sagenhaft. Erst Fleisch, dann Salat und dann nochmal Fleisch, so kommt ne geile homogene Tasche zusammen. Bei Bedarf grillgemüse, ich brauch das aber aufm Döner nich.\nKeine Werbung, ist aber einfach mein local Dönerladen, den es in München lohnt zu besuchen. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bfgxd2/chiccos_döner_münchen_7/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/r08kusy1qioc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.0 €</b> <br> 15.03.2024 by <a href="https://reddit.com/u/Scoottchy"> /u/Scoottchy</a><a href="https://reddit.com//r/doener/comments/1bfgxd2/chiccos_döner_münchen_7/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.7385105, 7.100846799999999); // 'Dönerteller Kalb Divan Bonn 15€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -261,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -291,7 +351,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -55120,7 +55180,7 @@
                                     &#8960;  Post-Preis 2024: 8.05 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-15 16:30:04.485726<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-15 16:45:06.601570<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
