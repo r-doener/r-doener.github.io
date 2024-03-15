@@ -48,6 +48,64 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.8233013, -0.1423472); // '&#34;German Doner Kebab&#34; in Brighton, UK 9£
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    icon: '/static/uk.png',
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '&#34;German Doner Kebab&#34; in Brighton, UK 9£ ',
+                subTitle: 'test',
+                description: 'Man hat an Terminals bezahlt wie bei McDonald&#39;s, der Döner, wenn man es so nennen kann war für Britische Verhältnisse OK aber nach den Deutschen standarts 4/10 Punkten. Auf den Bildern sieht man die Location. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bfewwm/german_doner_kebab_in_brighton_uk_9/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/fhb286tfaioc1.jpg"></a>' +
+        
+        '</br><b>Rating: 4/10 Preis: None €</b> <br> 15.03.2024 by <a href="https://reddit.com/u/osii_offiziell"> /u/osii_offiziell</a><a href="https://reddit.com//r/doener/comments/1bfewwm/german_doner_kebab_in_brighton_uk_9/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(48.1130791, 11.6510117); // 'Lezz-Et Döner München
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Lezz-Et Döner München ',
+                subTitle: 'test',
+                description: 'Letzter Döner 452g und diesmal nur 392g. Ist das ne normale Toleranz?\n\nPreis 6,50€\n\nIch werde meineStempelkarte voll machen und das wars dann. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bfeqfd/lezzet_döner_münchen/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/99e8ai3z8ioc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.5 €</b> <br> 15.03.2024 by <a href="https://reddit.com/u/Torsten-R"> /u/Torsten-R</a><a href="https://reddit.com//r/doener/comments/1bfeqfd/lezzet_döner_münchen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.411409, 12.548593); // 'Döner 7,50€ Istanbul Bistro &amp; Imbiss in Brandenburg an der Havel
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +351,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -55029,10 +55087,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
-                                    &#8960;  Post-Preis 2024: 8.04 €<br>
+                                    &#8960;  Post-Preis 2024: 8.03 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-15 15:00:09.497225<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-15 15:15:07.507574<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
