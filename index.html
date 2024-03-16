@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(53.5853851, 10.026493); // 'Der günstigste Döner aus Hamburg (3,30€) - Dönerqueen
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Der günstigste Döner aus Hamburg (3,30€) - Dönerqueen ',
+                subTitle: 'test',
+                description: 'Wir testen jeden Döner in Hamburg und das war bis jetzt der günstigste. Döner Queen Harburg Rathaus <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bg3jdx/der_günstigste_döner_aus_hamburg_330_dönerqueen/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/M3F6eGlqZnFnb29jMRoTpnYGpuDd8N65fhTl0QTAw33DBfvxTVMqX48cYq-V.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=78fade89f854d1ec19efa3a79316ef21318bb0cb"></a>' +
+        
+        '</br><b>Rating: - Preis: 3.3 €</b> <br> 16.03.2024 by <a href="https://reddit.com/u/Hope1887"> /u/Hope1887</a><a href="https://reddit.com//r/doener/comments/1bg3jdx/der_günstigste_döner_aus_hamburg_330_dönerqueen/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.47766050000001, 7.2171083); // 'Virgin Doner vs Chad Döner
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -291,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -55296,11 +55326,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
-                                    &#8960;  Post-Preis 2024: 8.05 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
+                                    &#8960;  Post-Preis 2024: 8.04 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-16 12:00:05.023023<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-16 12:15:04.811633<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
