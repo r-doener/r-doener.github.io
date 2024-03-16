@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(53.1429294, 8.2218739); // 'Emin Usta, Oldenburg, 8,30
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: '/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Emin Usta, Oldenburg, 8,30 ',
+                subTitle: 'test',
+                description: 'Ein Döner Max, mit Hähnchenfleisch. Sehr zu empfehlen.\n6,80 € für einen normalen Döner.\n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bg7ozy/emin_usta_oldenburg_830/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/x8ujj028lpoc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=35ec565dbe6a24f41bfe6d490bb6e386ef883c2e"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.8 €</b> <br> 16.03.2024 by <a href="https://reddit.com/u/KruppstahI"> /u/KruppstahI</a><a href="https://reddit.com//r/doener/comments/1bg7ozy/emin_usta_oldenburg_830/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.33871730000001, 12.4026817); // 'Olive, Leipzig Reudnitz, 5,80€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: '/static/doner-kebab-highlight.png',
+                        icon: '/static/doner-kebab.png',
                     
                 
 
@@ -55390,7 +55420,7 @@
                                     &#8960;  Post-Preis 2024: 8.03 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-16 15:45:04.642597<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-16 16:00:05.079960<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
