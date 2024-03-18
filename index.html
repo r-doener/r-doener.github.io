@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.5960719, 13.333347); // 'Beyoğlu Berlin Wittenau 6,50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Beyoğlu Berlin Wittenau 6,50€ ',
+                subTitle: 'test',
+                description: 'Mein Lieblingsdöner in der Hauptstadt.\n\nMit der Soße hat er es etwas sehr gut gemeint aber das kann ich ihm nicht übel nehmen, zumal die Soßen auch fantastisch schmecken.\n(Den extra Klecks bekomm ich auch nicht immer)\n\nFleisch ist gestecktes (nicht gestrecktes) Kalbsfleisch und die leicht knusprigen Scheiben wurden wirklich super dünn geschnitten.\n\nSalat war frisch und knackig und in einem ausgewogenem Verhältnis zum Fleisch.\n\nOranienburger Str. 89, 13437 Berlin für jeden hungrigen Dönerenthusiasten <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bhnamd/beyoğlu_berlin_wittenau_650/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/cub8ub4yi2pc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.5 €</b> <br> 18.03.2024 by <a href="https://reddit.com/u/Piefke_"> /u/Piefke_</a><a href="https://reddit.com//r/doener/comments/1bhnamd/beyoğlu_berlin_wittenau_650/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.5325541, 13.8359903); // 'Mini Döner von Mem Döner in Strausberg 5€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -291,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -55775,10 +55805,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.66 €<br>
-                                    &#8960;  Post-Preis 2024: 8.01 €<br>
+                                    &#8960;  Post-Preis 2024: 8.0 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-18 11:03:10.264507<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-18 11:18:17.995129<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
