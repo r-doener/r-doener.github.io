@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Püttlinger Kebab Haus im Ort Püttlingen im Saarland, großer Döner 6,5 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Püttlinger Kebab Haus im Ort Püttlingen im Saarland, großer Döner 6,5  ',
+                subTitle: 'test',
+                description: 'Fleisch ist eine Mischung aus Puten/Hähnchen/Kalb. Betreiber ist echt sympathisch und haut echt viel in das Fladenbrot rein. Geschmacklich 10/10, wsl beste Döner im Umkreis von 20-25 km. Getränke gibt es regelmäßig kostenlos dazu bei Stammkunden oder größeren Bestellungen.\n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bhovhq/püttlinger_kebab_haus_im_ort_püttlingen_im/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/gxvnae0903pc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=e8285bd9d46e9c35f323f3f7015791c6ddd206ae"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: None €</b> <br> 18.03.2024 by <a href="https://reddit.com/u/Sirsettlement"> /u/Sirsettlement</a><a href="https://reddit.com//r/doener/comments/1bhovhq/püttlinger_kebab_haus_im_ort_püttlingen_im/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Mello‘s München, 7.00€ Putenfleisch (selbstgesteckt).
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -291,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -55838,7 +55868,7 @@
                                     &#8960;  Post-Preis 2024: 8.0 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-18 12:48:55.736090<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-18 13:04:02.855073<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
