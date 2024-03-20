@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Yusis Kebabshaus, Wien 22, 5,50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Yusis Kebabshaus, Wien 22, 5,50€ ',
+                subTitle: 'test',
+                description: 'Habe heute eine Neueröffnung probiert. \n\nPositives: \n- Viel Fleisch, gut gewürzt\n- große Soßenauswahl (6)\n- gute, sehr scharfe Soße \n\nNegatives: \n- Der Döner wurde so gefüllt, dass das Meiste Gemüse rausgeflogen ist (siehe Bild 1)\n- Das Brot wirkte nicht selbst gemacht tbh \n- Die Soße war vermehrt im hinteren Teil des Döners (er war trotzdem immer saftig) \n- Die Tomaten hätt man sich sparen können \n\nOverall: 2.5/5 \n\nSolides Mittelfeld. Ein Döner den ich mir an einem verkaterten Sonntag holen würde. Aber nichts besonderes. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bjkjwf/yusis_kebabshaus_wien_22_550/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/chyi3ibc8jpc1.jpg"></a>' +
+        
+        '</br><b>Rating: 2.5/5 Preis: 5.5 €</b> <br> 20.03.2024 by <a href="https://reddit.com/u/Maze2810"> /u/Maze2810</a><a href="https://reddit.com//r/doener/comments/1bjkjwf/yusis_kebabshaus_wien_22_550/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Was sagt der hohe Rat? 
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -56673,10 +56703,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.66 €<br>
-                                    &#8960;  Post-Preis 2024: 7.99 €<br>
+                                    &#8960;  Post-Preis 2024: 7.98 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-20 19:26:58.389650<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-20 19:42:10.036497<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
