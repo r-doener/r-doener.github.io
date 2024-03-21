@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.529883, 13.4008739); // 'Rosenthaler Platz Grill, Berlin
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Rosenthaler Platz Grill, Berlin ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bke4r6/rosenthaler_platz_grill_berlin/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/z44h60j6hqpc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=8c4a54d3f33fcbfbabae8704c7e680cef02f945f"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 21.03.2024 by <a href="https://reddit.com/u/thegrey_m"> /u/thegrey_m</a><a href="https://reddit.com//r/doener/comments/1bke4r6/rosenthaler_platz_grill_berlin/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(51.34549920000001, 12.405015); // 'Bereket, Leipzig Eisenbahnstraße (Döner UND Falafel Dürüm insg. 11€)
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Bereket, Leipzig Eisenbahnstraße (Döner UND Falafel Dürüm insg. 11€) ',
+                subTitle: 'test',
+                description: 'Brot und Fleisch (Yaprak) waren top. Knoblauchsoße sehr geil und fast schon so intensiv wie gutes Aioli. Allein für den Preis absolute Empfehlung. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bkdwmw/bereket_leipzig_eisenbahnstraße_döner_und_falafel/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/pqr3ioahfqpc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=77760d80333754775340d3b3187bd74f6f3314e7"></a>' +
+        
+        '</br><b>Rating: - Preis: 11.0 €</b> <br> 21.03.2024 by <a href="https://reddit.com/u/prodbyredemption"> /u/prodbyredemption</a><a href="https://reddit.com//r/doener/comments/1bkdwmw/bereket_leipzig_eisenbahnstraße_döner_und_falafel/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(49.4596678, 11.1002554); // 'Grillmeister Nürnberg, 6,50€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -57062,11 +57122,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
-                                    &#8960;  Post-Preis 2024: 8.01 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
+                                    &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-21 19:38:30.143863<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-21 19:53:40.138705<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
