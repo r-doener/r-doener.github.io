@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(49.4596678, 11.1002554); // 'Grillmeister Nürnberg, 6,50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Grillmeister Nürnberg, 6,50€ ',
+                subTitle: 'test',
+                description: 'Geschmacklick 10/10, ordentliches Fleisch ohne Hackfleischanteile und sehr große Portion <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bkcvl0/grillmeister_nürnberg_650/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/6aczxcd18qpc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=a7a21c2474170e64ba6ce4b6dff2a6ea577feb26"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: 6.5 €</b> <br> 21.03.2024 by <a href="https://reddit.com/u/Jojokrieger"> /u/Jojokrieger</a><a href="https://reddit.com//r/doener/comments/1bkcvl0/grillmeister_nürnberg_650/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(51.7920562, 11.141448); // 'Quedlinburg, Sachsen-Anhalt, 2024
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Quedlinburg, Sachsen-Anhalt, 2024 ',
+                subTitle: 'test',
+                description: 'Hab kein Bild mehr vom Döner gemacht, war basic und leider Pressfleisch aber ein normal großer Döner <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bkcu9h/quedlinburg_sachsenanhalt_2024/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/8bht0mcr7qpc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=f5e5edd2ddb7875dad756baf0eba7ca4e7e21b31"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 21.03.2024 by <a href="https://reddit.com/u/Gago1108"> /u/Gago1108</a><a href="https://reddit.com//r/doener/comments/1bkcu9h/quedlinburg_sachsenanhalt_2024/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Shawarma vom Bullen am Spiess
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -57002,11 +57062,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
-                                    &#8960;  Post-Preis 2024: 8.02 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
+                                    &#8960;  Post-Preis 2024: 8.01 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-21 19:09:31.130911<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-21 19:23:20.723741<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
