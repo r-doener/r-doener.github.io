@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.0851517, 8.771620799999999); // 'Nazar Kebap und Grillhaus, Offenbach
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Nazar Kebap und Grillhaus, Offenbach ',
+                subTitle: 'test',
+                description: '8 für Kalb und Käse\nHat gut geschmeckt. Auch gut gefüllt\n(Erwarte ich aber auch bei dem Preis) \nPluspunkt: 2 Lagen Fleisch. Gut geschichtet Überall was von allem. \nMinuspunkte für das unfreundliche Personal (Chef?) an der Kasse. \nFand die andern beiden letzte Woche aber definitiv besser. Somit Nummer 3 meiner Liste aus Offenbach 2024...to be continued <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bnhwhc/nazar_kebap_und_grillhaus_offenbach/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/4b2ayqtabiqc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 25.03.2024 by <a href="https://reddit.com/u/AlPow420"> /u/AlPow420</a><a href="https://reddit.com//r/doener/comments/1bnhwhc/nazar_kebap_und_grillhaus_offenbach/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Kann sich denke ich sehen lassen.
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -58206,7 +58236,7 @@
                                     &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-25 17:24:09.084311<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-25 17:39:15.419536<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
