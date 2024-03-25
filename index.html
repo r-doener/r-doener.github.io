@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.3276887, 6.9764159); // 'Döner Pizza - La Baguette CH
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Döner Pizza - La Baguette CH ',
+                subTitle: 'test',
+                description: 'Döner Pizza im La Baguette in Volketswil. Location gut, Pizza selbst sehr gut. Döner Fleisch  CH Standard  Hackpresspampe. Sosse gut. CHF 17 Meine Bewertung 6/10 auch nur weil die Pizza echt toll war der Döner Belag leider aufgrund der Fleischqualität mittelmässig/von der Stange. Das Personal und das übrige Esseb ist btw. Überragend 9/10!  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bnboh9/döner_pizza_la_baguette_ch/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/atnjfw4uxgqc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=1a4756dada51aca2da04d5212afb1794f0e5c41f"></a>' +
+        
+        '</br><b>Rating: 6/10 Preis: None €</b> <br> 25.03.2024 by <a href="https://reddit.com/u/gobodetect"> /u/gobodetect</a><a href="https://reddit.com//r/doener/comments/1bnboh9/döner_pizza_la_baguette_ch/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(51.51282, 7.442589); // 'Das Haus des Döners
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Das Haus des Döners ',
+                subTitle: 'test',
+                description: 'Ehrlich, groß, lecker, 7,50€ – hier in Ehrenfeld, Venloer Str., Köln <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bnbmlk/das_haus_des_döners/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/uqvndf0bxgqc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.5 €</b> <br> 25.03.2024 by <a href="https://reddit.com/u/walljet"> /u/walljet</a><a href="https://reddit.com//r/doener/comments/1bnbmlk/das_haus_des_döners/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Biden am ausrasten
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -58116,7 +58176,7 @@
                                     &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-25 12:37:14.525811<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-25 12:52:21.723122<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
