@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Rarität: &#34;Döner&#34; im geschlossen Pita-Brot 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Rarität: &#34;Döner&#34; im geschlossen Pita-Brot  ',
+                subTitle: 'test',
+                description: 'Wurde mir auf Instagram angezeigt. So isst man anscheinend in Leverkusen Döner. \n\nIch bin erschüttert. Was soll ich nur tun? Noch nie wurde ich mit einem geschlossen Döner konfrontiert. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bnjvvl/rarität_döner_im_geschlossen_pitabrot/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/59owiy9epiqc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=285c93b8a1b7b85ebcfe5d2ea2ec61d1939c33c8"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 25.03.2024 by <a href="https://reddit.com/u/M00n_Life"> /u/M00n_Life</a><a href="https://reddit.com//r/doener/comments/1bnjvvl/rarität_döner_im_geschlossen_pitabrot/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(47.3759474, 8.5161718); // 'Yaprak Döner, mit&amp;ohne Zürich
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -58326,7 +58356,7 @@
                                     &#8960;  Post-Preis 2024: 8.03 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-25 18:39:40.924563<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-25 18:54:46.960819<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
