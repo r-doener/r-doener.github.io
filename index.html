@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.21626699999999, 6.5857756); // 'Döner Time 1, Kaarst, 7€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Döner Time 1, Kaarst, 7€ ',
+                subTitle: 'test',
+                description: 'Ein Fall für r/tja? Beides ca. 7€ - ein mal Pommes mit Kalb und ein mal Lahmacun mit allem. Lahmacun ist definitiv sehr fair gefüllt, und extrem lecker. Zutaten sind gut ausbalanciert und die Soßen sind auch mega.\n\nDie Spieße kommen von Ponath aus Mönchengladbach. Früher mit Hinweis, dass Pute enthalten ist, heute nicht mehr. Ob das gut oder schlecht ist - kein Plan. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bolcyq/döner_time_1_kaarst_7/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/2ga3kc2r9rqc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.0 €</b> <br> 26.03.2024 by <a href="https://reddit.com/u/OlMi1_YT"> /u/OlMi1_YT</a><a href="https://reddit.com//r/doener/comments/1bolcyq/döner_time_1_kaarst_7/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(52.5503632, 13.3525972); // 'Saray Seestraße 6,90€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Saray Seestraße 6,90€ ',
+                subTitle: 'test',
+                description: 'Bin heute vorbei und der Spieß sah gut aus.\nWar letztendlich nichts außergewöhnliches, aber trotzdem ein solider Döner. Saucen Verteilung war mittelmäßig(wie man auch dem Bild entnehmen kann, nicht auf dem Brot verteilt) daher waren die letzten Bissen sehr Saucen-lastig, da das meiste an Sauce unten war. Die scharfe Sauce kam da dann erst zum Vorschein, was schade ist da ich die echt lecker fand. Brot ist meine ich selbstgemacht , war aber nicht herausragend. Wie gesagt alles aber sehr solide daher eine 7/10 , wenn man da ist kann man sich den auf jeden Fall geben. Ambiente auch super, 3€ hausgemachter Ayran war auch lecker. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bol1el/saray_seestraße_690/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/oal8zoei7rqc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=b19479af1af8699aae8171ec4d0b3d4de5f56ebe"></a>' +
+        
+        '</br><b>Rating: 7/10 Preis: 6.9 €</b> <br> 26.03.2024 by <a href="https://reddit.com/u/Vince3000xd"> /u/Vince3000xd</a><a href="https://reddit.com//r/doener/comments/1bol1el/saray_seestraße_690/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.5795565, -0.0990346); // 'Antepliler beef doner green lanes london
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -261,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -291,7 +351,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -58654,7 +58714,7 @@
                                     &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-26 23:19:59.495234<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-26 23:35:06.149765<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
