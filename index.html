@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.5960282, 13.333131); // 'Beyoğlu Döner, Berlin, 6,50€ (9/10)
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Beyoğlu Döner, Berlin, 6,50€ (9/10) ',
+                subTitle: 'test',
+                description: 'Was soll ich sagen. Döner war sehr geil und ist direkt in meine Top 3. Kann easy mit Hasir und Ugur mithalten, wenn nicht sogar besser. Das Fleisch erstmal so probiert war 10/10. etwas ölig aber im Geschmack sehr gut. Kann sein dass etwas Lammfett auch mit beim Spieß war , ich meine da kam so eine Note heraus. Das Brot ist selbstgemacht und war sehr gut , schön knusprig außen und innen schön weich und fluffig. Perfekte Dicke. Da das Fleisch so lecker ist, muss man sagen dass Salat und Soßen schon fast gestört haben. Daher atsächlich noch einen dritten Döner geholt und geteilt wie man auf den Bildern sieht, dieses mal nur Zwiebeln und etwas Scharfe Sauce. Das kam sehr gut, selbst da fand ich aber die Sauce etwas störend durch die Süße. Würde nächste mal denke ich nur Kraut , Zwiebeln und Knoblauch Soße, die war mega. Ist aber alles meckern auf hohem Niveau der Döner war wirklich mega und 6,50€ dafür kann man nichts sagen. Für mich ab sofort ein Favorit. Auf dem letzten Bild sieht man noch den Döner des Kollegen , welcher von einem anderen Dönermann zubereitet wurde. Leider sieht man da schon einen Unterschied was die Fleischmenge angeht, aber Fleisch war trotzdem auch bei mir nicht zu wenig. Mit U8 auch sehr einfach zu erreichen und definitiv die Fahrt wert!  9/10 <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bp31nz/beyoğlu_döner_berlin_650_910/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/dbches6kyvqc1.jpg"></a>' +
+        
+        '</br><b>Rating: 9/10 Preis: 6.5 €</b> <br> 27.03.2024 by <a href="https://reddit.com/u/Vince3000xd"> /u/Vince3000xd</a><a href="https://reddit.com//r/doener/comments/1bp31nz/beyoğlu_döner_berlin_650_910/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.7738785, 11.4426573); // 'Schanzer Döner Ingolstadt 7,50€ mit Jalapeños und Käse, 6,50€ ohne
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -291,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -58771,10 +58801,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.69 €<br>
-                                    &#8960;  Post-Preis 2024: 8.02 €<br>
+                                    &#8960;  Post-Preis 2024: 8.01 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-27 15:10:37.478393<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-27 15:25:45.129878<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
