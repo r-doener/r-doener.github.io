@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Jemand liegt ganz falsch
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Jemand liegt ganz falsch ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bp48ke/jemand_liegt_ganz_falsch/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/vbi1n1uj7wqc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=d5693b225fd51922fc2ae6c7e8e091065ff9e6e7"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 27.03.2024 by <a href="https://reddit.com/u/South_Grass_2774"> /u/South_Grass_2774</a><a href="https://reddit.com//r/doener/comments/1bp48ke/jemand_liegt_ganz_falsch/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Streit eskaliert: Türkei ruft 53.000 Kebab-Verkäufer aus Österreich zu
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Streit eskaliert: Türkei ruft 53.000 Kebab-Verkäufer aus Österreich zu ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bp44dw/streit_eskaliert_türkei_ruft_53000_kebabverkäufer/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/58bwpfik6wqc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=899aac611d50055c7224cfe86d3fed4f5bd69819"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 27.03.2024 by <a href="https://reddit.com/u/trouble_bear"> /u/trouble_bear</a><a href="https://reddit.com//r/doener/comments/1bp44dw/streit_eskaliert_türkei_ruft_53000_kebabverkäufer/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.5960282, 13.333131); // 'Beyoğlu Döner, Berlin, 6,50€ (9/10)
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -261,7 +321,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -291,7 +351,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -58804,7 +58864,7 @@
                                     &#8960;  Post-Preis 2024: 8.01 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-27 15:55:56.243322<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-27 16:11:02.631984<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
