@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.35720600000001, 9.7663504); // 'german engineering in action
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'german engineering in action ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1brdrdk/german_engineering_in_action/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/a2xuMXVoNHRheXFjMemWC9E2Co1L8XS-qc7pGX8ATkDgkS_gHhgBEEIldDNW.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=cccbb1a4947a6183c6cfd2368707eb29761b4024"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 30.03.2024 by <a href="https://reddit.com/u/Consistent_Poet_2467"> /u/Consistent_Poet_2467</a><a href="https://reddit.com//r/doener/comments/1brdrdk/german_engineering_in_action/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Low carb/ Keto Döner Teller nach Fitness 
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -59104,7 +59134,7 @@
                                     &#8960;  Post-Preis 2024: 8.0 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-30 10:12:48.354136<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-30 10:27:56.027661<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
