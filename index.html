@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Low carb/ Keto Döner Teller nach Fitness 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Low carb/ Keto Döner Teller nach Fitness  ',
+                subTitle: 'test',
+                description: 'Balli Döner Berlin Hackfleisch Spieß Teller + Salat ohne Soße &amp; bisschen Ziegen Käse 13€ für die Leute die auf Kohlenhydraten verzichten möchten perfekt, hat geschmeckt 8/10  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1br3us7/low_carb_keto_döner_teller_nach_fitness/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/e3jgc8rl5drc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=ce9e47fdef3447003f43b1f08188f527557ef11a"></a>' +
+        
+        '</br><b>Rating: 8/10 Preis: 13.0 €</b> <br> 30.03.2024 by <a href="https://reddit.com/u/6820berlin"> /u/6820berlin</a><a href="https://reddit.com//r/doener/comments/1br3us7/low_carb_keto_döner_teller_nach_fitness/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(53.1122025, 9.798265299999999); // 'Atlas Pizzahaus und Spieße, Schneverdingen, 7 Euro
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -59071,10 +59101,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
-                                    &#8960;  Post-Preis 2024: 7.99 €<br>
+                                    &#8960;  Post-Preis 2024: 8.0 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-30 01:08:21.294192<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-03-30 01:23:29.302825<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
