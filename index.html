@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.035497, 16.3020953); // 'Kebap &amp; More - Traiskirchen (Österreich)
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Kebap &amp; More - Traiskirchen (Österreich) ',
+                subTitle: 'test',
+                description: 'Hühner Kebaps 5,90€ die Bilder sprechen für sich selbst\nExtremst geschmacksvoll <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bup1tu/kebap_more_traiskirchen_österreich/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/7v8bnjyrp8sc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 5.9 €</b> <br> 03.04.2024 by <a href="https://reddit.com/u/HadesLeftNutsack"> /u/HadesLeftNutsack</a><a href="https://reddit.com//r/doener/comments/1bup1tu/kebap_more_traiskirchen_österreich/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.56307779999999, 13.3273133); // 'Chicken Dürüm 7,5€ bei Hali&#39;s U-Bhf-Kurt-Schumacher-Platz
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -59760,11 +59790,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.69 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
                                     &#8960;  Post-Preis 2024: 8.0 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-03 12:08:56.061953<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-03 12:24:06.507650<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
