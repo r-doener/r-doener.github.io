@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.4985496, 13.4179723); // 'babaleison, Berlin, Kotti, 8,50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'babaleison, Berlin, Kotti, 8,50€ ',
+                subTitle: 'test',
+                description: 'Ich tue mich etwas schwer an dieser Review. Erstmal vorab, der Döner scheint ja sowieso schon sehr gemischte Meinungen zu haben, zumindest was ich von diversen Quellen im Internet mitbekommen habe. Hauptkritikpunkt, scheint ja der Lammgeschmack zu sein. Meiner Meinung nach ist das ja natürlich etwas total subjektives. Da ich Lamm sehr gerne esse habe ich mich sehr auf den Döner gefreut.\n\nUnd ich muss sagen, enttäuscht wurde ich nicht, aber geflashed bin ich auch nicht. (Mal wieder Meckern auf hohem Niveau) Das Fleisch war sehr lecker, hatte auf jeden Fall einen deutlichen Lamm Geschmack,  wenn man es erstmal so probiert hat. Im Brot finde ich kam der Lamm Geschmack nicht krass raus. Ich habe den Döner nur mit Zwiebeln und Tomaten gegessen, ohne Soße. Fleischmenge sah erstmal sehr gut aus , tatsächlich aber die letzten 4-5Bissen hatten garkein Fleisch mehr was ich schon enttäuschend fand und auch zu bemängeln habe. Außerdem muss ich sagen, war das Fleisch trockener als erwartet und daher generell der Döner etwas zu trocken. Ich würde keine Soße hinzufügen aber das Fleisch war trotzdem zu trocken für meinen Geschmack. Brot war denke ich selber gemacht und war auch sehr lecker, nix dran zu bemängeln. Da der Döner ja sehr &#34;minimalistisch&#34; ist gibt es auch garnicht mehr viel zu sagen. Tomaten und Zwiebel Menge fand ich perfekt und auch Fleisch war ordentlich vorhanden, bis man zum Ende kam, wo wie gesagt dann kein Fleisch mehr war. Letztendlich fand ich den Döner sehr lecker , aber ich hatte vielleicht zu hohe Erwartungen, keine Ahnung umgehauen hat er mich nicht und aufgrund der Kritikpunkte und 8,50€ finde ich auch happig, gebe ich eine 7,8/10. Man muss dazu jedoch sagen, Ambiente war super, ist halt keine Dönerbude sondern schon ein edleres Restaurant , mir hat das sehr gefallen vor allem der Blick in die offene Küche. Ayran war außerdem sehr lecker und kann ich nur empfehlen. Tatsächlich habe ich den Dönerspieß selber garnicht zu Blick bekommen und bin auch etwas verwirrt wo genau dieser sich befindet. Etwas schade , ich denke der ist einen Blick wert. Wer am Kotti ist kann sich den mal geben, ich denke ich würde den auch nochmal essen , aber wenn der Hasir am Kotti (ich war selber bis jetzt nur in Schöneberg bei Hasir) genauso gut ist wie in Schöneberg , würde ich Hasir 9/10 mal vorziehen denke ich. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1buwc3u/babaleison_berlin_kotti_850/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/y6u1sm35fasc1.jpg"></a>' +
+        
+        '</br><b>Rating: 7,8/10 Preis: 8.5 €</b> <br> 03.04.2024 by <a href="https://reddit.com/u/Vince3000xd"> /u/Vince3000xd</a><a href="https://reddit.com//r/doener/comments/1buwc3u/babaleison_berlin_kotti_850/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.50266449999999, 6.884207699999999); // 'Jumbodöner
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -59974,7 +60004,7 @@
                                     &#8960;  Post-Preis 2024: 8.0 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-03 17:57:48.019359<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-03 18:12:59.434455<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
