@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.5558756, 10.7677036); // 'Babylon House of Food, 99768 Harztor
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Babylon House of Food, 99768 Harztor ',
+                subTitle: 'test',
+                description: 'Servus!\n\nHeute gab&#39;s einen Döner mit Extra Fleisch, passend zum Dönerstag.\nMein Mum bringt immer welchen mit, wenn mein Bruder oder ich zu Besuch sind und hatte sich letztens extra erkundigt, ob es sich bei dem Kalbsfleisch um Hackmasse oder Schichtfleisch handelt. &#34;Zu 80% nur geschichtetes Fleisch!&#34; habe der Verkäufer total stolz geantwortet und ich wollte mich natürlich selbst davon überzeugen (als Alternative gibt es Hähnchen). \nUnd sieh da, tatsächlich schön saftiges, geschichtetes Kalbsfleisch. Als Sauce habe ich mich für Tzatziki (nennen sie so, ist aber geschmacklich &#39;ne klassische Knoblauchsauce auf Joghurtsauce) und Scharf entschieden, an Gemüse fand man die üblichen Verdächtigen (nein, Mais gehört da mMn nicht dazu).\nAnsonsten gibt es noch Kräuter- oder Spezialsauce, dazu kann ich bisher noch keine Aussage treffen.\nIch hab mir diese Bombe vor wenigen Minuten schmecken lassen und von der Menge her darf ich, als guter Esser, behaupten: das Teil macht satt.\nGeschmacklich auch wirklich sehr lecker, das Fleisch ist schön saftig und gut gewürzt, das Gemüse frisch, die Saucen schmackhaft und gut im Brot verteilt. Die generelle Verteilung von Fleisch, Gemüse und Saucen ist in meinen Augen sehr gelungen.\nOb das Brot selbst gebacken ist oder nicht kann ich leider nicht sagen, es ist außen schön kross und nimmt den Fleischsaft gut auf.\nAlles in allem tatsächlich der beste Döner, den ich bisher vergenussferkeln durfte (auch optisch, wobei er durch den Transport doch etwas zerdeppert wirkt) und deshalb für mich eine mehr als solide 10/10.\nUnd als i-Tüpfelchen: dieses gute Stück kostet 6,00€. Keine Aktion o.ä., das ist der Standardpreis für den Döner mit extra Fleisch. Wenn der Laden dieses Niveau bei dem Preis beibehält, dann ich küsse ich die Augen der Besitzer von Herzen und mit extra Liebe. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bvtvri/babylon_house_of_food_99768_harztor/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/r63ewzum4isc1.jpg"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: 6.0 €</b> <br> 04.04.2024 by <a href="https://reddit.com/u/psychostud7635"> /u/psychostud7635</a><a href="https://reddit.com//r/doener/comments/1bvtvri/babylon_house_of_food_99768_harztor/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.1044351, 8.765176499999999); // 'Baba&#39;s Döner Kleiner Biergrund 5 63065 Offenbach am Main Deutschland
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -60214,7 +60244,7 @@
                                     &#8960;  Post-Preis 2024: 7.99 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-04 19:44:20.739598<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-04 19:59:32.354524<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
