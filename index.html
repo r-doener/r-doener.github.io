@@ -48,6 +48,34 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.5836991, -0.0222631); // 'Gokyuzu London - lamb doner
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    icon: 'http://r-doener.github.io/static/uk.png',
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Gokyuzu London - lamb doner ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bwqm3c/gokyuzu_london_lamb_doner/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/juvkg5uuopsc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 05.04.2024 by <a href="https://reddit.com/u/odegood"> /u/odegood</a><a href="https://reddit.com//r/doener/comments/1bwqm3c/gokyuzu_london_lamb_doner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(49.986891, 8.6797521); // 'Dönerteller beim Königkebab by Dogan in Langen 14,50€. Was sagt der ho
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -295,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -60546,7 +60574,7 @@
                                     &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-05 21:16:04.198570<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-05 21:31:13.516193<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
