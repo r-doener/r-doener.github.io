@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.388611, 9.7508229); // 'Lister Döner Hannover
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Lister Döner Hannover ',
+                subTitle: 'test',
+                description: 'Bekannt aus Film und Fernsehen. \nIch hatte ein Döner Menü mit Premium Lammfleisch, Pommes und Fritz Kola für 12,50€\nSuper Geschmack mit Zitrone, Rucola und Petersilie u.A.\nBei jedem Biss war alles top auf einander abgestimmt. \n\nDefinitive Empfehlung, 10/10 für die Region.  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bwm6zq/lister_döner_hannover/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/eklmomgbsosc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=83a72a298db4a0605a9a2fe144dcc4dfb59d4dd8"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: 12.5 €</b> <br> 05.04.2024 by <a href="https://reddit.com/u/NoobCanoeWork"> /u/NoobCanoeWork</a><a href="https://reddit.com//r/doener/comments/1bwm6zq/lister_döner_hannover/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(50.7768053, 6.0907531); // 'Dönerteller 11€, Zoom Döner, Aachen
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -295,7 +325,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -60453,10 +60483,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.69 €<br>
-                                    &#8960;  Post-Preis 2024: 8.0 €<br>
+                                    &#8960;  Post-Preis 2024: 8.01 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-05 18:14:16.082070<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-05 18:29:24.610387<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
