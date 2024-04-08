@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(49.0056794, 8.3727603); // 'Aroma - die Legende in Karlsruhe 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Aroma - die Legende in Karlsruhe  ',
+                subTitle: 'test',
+                description: 'Seit sicherlich länger als 20 Jahre dreht hier einer der Dönerinstitutionen in der Karlsruher Weststadt. In einer netten und sehr sauberen Atmosphäre wird man hier von sehr freundlichen Menschen bedient. \nHier die Hardfacts:\n- Preis 8€ (preislich gleich zum Yufka aka. Dürüm)\n- Bestellt mit Allem, Knoblauchsoße auf Jogurt Basis und scharfem Pulver\n- Fleisch 100% Rindfleisch (ähnlich zu einem Steakdöner)\n- Handgemachtes Brot\n- Frisches Gemüse inkl. Rotkraut\n- Eingewickelt in Umweltfreundlichem Papier \n\nHier das subjektives Urteil:\nBeim ersten Bissen - ich muss sagen, ich war sicherlich 3 jahre nicht mehr da - fällt leider direkt auf, dass das Brot zwar außen knusprig, aber innen nicht mehr ganz frisch und teigig war. Die Belegung zeugte jedoch von der langjährigen Erfahrung: Auch wenn der Döner nicht überquillte, zu jeder Zeit hatte ich einen &#34;perfect bite&#34;! Eine perfekte Balance aus frische, säure und Herzhaftigkeit traf sich jedes mal in meinem Gaumen. Das scharfe Pulver war zu meinem Leidwesen wirklich scharf und nicht nur ein leeres versprechen. Das Fleisch jedoch, auch wenn es eine sehr hochwertige Anmutung hatte, überzeugte mich nicht vollends. Zwar war der fleischige Geschmack eine erfreuliche Abwechslung zu den sonstigen Hackfleischdönern, doch tat ich mir ein wenig schwer mit dem Kauaufwand, den das Fleisch von mir verlangte. Das in Kombination mit dem nicht ganz gelungenen Brot führt zu meiner Bewertung von  soliden 8/10. Top Qualität trifft hier auf Können mit leichtem Abzug in der B-Note. Nächstes mal werde ich den selbstgemachten Yufka probieren ✌️ <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1bz62ab/aroma_die_legende_in_karlsruhe/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/tox2wnzxyatc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=ce67ac137957d6889d1f2e54b56ec9a188314786"></a>' +
+        
+        '</br><b>Rating: 8/10 Preis: 8.0 €</b> <br> 08.04.2024 by <a href="https://reddit.com/u/omegalols1"> /u/omegalols1</a><a href="https://reddit.com//r/doener/comments/1bz62ab/aroma_die_legende_in_karlsruhe/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Eines ist das ganz sicher:Ein Verbrechen 
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -297,7 +327,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -60968,7 +60998,7 @@
                                     &#8960;  Post-Preis 2024: 8.04 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-08 20:51:34.012750<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-08 21:06:41.401926<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
