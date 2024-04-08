@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.19790640000001, 16.3271969); // ' Diwan Wien 6,90€ (Menü war 9,90€)
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: ' Diwan Wien 6,90€ (Menü war 9,90€) ',
+                subTitle: 'test',
+                description: 'Das Rindfleisch ist vom Holzkohlegrill.  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1byuy23/diwan_wien_690_menü_war_990/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/l78icm18l8tc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=5ec0676d11ed25d31b071ff21fd73b3920fa7d09"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.9 €</b> <br> 08.04.2024 by <a href="https://reddit.com/u/hubbusubbu"> /u/hubbusubbu</a><a href="https://reddit.com//r/doener/comments/1byuy23/diwan_wien_690_menü_war_990/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.50477859999999, 7.464179400000001); // 'Döner 6€ in Dortmund
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -297,7 +327,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -60878,7 +60908,7 @@
                                     &#8960;  Post-Preis 2024: 8.05 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-08 12:47:35.135525<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-08 13:02:43.586782<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
