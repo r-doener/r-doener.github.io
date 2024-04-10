@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.49048089999999, 13.4229802); // 'Imren, Berlin-Kreuzberg, 6 Euro
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Imren, Berlin-Kreuzberg, 6 Euro ',
+                subTitle: 'test',
+                description: 'Einer der besten osmanischen Schlemmertaschen der Stadt. Die Optik des Salathaufens wird dem perfekten Mischungsverhältnis nicht gerecht: bis zum letzten Bissen saftig und knusprig. Saucenauswahl mit Sesam &amp; Scharf für Berliner Verhältnisse ungewöhnlich, aber die perfekten, weil aromatisch selbstbewussten Begleiter zum sehr intensiven, selbstgeschichteten und -marinierten Rindfleisch. \n\nPreis-Leistung hervorragend, bin immer noch pappsatt. Dazu Ayran und Tee zum selberzapfen. \n\nEine echte Oase für Freunde der türkischen Maultasche; die kebabgewordene Seele, die man herzhaft baumeln lassen kann. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1c0m64b/imren_berlinkreuzberg_6_euro/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/bi57w12rqntc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.0 €</b> <br> 10.04.2024 by <a href="https://reddit.com/u/WasabiLangoustine"> /u/WasabiLangoustine</a><a href="https://reddit.com//r/doener/comments/1c0m64b/imren_berlinkreuzberg_6_euro/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Chicken döner on plate, Donas, 160₺ (5€) 
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -61235,10 +61265,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.7 €<br>
-                                    &#8960;  Post-Preis 2024: 8.03 €<br>
+                                    &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-10 15:50:46.679785<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-10 16:05:53.165776<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
