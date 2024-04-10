@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.388611, 9.7508229); // 'Lister Döner Hannover
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Lister Döner Hannover ',
+                subTitle: 'test',
+                description: 'Döner im Stadtteil List in Hannover.\n\nSehr guter Döner, die haben 4 Spieße.\n\n- Hackfleisch mit Lamm\n- Pur Lamm ( Premiumfleisch ) mit Aufpreis von 1 Euro ausgeschildert\n- Hähnchen \n- Vegan\n\nAusserdem eine &#34;Cheebab&#34; Maschine, falls man flüssigen Cheedar auf seinen Gerichten haben will.\n\nVerschiedene Saucen und Pasten!\n\nIm Döner wird mit dem Standart Gemüse gearbeitet, ausserdem mit Paprika, Rucola, Granatapfelsirup, Sumach und frischer Zitrone.\n\nAyran ist aus deren Ayranmaschine mit frischen Minzblättern drin.\n\nKann den Döner empfehlen, sehr lecker, aber Wartezeit mitbringen.\nEs ist immer eine Schlange dort, ich habe 25 - 30 Minuten gewartet.\n\nNormaler Döner (Hackfleisch) 6€ oder mit Premiumfleisch 7€.\nAyran 2,50€\n\nZum Schluss sogar einen Tee und Baklava umsonst bekommen. \n\nTop.\n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1c0unn1/lister_döner_hannover/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/f7zo8rtqhptc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=c8a619b0c3da0bedc39c7cbcae1fade7d44cc6e1"></a>' +
+        
+        '</br><b>Rating: - Preis: 1.0 €</b> <br> 10.04.2024 by <a href="https://reddit.com/u/gg_r0"> /u/gg_r0</a><a href="https://reddit.com//r/doener/comments/1c0unn1/lister_döner_hannover/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.7706623, 9.1820279); // 'Alaturka in Stuttgart [11,50€ - inkl. 2€ Aufpreis für extra Fleisch]
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -61348,11 +61378,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.71 €<br>
-                                    &#8960;  Post-Preis 2024: 8.04 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.7 €<br>
+                                    &#8960;  Post-Preis 2024: 8.02 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-10 21:42:54.880328<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-10 21:49:19.531257<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
