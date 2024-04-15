@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(49.4596678, 11.1002554); // 'Dönerteller Grillmeister Nürnberg, 13€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerteller Grillmeister Nürnberg, 13€ ',
+                subTitle: 'test',
+                description: 'Mit richtigen Scheibenfleisch aus Rind :) teil wiegt bestimmt ein Kilo. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1c4q1lb/dönerteller_grillmeister_nürnberg_13/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/mwzbxmw73ouc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=a7eab54d8b8e36f11bdccf8afa0551127941d2a7"></a>' +
+        
+        '</br><b>Rating: - Preis: 13.0 €</b> <br> 15.04.2024 by <a href="https://reddit.com/u/Zwangsbremsung"> /u/Zwangsbremsung</a><a href="https://reddit.com//r/doener/comments/1c4q1lb/dönerteller_grillmeister_nürnberg_13/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Food Lover Essen Kray, Kalbsdöner mit 180g Fleischeinlage 7,90€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -61769,10 +61799,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.69 €<br>
-                                    &#8960;  Post-Preis 2024: 7.98 €<br>
+                                    &#8960;  Post-Preis 2024: 7.99 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-15 17:55:23.092519<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-15 18:10:29.197999<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
