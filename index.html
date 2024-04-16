@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(47.8218045, 13.0443008); // 'Alpis Kebab, Stadt Salzburg 6,80€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Alpis Kebab, Stadt Salzburg 6,80€ ',
+                subTitle: 'test',
+                description: 'Der beste Kebab Salzburgs meiner Meinung nach, das Fleisch ist mega, das Brot ist knusprig, selbst der Salat ist frisch. Ich hol mir meistens den Chili-Cheese Kebab wie am Bild zu sehen, schmeckt unglaublich gut mit der geschmolzenen Käse. 10/10 auch die anderen Gerichte welche sie anbieten sind top. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1c5dmjn/alpis_kebab_stadt_salzburg_680/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/1m0q48q1ttuc1.jpg"></a>' +
+        
+        '</br><b>Rating: 10/10 Preis: 6.8 €</b> <br> 16.04.2024 by <a href="https://reddit.com/u/GreekTurkishInfidel"> /u/GreekTurkishInfidel</a><a href="https://reddit.com//r/doener/comments/1c5dmjn/alpis_kebab_stadt_salzburg_680/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Bald beginnt endlich wieder der MELÖNER®️ saison🍉🥙👌
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -61948,11 +61978,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.69 €<br>
-                                    &#8960;  Post-Preis 2024: 7.98 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
+                                    &#8960;  Post-Preis 2024: 7.97 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-16 13:17:32.260216<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-16 13:32:38.933430<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
