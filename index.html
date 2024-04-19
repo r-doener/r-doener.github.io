@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.1757183, 16.3741262); // 'Fedi&#39;s Döner in Wien; Kalb 4.90€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Fedi&#39;s Döner in Wien; Kalb 4.90€ ',
+                subTitle: 'test',
+                description: '\nDer Döner ist nichts Besonderes. Schmeckt ok-gut, aber war es definitiv nicht wer sich eine halbe Stunde anzustellen. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1c7txlc/fedis_döner_in_wien_kalb_490/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/5mrifdlx2fvc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=61a4adc5a9f37bb452f33eb6bd6b1d737f7434eb"></a>' +
+        
+        '</br><b>Rating: - Preis: 4.9 €</b> <br> 19.04.2024 by <a href="https://reddit.com/u/Vic-Ier"> /u/Vic-Ier</a><a href="https://reddit.com//r/doener/comments/1c7txlc/fedis_döner_in_wien_kalb_490/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(53.5569514, 9.9686607); // 'Einmal U-Bahn mit alles
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -62338,11 +62368,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
                                     &#8960;  Post-Preis 2024: 7.95 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-19 12:43:55.607164<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-19 12:59:00.643656<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
