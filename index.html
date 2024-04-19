@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Wir haben es geschafft! Und sogar die bauchtänzerin gesehen
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Wir haben es geschafft! Und sogar die bauchtänzerin gesehen ',
+                subTitle: 'test',
+                description: 'Also wir standen auf jeden Fall 2h an😂 es war gute Stimmung in der Schlange, obwohl es gepisst hat. Naja am Fleisch haben sie doch gespart, ich würd auch sagen der Döner ist so ne 5/10. die Soßen haben richtig nach Mayo geschmeckt, aber das Brot war echt lecker. Die bauchtänzerin kam auch mit ein bisschen Verspätung. Würde da nicht nochmal hin aber die Erfahrung war auf jeden Fall witzig. Die Getränkeauswahl war jedoch echt groß. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1c83vn4/wir_haben_es_geschafft_und_sogar_die/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/fcedauzx9hvc1.jpg"></a>' +
+        
+        '</br><b>Rating: 5/10 Preis: None €</b> <br> 19.04.2024 by <a href="https://reddit.com/u/lildedlea"> /u/lildedlea</a><a href="https://reddit.com//r/doener/comments/1c83vn4/wir_haben_es_geschafft_und_sogar_die/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(53.0805723, 8.810521); // 'Kültür Bremen nähe HBF 5,80€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -62402,7 +62432,7 @@
                                     &#8960;  Post-Preis 2024: 7.94 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-19 20:16:31.132966<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-19 20:31:37.678800<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
