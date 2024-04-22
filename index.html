@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Berliner Dönerwirt reist mit 60KG und unserem Bundespräsidenten in die
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Berliner Dönerwirt reist mit 60KG und unserem Bundespräsidenten in die ',
+                subTitle: 'test',
+                description: 'https://youtu.be/0z6xtam_0Bo?si=uMP_PYQ4ozC7BNHU\n\nDas Leben schreibt die besten Stories, einfach 60KG pures Glück und ein Bundespräsident besuchen die Türkei im Zuge des Gedenkens an die Freundschaft beider Völker[Video](https://youtu.be/0z6xtam_0Bo?si=uMP_PYQ4ozC7BNHU) <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1caejmj/berliner_dönerwirt_reist_mit_60kg_und_unserem/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/WLhsaWU0j9PwsUyk5PfSOW6oKTvO66cfiaW6fCCVA3k.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=705a02e9bbe45f3d067d4ab4c7236118514107b4"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 22.04.2024 by <a href="https://reddit.com/u/MeAgainstTheWord"> /u/MeAgainstTheWord</a><a href="https://reddit.com//r/doener/comments/1caejmj/berliner_dönerwirt_reist_mit_60kg_und_unserem/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.31582900000001, 9.790614099999999); // 'Dimili‘s in Laatzen. 5€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -62882,7 +62912,7 @@
                                     &#8960;  Post-Preis 2024: 7.97 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-22 17:57:29.130308<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-22 18:12:36.579605<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
