@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(48.09616030000001, 11.7859342); // 'Miran Döner und Pizza - Nähe München - Schülerdöner 5€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Miran Döner und Pizza - Nähe München - Schülerdöner 5€ ',
+                subTitle: 'test',
+                description: 'Auf dem Beils sieht e aus als wäre wenig Fleisch und viel Gemüse drauf, aber war in echt sehr gut ausgeglichen, schön viel Fleisch.\nWar geschmacklich ganz gut, gab schon etwas bessere, aber auch schon deutlich schlechtere. \nKann man für 5€ nichts sagen.\nNormalpreis glaube ich 7€ <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cb5228/miran_döner_und_pizza_nähe_münchen_schülerdöner_5/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/jz892hn3h8wc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=e1041c2695601cd6090f2e00d37cff2976af00a2"></a>' +
+        
+        '</br><b>Rating: - Preis: 5.0 €</b> <br> 23.04.2024 by <a href="https://reddit.com/u/cct_benj"> /u/cct_benj</a><a href="https://reddit.com//r/doener/comments/1cb5228/miran_döner_und_pizza_nähe_münchen_schülerdöner_5/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.66027190000001, 6.967085); // 'Dnertasche
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -63088,11 +63118,11 @@
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.69 €<br>
-                                    &#8960;  Post-Preis 2024: 7.97 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
+                                    &#8960;  Post-Preis 2024: 7.96 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-23 15:37:07.231261<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-23 15:52:14.429887<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
