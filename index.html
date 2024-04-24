@@ -48,6 +48,66 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Die Dönerbremse kommt! 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Die Dönerbremse kommt!  ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cc4bqk/die_dönerbremse_kommt/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/eng5shfsqgwc1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=90e1c780b4b0ccdba1d031d5b236a0bb76fa9b17"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 24.04.2024 by <a href="https://reddit.com/u/RainfortXb1"> /u/RainfortXb1</a><a href="https://reddit.com//r/doener/comments/1cc4bqk/die_dönerbremse_kommt/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Döner madness
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Döner madness ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cc40pq/döner_madness/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/AkAkP5GBLScNXRZ2CnvgylE-1SUiJBihbtUsqWVz3Ts.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=fe3ce4ab9c51a1c9acdeb0e0c58592a1c9de9829"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 24.04.2024 by <a href="https://reddit.com/u/figub248"> /u/figub248</a><a href="https://reddit.com//r/doener/comments/1cc40pq/döner_madness/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Nochmal Bild von Steinmeier
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -263,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -293,7 +353,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -63212,7 +63272,7 @@
                                     &#8960;  Post-Preis 2024: 7.96 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-24 19:20:51.639565<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-24 19:35:59.166334<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
