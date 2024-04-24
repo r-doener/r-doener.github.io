@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.4021815, 12.5535578); // 'Chili con Carne Dürüm - 7€ - Shahin Döner - Brandenburg
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Chili con Carne Dürüm - 7€ - Shahin Döner - Brandenburg ',
+                subTitle: 'test',
+                description: 'Habt ihr schon mal einen Döner / Dürüm o.ä. mit Chili con Carne Zutaten bestellt?\nKann ich nur empfehlen. \nHier zu sehen ein Dürüm nur mit Chili Sauce, Fleisch, Mais und Kidneybohnen. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cc6b81/chili_con_carne_dürüm_7_shahin_döner_brandenburg/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/06fkxfan4hwc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.0 €</b> <br> 24.04.2024 by <a href="https://reddit.com/u/Der-andere-Autist"> /u/Der-andere-Autist</a><a href="https://reddit.com//r/doener/comments/1cc6b81/chili_con_carne_dürüm_7_shahin_döner_brandenburg/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.9602219, 7.6360145); // 'Wow
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -63302,7 +63332,7 @@
                                     &#8960;  Post-Preis 2024: 7.96 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-24 20:51:34.017825<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-24 21:06:42.936816<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
