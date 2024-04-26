@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Kulturelle Aneignung bei Dönner ;-) 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Kulturelle Aneignung bei Dönner ;-)  ',
+                subTitle: 'test',
+                description: 'Aus aktuellem Anlass einer Diskussion in diesem Unter, bei der OP die Aussage: „Deutscher Döner sei türkisch-deutsch“ kulturelle Aneignung sei, obwohl wir uns doch alle einig sind, dass Döner der Völkerverständigung dient und uns durch alle sozialen Klassen vereint. \n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cdmowj/kulturelle_aneignung_bei_dönner/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/5bz9jxz72uwc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=d549c3e2febbe60ce7123da35f5d8eb93e7565d7"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 26.04.2024 by <a href="https://reddit.com/u/EggplantCapital9519"> /u/EggplantCapital9519</a><a href="https://reddit.com//r/doener/comments/1cdmowj/kulturelle_aneignung_bei_dönner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(48.45281, 9.341228599999999); // 'An der Alb gibt’s noch 5€-Döner
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -63602,7 +63632,7 @@
                                     &#8960;  Post-Preis 2024: 7.96 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-26 16:12:03.648174<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-26 16:27:12.128079<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
