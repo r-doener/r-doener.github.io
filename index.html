@@ -48,6 +48,38 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Ja 2006.Döner 2 Euro .
+Das waren noch Zeiten…
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Ja 2006.Döner 2 Euro .
+Das waren noch Zeiten… ',
+                subTitle: 'test',
+                description: 'Der gute alte Flyer lüg nicht!isch schwöR. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cdqtb2/ja_2006döner_2_euro_das_waren_noch_zeiten/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/43ptg4o4wuwc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=660d291e4be552b2861b8cfc734ee22853b7b0c6"></a>' +
+        
+        '</br><b>Rating: - Preis: 2.0 €</b> <br> 26.04.2024 by <a href="https://reddit.com/u/Beautiful_Depth_6541"> /u/Beautiful_Depth_6541</a><a href="https://reddit.com//r/doener/comments/1cdqtb2/ja_2006döner_2_euro_das_waren_noch_zeiten/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'TIL that a politician gave a food review of kebab while speaking in pa
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +325,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -63689,10 +63721,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
-                                    &#8960;  Post-Preis 2024: 7.96 €<br>
+                                    &#8960;  Post-Preis 2024: 7.95 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-26 18:58:42.236047<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-26 19:13:51.846631<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
