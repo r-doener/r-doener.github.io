@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(50.085356, 14.443486); // '6€ Queens Kebab Prag
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '6€ Queens Kebab Prag ',
+                subTitle: 'test',
+                description: 'Portion war um einiges größer als in DE üblich, kein Aufpreis für Schafskäse, einziges Manko, wurde nicht gefragt welches Fleisch ich haben will (das hier was Hühnchen) 9/10  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ceg89s/6_queens_kebab_prag/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/leyyoohrb1xc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=28008bd291196875ec7a395e79a20e43c45d9756"></a>' +
+        
+        '</br><b>Rating: 9/10 Preis: 6.0 €</b> <br> 27.04.2024 by <a href="https://reddit.com/u/BumseBine"> /u/BumseBine</a><a href="https://reddit.com//r/doener/comments/1ceg89s/6_queens_kebab_prag/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.4662202, 13.4318178); // 'Tandir, Berlin (Hermannstr.)
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -295,7 +325,7 @@ Das waren noch Zeiten… ',
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -63840,11 +63870,11 @@ Das waren noch Zeiten… ',
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
                                     &#8960;  Post-Preis 2024: 7.94 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-27 16:40:49.810608<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-27 16:55:59.460869<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
