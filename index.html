@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.4662202, 13.4318178); // 'Tandir, Berlin (Hermannstr.)
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Tandir, Berlin (Hermannstr.) ',
+                subTitle: 'test',
+                description: 'Ein sehr feiner Yaprak-Döner, Fleisch ultrasaftig &amp; heiß, jedoch nicht allzu stark gewürzt wie zum Beispiel das bei Imren. Fladenbrot ist sehr frisch, wird jeden Morgen von einer der zahlreichen türkischen Bäckereien dieser Gegend geliefert; außen kross, innen soft. Ordentliche Portion für 6,50 Euro, Salat-Fleisch-Ratio 1:3 würde ich sagen. \n\nEine sehr ehrenhafte Osmanentasche. Bonuspunkte für den Ayran-Brunnen; deutlich säuerlicher als man erwarten würde, bricht aber die ausladende Fettigkeit des Fleischs. \n\nP.S.: Noch ein zusammengeklapptes Foto für die ganzen „wArUm iSt dEr dÖnEr iMmeR aUfGeKlApPt!?!“-Nörgler <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ced9jd/tandir_berlin_hermannstr/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/hg9a46nol0xc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.5 €</b> <br> 27.04.2024 by <a href="https://reddit.com/u/WasabiLangoustine"> /u/WasabiLangoustine</a><a href="https://reddit.com//r/doener/comments/1ced9jd/tandir_berlin_hermannstr/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(49.9515047, 8.458137599999999); // 'Lecker Döner 🥙
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -295,7 +325,7 @@ Das waren noch Zeiten… ',
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -63811,10 +63841,10 @@ Das waren noch Zeiten… ',
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
-                                    &#8960;  Post-Preis 2024: 7.95 €<br>
+                                    &#8960;  Post-Preis 2024: 7.94 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-27 14:09:22.386786<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-27 14:24:31.119819<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
