@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(47.8456483, 16.5242405); // 'Gemischter Dönerteller (12,90€) | Benji&#39;s in Eisenstadt, Österreich
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Gemischter Dönerteller (12,90€) | Benji&#39;s in Eisenstadt, Österreich ',
+                subTitle: 'test',
+                description: ' <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cgpq08/gemischter_dönerteller_1290_benjis_in_eisenstadt/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/jrxr2nteilxc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=4f5f8ee175d64b4b8ee776dd3827619729793d98"></a>' +
+        
+        '</br><b>Rating: - Preis: 12.9 €</b> <br> 30.04.2024 by <a href="https://reddit.com/u/onideluxe"> /u/onideluxe</a><a href="https://reddit.com//r/doener/comments/1cgpq08/gemischter_dönerteller_1290_benjis_in_eisenstadt/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.5500148, 13.3869275); // 'Spargeldöner: So teuer ist der „Döner Beelitzer Art“ in Berlin
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -64259,10 +64289,10 @@
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
-                                    &#8960;  Post-Preis 2024: 7.94 €<br>
+                                    &#8960;  Post-Preis 2024: 7.95 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-30 12:38:07.117011<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-04-30 12:46:54.788312<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
