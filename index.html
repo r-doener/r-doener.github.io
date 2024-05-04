@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Gilt der….Phnom Penh Cambodia
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Gilt der….Phnom Penh Cambodia ',
+                subTitle: 'test',
+                description: 'Aeon Mall 1 Phnom  Penh ca. 2,5 Euro <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ck42sk/gilt_derphnom_penh_cambodia/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/7nt7ermkqfyc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 2.5 €</b> <br> 04.05.2024 by <a href="https://reddit.com/u/Calm_Tom24"> /u/Calm_Tom24</a><a href="https://reddit.com//r/doener/comments/1ck42sk/gilt_derphnom_penh_cambodia/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(52.49398739999999, 13.388024); // 'Geheimtipp aus Berlin: Mustafa&#39;s Gemüse Kebab - mein bisher bester Dön
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -295,7 +325,7 @@ Kr ',
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -65041,10 +65071,10 @@ Kr ',
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
-                                    &#8960;  Post-Preis 2024: 7.92 €<br>
+                                    &#8960;  Post-Preis 2024: 7.91 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-04 18:19:10.992561<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-04 18:28:11.801564<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
