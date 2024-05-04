@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(53.0680528, 8.8011799); // 'Bremen, Neue Beste Dönerbude
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Bremen, Neue Beste Dönerbude ',
+                subTitle: 'test',
+                description: 'In Bremen Gastfeldstraße 43, 28201 Bremen hat ein neuer Dönerbude aufgemacht. Siggys Gemüse Döner. Kein Döner, nicht al Palais oder Özalibaba kann da mithalten. Mit Echten Blattdöner aus Kalb. Schaut Fotos. Preise auch drin. Wie in Türkei nach Gramm. Tzatziki kann man nicht Mal mit anderen Buden vergleichen. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ck6sgr/bremen_neue_beste_dönerbude/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/ovxnnz21cgyc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 04.05.2024 by <a href="https://reddit.com/u/Fatih2024"> /u/Fatih2024</a><a href="https://reddit.com//r/doener/comments/1ck6sgr/bremen_neue_beste_dönerbude/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.6361973, 6.1887965); // 'Damals war alles Frher!
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -294,7 +324,7 @@ Kr
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -65104,7 +65134,7 @@ Kr ',
                                     &#8960;  Post-Preis 2024: 7.91 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-04 20:16:39.806334<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-04 20:22:57.164813<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
