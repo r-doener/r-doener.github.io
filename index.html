@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.5370065, 9.934547499999999); // 'Nachm Club gestern einen arschgeilen Kalb Döner mit einem Spritzer Zit
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Nachm Club gestern einen arschgeilen Kalb Döner mit einem Spritzer Zit ',
+                subTitle: 'test',
+                description: 'Nochmal gepostet weil mein Blödarsch Standort und Preis vergessen hat :3  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cjwf34/nachm_club_gestern_einen_arschgeilen_kalb_döner/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/tolb8x8ppdyc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=d7fbd500e2a6ba8a3bcd74aaa4ab150395819dd9"></a>' +
+        
+        '</br><b>Rating: - Preis: 5.5 €</b> <br> 04.05.2024 by <a href="https://reddit.com/u/krabberknam"> /u/krabberknam</a><a href="https://reddit.com//r/doener/comments/1cjwf34/nachm_club_gestern_einen_arschgeilen_kalb_döner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(51.45412, 8.371269999999999); // 'Nachm Club gestern einen arschgeilen Kalb Döner mit einem Spritzer Zit
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -295,7 +325,7 @@ Kr ',
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -64954,7 +64984,7 @@ Kr ',
                                     &#8960;  Post-Preis 2024: 7.93 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-04 11:29:43.163885<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-04 11:38:49.889085<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
