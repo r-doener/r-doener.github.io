@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(52.49398739999999, 13.388024); // 'Geheimtipp aus Berlin: Mustafa&#39;s Gemüse Kebab - mein bisher bester Dön
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Geheimtipp aus Berlin: Mustafa&#39;s Gemüse Kebab - mein bisher bester Dön ',
+                subTitle: 'test',
+                description: 'Der Stand ist am Mehringdamm, Preis: 7,10€ was echt gute Preis Leistung ist. Mit lecker Grillgemüse und ein bissl Käse 😍Ist nur ein kleiner Stand aber mit riesigem Spieß. Warum nur? Es gab wenig Kunden (10:15 Uhr). <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cjzehf/geheimtipp_aus_berlin_mustafas_gemüse_kebab_mein/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/da9b8zg9neyc1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.1 €</b> <br> 04.05.2024 by <a href="https://reddit.com/u/KiezSchellenMann"> /u/KiezSchellenMann</a><a href="https://reddit.com//r/doener/comments/1cjzehf/geheimtipp_aus_berlin_mustafas_gemüse_kebab_mein/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Linke-Papier: So könnte eine Dönerpreisbremse aussehen
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -295,7 +325,7 @@ Kr ',
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -65011,10 +65041,10 @@ Kr ',
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
-                                    &#8960;  Post-Preis 2024: 7.93 €<br>
+                                    &#8960;  Post-Preis 2024: 7.92 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-04 14:31:52.554356<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-04 14:40:51.393409<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
