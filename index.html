@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Urlaub Grill - Döner Kebab Turbo
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Urlaub Grill - Döner Kebab Turbo ',
+                subTitle: 'test',
+                description: '\nDönerfleisch in Currysauce mit Paprika und Champinons. Dazu Pommes mit Sauce nach Wahl, hier Spezial.\n\nDas beste waren die Pommes, da nicht so latschig, wie sonst vom Lieferdienst. Im Fleisch 2 Knorpel. Menge ist solide.\nPreis 9,50€\n\nInsgesamt 2/10 <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cmjh3p/urlaub_grill_döner_kebab_turbo/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/y2389muiw1zc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=247e81186f0fc1711885766eb49279d48b832ae5"></a>' +
+        
+        '</br><b>Rating: 2/10 Preis: 9.5 €</b> <br> 07.05.2024 by <a href="https://reddit.com/u/michi52mx"> /u/michi52mx</a><a href="https://reddit.com//r/doener/comments/1cmjh3p/urlaub_grill_döner_kebab_turbo/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'So eine frage kann ich nicht kurz und einfach beantworten
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -65614,7 +65644,7 @@ Kr ',
                                     &#8960;  Post-Preis 2024: 7.9 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-07 20:45:25.665955<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-07 20:53:50.233627<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
