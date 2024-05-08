@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.3649753, 12.3860751); // 'Calimero Leipzig / 8,00€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Calimero Leipzig / 8,00€ ',
+                subTitle: 'test',
+                description: 'Mittlerweile seit einem dreiviertel Jahr mein Stammdöner da Eisi oft ne Ecke zu weit weg ist. Super freundliche Angestellte, sehr geile Soßen und mit Abstand der sauberste Laden in dem ich je Döner gegessen habe. Dienstag &amp; Mittwoch Yaprak für 9€. Mein Fav bei den Soßen ist die Kombi aus Chili und Curry-Mango. Thanks for coming to my TED Talk <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cn0jke/calimero_leipzig_800/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/zubrmll0b6zc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=1dc8605d19a1c0c555760417d9a7712335b034d0"></a>' +
+        
+        '</br><b>Rating: - Preis: 8.0 €</b> <br> 08.05.2024 by <a href="https://reddit.com/u/prodbyredemption"> /u/prodbyredemption</a><a href="https://reddit.com//r/doener/comments/1cn0jke/calimero_leipzig_800/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // ':)
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -65821,10 +65851,10 @@ Kr ',
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
     <div class="hide" id="infotext">&#8960;  Post-Preis: 7.66 €<br>
-                                    &#8960;  Post-Preis 2024: 7.9 €<br>
+                                    &#8960;  Post-Preis 2024: 7.91 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-08 11:39:32.476173<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-08 11:47:56.426091<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
