@@ -48,6 +48,36 @@
         infobox.setMap(map);
         
 
+                var location = new Microsoft.Maps.Location(51.3862174, 8.5080136); // 'Dönerteller
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: 'Dönerteller ',
+                subTitle: 'test',
+                description: 'BizKing Brackenheim, 9,50€. Mit Pommes. Habs nicht geschafft. Einfach viel <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cpfmsu/dönerteller/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/bev3t9arbszc1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=6ca53fa3cb1317db57c6f29db7055c3c566f3b0e"></a>' +
+        
+        '</br><b>Rating: - Preis: 9.5 €</b> <br> 11.05.2024 by <a href="https://reddit.com/u/Turbulent-Yard3087"> /u/Turbulent-Yard3087</a><a href="https://reddit.com//r/doener/comments/1cpfmsu/dönerteller/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Ist das ein  doener Verbrechen oder die neueste Food-Innovation????
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -293,7 +323,7 @@
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -66060,11 +66090,11 @@ Kr ',
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.67 €<br>
-                                    &#8960;  Post-Preis 2024: 7.92 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.68 €<br>
+                                    &#8960;  Post-Preis 2024: 7.93 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-11 13:39:47.665787<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-11 13:48:22.489609<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
