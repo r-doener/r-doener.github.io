@@ -16,6 +16,7 @@ reddit = praw.Reddit(
 subreddit = reddit.subreddit("doener")
 
 counter = 0  ### just for progress viewing
+lon, lat = 0
 for submission in subreddit.new(limit=limit):  # hot, top, new, rising,
     counter = counter + 1
     print(counter)
@@ -86,12 +87,11 @@ for submission in subreddit.new(limit=limit):  # hot, top, new, rising,
 
             date = submission.created_utc
             if not error: ## if no coordinates - throw way
-                if lon:
-                    with conn:
-                        values = (
-                        submission.id, submission.title, rating, find_number(price), lon, lat, str(submission.author), date,
-                        image, text, image_ns, str(submission.permalink))
-                        insert_value(conn, values)
+               with conn:
+                    values = (
+                    submission.id, submission.title, rating, find_number(price), lon, lat, str(submission.author), date,
+                    image, text, image_ns, str(submission.permalink))
+                    insert_value(conn, values)
             else:
                 with conn:
                     values = (
