@@ -16,7 +16,8 @@ reddit = praw.Reddit(
 subreddit = reddit.subreddit("doener")
 
 counter = 0  ### just for progress viewing
-lon, lat = 0
+lon = 0
+lat = 0
 for submission in subreddit.new(limit=limit):  # hot, top, new, rising,
     counter = counter + 1
     print(counter)
