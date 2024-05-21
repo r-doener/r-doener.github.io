@@ -78,7 +78,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Muss das sein?
+                var location = new Microsoft.Maps.Location(52.0044838, 9.169410899999999); // 'Muss das sein?
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -168,6 +168,36 @@
             map.entities.push(pin);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Guter Teller in Budapest für umgerechnet 7,50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: 'Die Pommes war etwas weich und es könnte mehr Brot sein, aber für den Preis beschwer ich mich nicht. <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cwh0d7/guter_teller_in_budapest_für_umgerechnet_750/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/58gi0gftdl1d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=804a73b3178b0710dfd9729838335d49006d9172"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.5 €</b> <br> 20.05.2024 by <a href="https://reddit.com/u/Rortox"> /u/Rortox</a><a href="https://reddit.com//r/doener/comments/1cwh0d7/guter_teller_in_budapest_für_umgerechnet_750/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'A very expensive yet very average döner. Kulti Kebab, Münster. €8.50
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
@@ -188,6 +218,36 @@
          '<a href="https://reddit.com//r/doener/comments/1cvsrbf/a_very_expensive_yet_very_average_döner_kulti/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/gdxe2v64ye1d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=b655fb622d82b8e6806b23e3051830883b3a0fbb"></a>' +
         
         '</br><b>Rating: - Preis: None €</b> <br> 19.05.2024 by <a href="https://reddit.com/u/TipsyGinTinkerer"> /u/TipsyGinTinkerer</a><a href="https://reddit.com//r/doener/comments/1cvsrbf/a_very_expensive_yet_very_average_döner_kulti/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(48.1397737, 11.5614391); // '7,50€ Kalbsdöner bei OLIVA, München Hbf
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: 'Auch wenn ich kein Fan von den „langen“ Broten bin, war dieser Kalbsdöner (mit alles) für 7,50€ sehr lecker. Meiner Meinung nach aber etwas zu viel Salat.\n\n\n\n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cvo8oi/750_kalbsdöner_bei_oliva_münchen_hbf/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/t8szgkm2xd1d1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 7.5 €</b> <br> 19.05.2024 by <a href="https://reddit.com/u/eren_srt"> /u/eren_srt</a><a href="https://reddit.com//r/doener/comments/1cvo8oi/750_kalbsdöner_bei_oliva_münchen_hbf/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
 
             };
 
@@ -258,12 +318,72 @@
             map.entities.push(pin);
         
 
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Habe den auf Amazon gefunden
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: '\nhttps://www.amazon.de/dp/B01LYFQS20?ref_=pfb_spv01_c06d1ebab6b0082816c10186aeefee4c&amp;tag=igasaphrd-de-21&amp;ascsubtag=pig-GAZTOYS-1-9-mzgjsimqjh8yufyo&amp;mcid=5596111755c43de5ab3212da257ae27b&amp;fbclid=PAAaa8T9NKf-2dPV2XiKYom9SV0WYGv1IIAD035Rh9966LM2mm2mCCGtTMIvg_aem_AYGf333Uz_oK4OqL_2SnQ97ClS_adgv5OtH3M5XEmRATJaC-PWyZMqSFISnkIkhbtwwZM_SAky2fy1Ef1W6LUX8B <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cvjel3/habe_den_auf_amazon_gefunden/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/8s7dnczkdc1d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=577beb6651f2b0d8d2d55c94d1824761bdf50b94"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 19.05.2024 by <a href="https://reddit.com/u/Almann_007"> /u/Almann_007</a><a href="https://reddit.com//r/doener/comments/1cvjel3/habe_den_auf_amazon_gefunden/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // '6€ bei Ugur in Osnabrück. 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: 'super knusper Brot, 4 verschiedene Soßen für 6€ in Osnabrück bei Ugur&#39;s Kebabhaus\n\n\n <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cv5jfu/6_bei_ugur_in_osnabrück/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/opry62o5o81d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=77e6668811693819cd41ae1e3f2e1a66d6e69a3f"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.0 €</b> <br> 18.05.2024 by <a href="https://reddit.com/u/mang00mann"> /u/mang00mann</a><a href="https://reddit.com//r/doener/comments/1cv5jfu/6_bei_ugur_in_osnabrück/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
                 var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Döner 3,90€ im Jahr 2024 🥳
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -288,12 +408,12 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Bock auf einen Döner ?
+                var location = new Microsoft.Maps.Location(51.4832082, 8.119993899999999); // 'Bock auf einen Döner ?
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
                     
-                        icon: 'http://r-doener.github.io/static/doner-kebab-highlight.png',
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
                     
                 
 
@@ -308,6 +428,36 @@
          '<a href="https://reddit.com//r/doener/comments/1cuzvdv/bock_auf_einen_döner/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/azl0dDlwdW1lNzFkMa9Pd18jL5OZjVT-sWoKerl1eYVRoflIM1UvaD9UYK3q.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=f8c0e33f0391fadfeb18e29ff8ce3661bc648c3c"></a>' +
         
         '</br><b>Rating: - Preis: None €</b> <br> 18.05.2024 by <a href="https://reddit.com/u/GhostCheeese"> /u/GhostCheeese</a><a href="https://reddit.com//r/doener/comments/1cuzvdv/bock_auf_einen_döner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Döner mit Hühnerfleisch in Das Dönerhaus in Almaty, Kasachstan (€5)
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: 'Ich lebe in Kasachstan, und als ich vor kurzem in Almaty eingetroffen bin, konnte ich die Möglichkeit, einen Döner auszuprobieren, nicht verpassen. Normalerweise essen wir in Kasachstan den Dürüm (den wir Döner nennen :D). Der Geschmack war okay, die Portion groß, und es war ziemlich unbequem, den zu essen. Es gab wenig Fleisch und nichts Sharfes. Im Großen und Ganzen gefiel mir der Döner nicht so sehr.  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cuyhh1/döner_mit_hühnerfleisch_in_das_dönerhaus_in/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/hsuva1ly271d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=3699c292e63d8d7f62f7a4abd7cd301e7e889167"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 18.05.2024 by <a href="https://reddit.com/u/Ameriggio"> /u/Ameriggio</a><a href="https://reddit.com//r/doener/comments/1cuyhh1/döner_mit_hühnerfleisch_in_das_dönerhaus_in/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
 
             };
 
@@ -348,7 +498,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Jumbo Döner, All-in Bad Berleburg 8€
+                var location = new Microsoft.Maps.Location(51.0508339, 8.3938296); // 'Jumbo Döner, All-in Bad Berleburg 8€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -378,7 +528,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Jumbo Döner 8€
+                var location = new Microsoft.Maps.Location(51.50266449999999, 6.884207699999999); // 'Jumbo Döner 8€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -398,6 +548,96 @@
          '<a href="https://reddit.com//r/doener/comments/1cutqwl/jumbo_döner_8/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/gngl127dp51d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=4af643386cd0238ef38b77dad11fe1392eaa4aae"></a>' +
         
         '</br><b>Rating: - Preis: 8.0 €</b> <br> 18.05.2024 by <a href="https://reddit.com/u/s77m"> /u/s77m</a><a href="https://reddit.com//r/doener/comments/1cutqwl/jumbo_döner_8/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(52.546287, 13.3584278); // 'Nomaden Döner Teller, Pamfilya Berlin. 19.50€
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: 'Der Spaß war lecker! (Manti war nicht meins) <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cut67y/nomaden_döner_teller_pamfilya_berlin_1950/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://i.redd.it/4mkdp1yvh51d1.jpg"></a>' +
+        
+        '</br><b>Rating: - Preis: 19.5 €</b> <br> 18.05.2024 by <a href="https://reddit.com/u/Bergfried"> /u/Bergfried</a><a href="https://reddit.com//r/doener/comments/1cut67y/nomaden_döner_teller_pamfilya_berlin_1950/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(50.8179189, 6.375124); // 'Lamacun komplett, Döner-Center Langerwehe 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: 'Mittlerweile bei unverschämten 9,00€. War lecker und gut scharf  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cush1c/lamacun_komplett_dönercenter_langerwehe/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/z23wgjak851d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=0cd631df17a52083ed27a67a3c960bc36259a92b"></a>' +
+        
+        '</br><b>Rating: - Preis: 9.0 €</b> <br> 18.05.2024 by <a href="https://reddit.com/u/ComprehensiveLake512"> /u/ComprehensiveLake512</a><a href="https://reddit.com//r/doener/comments/1cush1c/lamacun_komplett_dönercenter_langerwehe/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(51.4467156, 8.3548109); // 'Kalb-schichtfleisch Döner
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: 'Bei Vegan Halal Döner und Pizza in Düsseldorf  <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cudd4j/kalbschichtfleisch_döner/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/xd6l0dehb11d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=1f5baaa990bc0f1c39b3272f162ddc53fa3eb26c"></a>' +
+        
+        '</br><b>Rating: - Preis: None €</b> <br> 17.05.2024 by <a href="https://reddit.com/u/Dope4ever"> /u/Dope4ever</a><a href="https://reddit.com//r/doener/comments/1cudd4j/kalbschichtfleisch_döner/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
 
             };
 
@@ -438,7 +678,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // '7 Days Gemüse Kebab - Berlin Schöneberg - 6,90€
+                var location = new Microsoft.Maps.Location(52.48641019999999, 13.3563157); // '7 Days Gemüse Kebab - Berlin Schöneberg - 6,90€
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -468,7 +708,37 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Doener oder Shawarma?
+                var location = new Microsoft.Maps.Location(52.5011685, 13.4193705); // 'Hasir Berlin
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: 'Rindfleisch mit Lammfett.\n6,50€, bester Döner in meinen Augen überhaupt <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1cu9bu4/hasir_berlin/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/7a9nnwfuh01d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=806e20d17875ac538314bc20205423a009aa5d1b"></a>' +
+        
+        '</br><b>Rating: - Preis: 6.5 €</b> <br> 17.05.2024 by <a href="https://reddit.com/u/ObjectiveBlock8"> /u/ObjectiveBlock8</a><a href="https://reddit.com//r/doener/comments/1cu9bu4/hasir_berlin/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(51.4923521, 8.4330356); // 'Doener oder Shawarma?
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -528,7 +798,7 @@
             map.entities.push(pin);
         
 
-                var location = new Microsoft.Maps.Location(0.0, 0.0); // 'Yammi heute lecker Schüler 🤤
+                var location = new Microsoft.Maps.Location(51.4850884, 8.3367851); // 'Yammi heute lecker Schüler 🤤
 
                 var pin = new Microsoft.Maps.Pushpin(location, {
                 
@@ -608,6 +878,36 @@
          '<a href="https://reddit.com//r/doener/comments/1ctl276/es_gibt_wieder_hoffnung/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://external-preview.redd.it/NXEzZ2RiNGk4dTBkMdEl0_cuuSGJu7REvBFpx7z_ChTjy0_iEJ3sZiIJcd7H.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=20481f02b10a8653f517058ed701d111b324cd33"></a>' +
         
         '</br><b>Rating: - Preis: None €</b> <br> 16.05.2024 by <a href="https://reddit.com/u/joegoodno"> /u/joegoodno</a><a href="https://reddit.com//r/doener/comments/1ctl276/es_gibt_wieder_hoffnung/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
+
+            };
+
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseover', pushpinHovered);
+            Microsoft.Maps.Events.addHandler(pin, 'mouseout', closeTooltip);
+
+            map.entities.push(pin);
+        
+
+                var location = new Microsoft.Maps.Location(53.1000362, 8.8855013); // 'Uludag Dönerteller in Bremen für 12€. Ich war glücklich 
+
+                var pin = new Microsoft.Maps.Pushpin(location, {
+                
+                    
+                        icon: 'http://r-doener.github.io/static/doner-kebab.png',
+                    
+                
+
+
+            anchor: new Microsoft.Maps.Point(12, 39)
+        });
+            pin.metadata = {
+                title: '{{ row.1[:70] }} ',
+                subTitle: 'test',
+                description: '&#34;Mit scharf Bruder?&#34;\n\nJa, mit scharf Bruder. \n\nEs war sehr scharf ;) <br><br>' +
+        
+         '<a href="https://reddit.com//r/doener/comments/1ctg3fl/uludag_dönerteller_in_bremen_für_12_ich_war/" target="_blank"><img width="250px" style="border-radius:5px;display: block; margin-left: auto; margin-right: auto;" src="https://preview.redd.it/9w5alnh08t0d1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=a15de6c998e890024699da36db98483b30ffc928"></a>' +
+        
+        '</br><b>Rating: - Preis: 12.0 €</b> <br> 16.05.2024 by <a href="https://reddit.com/u/RoninXiC"> /u/RoninXiC</a><a href="https://reddit.com//r/doener/comments/1ctg3fl/uludag_dönerteller_in_bremen_für_12_ich_war/" target="_blank"><img src="/static/reddit.png" width="40px" style="display: block; margin-left: 240px; margin-top: -45px;"</a><br>'
 
             };
 
@@ -67499,11 +67799,11 @@ Kr
  <div class="customNavBar">
             <input type="button" value="Döner Informationen" onclick="onButtonClick();"/>
         </div>
-    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.69 €<br>
-                                    &#8960;  Post-Preis 2024: 7.95 €<br>
+    <div class="hide" id="infotext">&#8960;  Post-Preis: 7.71 €<br>
+                                    &#8960;  Post-Preis 2024: 7.98 €<br>
                                     &#8960;  Post-Preis 2023: 7.57 €<br>
                                     &#8960;  Post-Preis 2022: 6.79 €<br>
-                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-21 10:48:13.482197<br>
+                                    &#8960;  Post-Preis 2021: 9.3 €<br><br><br>Letztes Update: 2024-05-21 10:49:25.612765<br>
         Doner Image by <a href="https://www.freepik.com/">Freepik</a><br>created by <a href="https://reddit.com/u/timo_schroe">/u/timo_schroe</a><a href="https://www.buymeacoffee.com/georgs"><br><br><img width="150px" src="/static/buymeadoener.png"></a></div>
     <script>
         // Dynamic load the Bing Maps Key and Script
