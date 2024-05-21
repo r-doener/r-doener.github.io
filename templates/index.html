@@ -65,7 +65,7 @@
             anchor: new Microsoft.Maps.Point(12, 39)
         });
             pin.metadata = {
-                title: '{{ row.1[:70] }} ',
+                title: '{% raw %}{{ row.1[:70] }} {% endraw %}',
                 subTitle: 'test',
                 description: '{{ row.9| replace('\n','\\n') }} <br><br>' +
         {% if row.8 == "/static/doner-kebab.png" %}
